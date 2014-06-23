@@ -8,3 +8,7 @@ url: "http://blog.cartodb.com/"
 # Build settings
 markdown: kramdown
 permalink: pretty
+encoding: utf-8
+exclude: ['README.md']
+gems:
+  - jekyll-compass
