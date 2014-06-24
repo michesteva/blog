@@ -19,8 +19,14 @@
 .h-balign { vertical-align: bottom; }
 .h-pa { position: absolute; }
 .h-pr { position: relative; }
-
 .h-tupper { text-transform: uppercase; }
+
+.h-vspace-xl { margin-bottom: 60px; }
+.h-vspace-l { margin-bottom: 40px; }
+.h-vspace-m { margin-bottom: 25px; }
+.h-vspace-s { margin-bottom: 12px; }
+.h-vspace-xs { margin-bottom: 8px; }
+
 
 .inb-list {
   > li {
@@ -42,4 +48,9 @@
 .itm-body { display: table; height: 1%; }
 .itm-body-exp { display: block; overflow: hidden; }
 
+
+.txt-default {
+  color: #666;
+  font: 400 18px 'Proxima Nova Rg';
+}
 
