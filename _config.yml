@@ -2,7 +2,7 @@
 title: CartoDB | Blog
 email: your-email@domain.com
 description: "We love Open Data. CartoDB is a geospatial database on the cloud to allow development of location aware applications quickly and easily."
-baseurl: ""
+baseurl: "http://www.cartodb.com/"
 url: "http://blog.cartodb.com/"
 
 # Build settings

@@ -2,15 +2,38 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1>Posts</h1>
+<div class="home inner">
 
-  <ul class="posts">
+  <ul class="lst-post">
     {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <li class="h-txt-center">
+        <div class="post-header h-txt-center">
+          <p class="post-date"><span class="h-iblock h-pr">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+          <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <div class="lst-tags">
+            <i class="h-iblock h-malign">tab</i>
+            <ul class="inb-list h-iblock h-malign">
+              <li><a href="#">CartoDBeers</a></li>
+              <li><a href="#">Customer Stories</a></li>
+              <li><a href="#">Enterprise</a></li>
+            </ul>
+          </div>
+          <p class="post-author">by <img src="/img/alvaro.jpg" alt="Álvaro Ortiz" class="h-iblock h-malign" /> <a href="#">Álvaro Ortiz</a></p>
+        </div>
+
+
+        <div class="post-inner h-txt-left">
+          <p>We are excited to announce the launch of the NGO Aid Map, an InterAction project developed by Simbiótica, a partner of CartoDB. ngoaidmap.org “aims to increase the amount of publicly available data on international development and humanitarian response by providing detailed project information through interactive maps and data visualizations”</p>
+
+          <div class="h-txt-center post-more">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-medium btn-blue btn-background h-tupper">
+              <span class="btn-border">Read more</span>
+            </a>
+          </div>
+
+        </div>
+
       </li>
     {% endfor %}
   </ul>
