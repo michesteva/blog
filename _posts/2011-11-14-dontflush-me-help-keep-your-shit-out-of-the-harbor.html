@@ -1,0 +1,35 @@
+---
+layout: post
+title: 'DontFlush.me: Help keep your shit out of the harbor during storms'
+date: '2011-11-14T18:32:05+01:00'
+tags:
+- cartodb
+- ecohacknyc
+- nycbigapps
+- hack
+- sciencehackday
+- geo
+- maps
+- flush
+tumblr_url: http://blog.cartodb.com/post/12794674311/dontflush-me-help-keep-your-shit-out-of-the-harbor
+---
+<p>In The last 2 weeks a lot of new applications have been developed at <a href="http://www.ecohacknyc.org/">#ecohacknyc</a>, <a href="http://2011.nycbigapps.com/">#nycbigapps</a> and <a href="http://sciencehackday.com/">#sciencehackday</a> using CartoDB, pretty excited. This demonstrates the power of CartoDB specially for fast development of location aware applications and mapping. We are gonna be highlighting different applications that make use of CartoDB on the next days. </p>
+<p>Today we want to talk about <a href="http://dontflush.me/ecohacknyc/">DontFlush.me</a>, in their own words:</p>
+
+<p><em>"Unprocessed sewage overflows into New York City waterways as often as once a week.</em></p>
+<p><em>27 billion gallons of untreated sewage is dumped into NYC&#8217;s Harbor every year.</em></p>
+<p><em>Combined Sewer Overflows (CSOs) happen when the sewer system is overloaded by rainfall and snow.</em></p>
+<p><em>Help keep your shit out of the harbor during storms.&#8221;</em></p>
+<p><em><a href="http://dontflush.me/ecohacknyc/"><img width="640" src="http://cartodb.s3.amazonaws.com/tumblr/posts/dontflushme.png" align="middle"/></a><br/></em></p>
+<p>During #ecohackNYC a group of talented people got together to develop an application that can show you where is your sewage going. They used CartoDB to host all the data and then with a simple SQL API call like this:</p>
+<p>&#8212;-</p>
+<blockquote>
+<p><a href="http://ecohack-nyc-03.cartodb.com/api/v1/sql?q=">http://ecohack-nyc-03.cartodb.com/api/v1/sql?q=</a></p>
+<p><strong>SELECT</strong> DISTINCT(sheds.drainage_n), <strong>ST_AsGeoJSON</strong>(pol.the_geom) as polygon, <strong>ST_AsGeoJSON</strong>(poin.the_geom) as point_geom</p>
+<p><span> </span><strong>FROM</strong> drain_areas_wgs84webmerc_nodupou as pol inner join cso_nyc_wgs84webmerc_latlon as poin on poin.item_id=pol.primary_ou, drainage_nyc_sewage_plant_sheds as sheds</p>
+<p><span> </span><strong>WHERE ST_Intersects</strong>(pol.the_geom,ST_GeomFromText(&#8216;POINT(-73.96212000000003&#160;40.675573)&#8217;,4326)) AND (sheds.wpcp=poin.wpcp OR sheds.alt_name=poin.wpcp)</p>
+</blockquote>
+<p>&#8212;-</p>
+
+<p>They get the polygon of your CSO are and where it ends up on the river. On top of that is all about bringing a nice UI and give contest to the issue.</p>
+<p>Great job from Matt, Eric, Jeni, Liz, Jeff, Chris, Sheiva, Anna, Karen, Wendy and Carl. Congratulations!</p>

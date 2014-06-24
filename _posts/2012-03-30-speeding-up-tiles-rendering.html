@@ -1,0 +1,155 @@
+---
+layout: post
+title: Speeding up tiles rendering
+date: '2012-03-30T10:59:00+02:00'
+tags:
+- PostGis
+- cartodb
+- data
+- mapnik
+tumblr_url: http://blog.cartodb.com/post/20163722809/speeding-up-tiles-rendering
+---
+<p><img src="http://cartodb.s3.amazonaws.com/tumblr/posts/mapnik_patch.png"/></p>
+
+
+
+<p>Some weeks ago we announced that <a href="http://www.vizzuality.com/team/sandro">Sandro Santilli</a> joined the CartoDB team. He has been working hard on making PostGIS 2.0 and improving CartoDB, looking at queries we are making. Particularly he is been profiling rendering of CartoDB map tiles to find improvements opportunities.</p>
+
+
+
+<p>CartoDB data is fetched from PostGIS and rendered by Mapnik. The pipeline hot spot was the rendering part, keeping the CPU pretty busy. How to calm it down&#160;? Reduce the workload!</p>
+
+
+
+<p>Mapnik workload is number of input vertices. What options do we have to reduce them? PostGIS has three functions that can be used to reduce the complexity of geometries: ST_SnapToGrid, ST_Simplify and ST_SimplifyPreserveTopology.</p>
+
+
+
+<p>ST_SnapToGrid and ST_Simplify are available in PostGIS since 1.0.0 and before (circa 2003) and were implemented specifically to reduce workload of client-side mapping applications (where both browser memory and transfer time are a concern).</p>
+
+
+
+<p>ST_SimplifyPreserveTopology was added in 1.3.3 (2008) to avoid the dimensional collapses and the introduction of invalidities in geometries being reduced. This one is implemented in GEOS so has the disadvantage of an overhead in conversion between PostGIS and GEOS geometry structures.</p>
+
+
+
+<p>Let&#8217;s see how these methodologies compared.</p>
+
+
+
+<p>The <a href="http://www.istat.it/it/archivio/24580">dataset</a> under examination was a layer of 8,094 Italian municipality boundaries with a total of 4,845,240 vertices. We rendered the layer at 5 different zoom levels over a 600x400 image so that: level0 rendered all of Italy in 24x30 pixels, level1 rendered all Italy in 295x400 pixels, level2 only containd about 1/3 of the country, and level3 contained a single region. Parameters passed to simplifiers were of course dependent on zoom level.</p>
+
+
+
+<p>Finally a run was made with pre-simplified vectors to make sure any dynamic simplification would only hit the worst case of having no effect. Timings were taken using &#8216;mapnik-speed-check&#8217; running 10 times. They include data fetching (and thus query execution) and rendering.</p>
+
+
+
+<p>In the schema below &#8220;SimpTP&#8221; is ST_SimplifyPreserveTopology, &#8220;Simp&#8221; is ST_Simplify, &#8220;Snap&#8221; is ST_SnapToGrid and &#8220;vanilla&#8221; is no preprocessing. With &#8220;v&#8221; you have the total number of vertices fetched by the query and &#8220;g&#8221; gives you number of non-empty geometries over total number of geometries.</p>
+
+
+
+<p>In the image above, first map (called &#8220;vanilla&#8221; in the numbers following) takes more time to render; next image (&#8220;SimpTP&#8221;) loads faster. Here are the most interesting numbers:</p>
+
+
+
+<p><strong><br/></strong></p>
+
+
+
+<p><strong>level0 (full extent on 24x30 pixel)</strong></p>
+
+
+
+<blockquote>
+<p>avg: 10070.ms &lt;&#8212; SimpTP          46390 v  8094/8094&#160;g </p>
+<p>avg: 3190.5ms &lt;&#8212; vanilla       4845240 v  8094/8094&#160;g</p>
+<p>avg: 645.24ms &lt;&#8212; Snap             4164 v   697/8094&#160;g</p>
+<p>avg: 640.53ms &lt;&#8212; Simp            27279 v  8094/8094&#160;g </p>
+</blockquote>
+
+
+
+<p><strong><br/></strong></p>
+
+
+
+<p><strong>level1 (full extent on 295x400 pixels)</strong></p>
+
+
+
+<blockquote>
+<p>avg: 10185.ms &lt;&#8212; SimpTP          47498 v  8094/8094&#160;g</p>
+<p>avg: 3233.2ms &lt;&#8212; vanilla       4845240 v  8094/8094&#160;g</p>
+<p>avg: 741.77ms &lt;&#8212; Snap           106232 v  7889/8094&#160;g [crowded]</p>
+<p>avg: 707.78ms &lt;&#8212; Simp            34438 v  8094/8094&#160;g ***</p>
+</blockquote>
+
+
+
+<p><strong><br/></strong></p>
+
+
+
+<p><strong>level2 (1/3 of extent on 600x400 pixels)</strong></p>
+
+
+
+<blockquote>
+<p>avg: 3335.9ms &lt;&#8212; SimpTP,Snap   14004 v  2183/2183&#160;g</p>
+<p>avg: 945.04ms &lt;&#8212; vanilla     1462892 v  2183/2183&#160;g</p>
+<p>avg: 476.34ms &lt;&#8212; Snap,SimpTP   18282 v  2179/2183&#160;g ***</p>
+<p>avg: 230.86ms &lt;&#8212; Snap          60761 v  2179/2183&#160;g [crowded]</p>
+<p>avg: 216.49ms &lt;&#8212; Simp          13299 v  2183/2183&#160;g ***</p>
+</blockquote>
+
+
+
+<p><strong><br/></strong></p>
+
+
+
+<p><strong>level4 (1/10 of extent on 600x400 pixels)</strong></p>
+
+
+
+<blockquote>
+<p>avg: 853.96ms &lt;&#8212; SimpTP           10476 v  547/547&#160;g</p>
+<p>avg: 218.95ms &lt;&#8212; vanilla         327660 v  547/547&#160;g</p>
+<p>avg: 195.80ms &lt;&#8212; Snap,SimpTP      14094 v  547/547&#160;g</p>
+<p>avg: 74.150ms &lt;&#8212; Simp             10287 v  547/547&#160;g ***</p>
+<p>avg: 70.242ms &lt;&#8212; Snap             67041 v  547/547&#160;g [spiky]</p>
+</blockquote>
+
+
+
+<p><strong><br/></strong></p>
+
+
+
+<p><strong>level4 (1/10 of extent on 600x400 pixels - PRESIMPLIFIED!)</strong></p>
+
+
+
+<blockquote>
+<p>avg: 54.777ms &lt;&#8212; Simp             13459 v  545/545&#160;g</p>
+<p>avg: 53.419ms &lt;&#8212; Snap             13459 v  545/545&#160;g</p>
+<p>avg: 52.430ms &lt;&#8212; vanilla          13459 v  545/545&#160;g</p>
+<p>avg: 49.978ms &lt;&#8212; SimpNCD          13459 v  545/545&#160;g</p>
+</blockquote>
+
+
+
+<p>Generally speaking a simple ST_Simplify() call is what drop most vertices and it&#8217;s fast enough not to represent a problem even when there&#8217;s nothign to do for it.</p>
+
+
+
+<p>Starting from there we <a href="https://github.com/mapnik/mapnik/issues/1136">contributed a patch</a> to mapnik for exposing a style file parameter to request automatic simplification based on resolution. The patch is strictly for the PostGIS provider.</p>
+
+
+
+<p>The patched Mapnik is already running live and it&#8217;s one of the main improvements of upcoming CartoDB 1.0. Which will be presented at <a href="http://whereconf.com/where2012">Where Conference</a> and <a href="http://foss4g-na.org/">FOSS4G-NA</a>.</p>
+
+
+
+<p>Congrats Sandro on this great work. This is not only great news for CartoDB users, but also for Openstreemap users which will potentially see their maps being rendered with Mapnik much faster.</p>

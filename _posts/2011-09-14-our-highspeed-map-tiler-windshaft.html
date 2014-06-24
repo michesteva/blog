@@ -1,0 +1,21 @@
+---
+layout: post
+title: 'Our highspeed map tiler: Windshaft'
+date: '2011-09-14T00:14:00+02:00'
+tags: []
+tumblr_url: http://blog.cartodb.com/post/10177550591/our-highspeed-map-tiler-windshaft
+---
+<p>We often find ourselves needing a simple, high speed and decoupled map tile server to generate maps from PostGIS as fast as possible without sacrificing developmental flexibility.</p>
+<p>At the same time, we wouldn&#8217;t be Vizzuality without also <a href="http://www.vizzuality.com/projects/spanishelections">needing</a> <a href="http://www.vizzuality.com/projects/protectedplanet">to</a> <a href="http://www.vizzuality.com/projects/gmba">style</a> these <a href="http://www.vizzuality.com/projects/imazon">maps</a> with a modern cartographic language.</p>
+<p>Today we&#8217;re really pleased to introduce a node.js library called <a href="https://github.com/Vizzuality/Windshaft">windshaft</a> that makes integrating a simple high speed map tiler with your application as simple as possible.</p>
+<p><a href="https://github.com/Vizzuality/Windshaft">Windshaft</a> give you:</p>
+<p><span> </span></p>
+<ul><li>Pluggable routing to provide customisable tile API URL endpoints</li>
+<li>Renders all data, or data restricted by SQL query</li>
+<li>Generates image and UTFGrid tiles</li>
+<li>Accepts, stores, serves, and applys map styles written in the Carto markup language (same markup as Mapbox Tilemill)</li>
+<li>Serves Infowindow information</li>
+<li>Focus on handling concurrent requests</li>
+</ul><p>These days we are using more and more Javascript for front and back end development. We think this &#8216;little language that could&#8217; really hits the sweet spot for map tile servers, including great concurrency, small footprint, and deep support for Mapnik, the popular Open Source map renderer.</p>
+<p><span>Being a dynamic map renderer, windshaft commits some map server &#8216;sins&#8217; in it&#8217;s raw form, but the idea is that you the developer actually want to graft your own auth/metrics/caching/scaling on top of decent core components. Same old story: high cohesion, low coupling makes us happy.</span></p>
+<p>To download and start using Windshaft today, <a target="_blank" href="https://github.com/Vizzuality/Windshaft">check out the source on Github</a></p>
