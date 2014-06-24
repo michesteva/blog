@@ -263,13 +263,19 @@ a {
 		border-top: 1px solid #e5e5e5;
 		> li {
 			display: inline-block;
-			width: 49%;
+			width: 50%;
 			margin-left: -5px;
 			border-bottom: 1px solid #e5e5e5;
 			border-top: 0;
 			&:last-child {
 				border-bottom: 0;
 			}
+		}
+	}
+	.post-share {
+		li {
+			display: block;
+			margin: 20px 0 0 0;
 		}
 	}
 }
