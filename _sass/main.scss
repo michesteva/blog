@@ -235,7 +235,51 @@ a {
 	}
 }
 
+.post-relations {
+	border-top: 1px solid #e5e5e5;
+	.lst-post-relations {
+		margin-left: 5px;
+		h2 {
+			font: 400 21px/24px 'Proxima Nova Rg';
+			a { color: #333; }
+		}
+ 		> li {
+ 			width: 21.5%;
+ 			margin-left: -5px;
+ 			margin-right: 4.94%;
+ 			vertical-align: top;
+ 			&:last-child {
+ 				margin-right: 0;
+ 			}
+ 		}
+ 		.relations-media {
+ 			overflow: hidden;
+ 			border-radius: 4px;
+ 			&:before {
+ 				content:"";
+ 				position: absolute;
+ 				left: 0;
+ 				right: 0;
+ 				top: 0;
+ 				bottom: 0;
+ 				border: 1px solid rgba(0, 0, 0, .2);
+ 				pointer-events: none;
+ 			}
+ 			img { display: block; width: 100%;}
+ 		}
+	}
+}
+.relations-title {
+	font: 700 16px 'Proxima Nova Rg';
+	margin-top: -16px;
+	> span { display: inline-block; padding: 8px 24px; background: #fff; }
+}
+
 @media (max-width:900px){
+	.lst-post > li {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.post-inner { width: 90%; }
 }
 
