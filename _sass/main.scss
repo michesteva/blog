@@ -234,3 +234,42 @@ a {
 		}
 	}
 }
+
+@media (max-width:900px){
+	.post-inner { width: 90%; }
+}
+
+
+@media (max-width:670px){
+	.blog-navigation {
+		&:before {
+			display: none;
+		}
+	}
+	.blog-tags {
+		float: none;
+		display: block;
+		width: 100%;
+		margin-bottom: 60px;
+		padding-bottom: 20px;
+	}
+	.blog-subscribe {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+	.lst-nav-tags {
+		margin-left: 5px;
+		border-top: 1px solid #e5e5e5;
+		> li {
+			display: inline-block;
+			width: 49%;
+			margin-left: -5px;
+			border-bottom: 1px solid #e5e5e5;
+			border-top: 0;
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+}
