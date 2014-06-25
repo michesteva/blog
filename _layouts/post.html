@@ -6,12 +6,11 @@ layout: default
   <header class="post-header h-txt-center">
     <p class="post-date"><span class="h-iblock h-pr">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span></p>  
     <h1 class="post-title">{{ page.title }}</h1>
-    {{post.tags.size}}
-    {% unless post.tags.size == 0 %}
+    {% unless page.tags.size == 0 %}
       <div class="lst-tags">
         <i class="icon i-xs icons-tag h-malign i-medium"></i>
         <ul class="inb-list h-iblock h-malign">
-          {% for tag_item in post.tags %}
+          {% for tag_item in page.tags %}
             <!-- TODO: link tags -->
             <li>{{ tag_item }}</li>
           {% endfor %}
@@ -19,13 +18,13 @@ layout: default
       </div>
     {% endunless %}
 
-    {% if post.author %}
+    {% if page.author %}
       {% assign author_slug = '' %}
       {% assign author_name = '' %}
       {% assign author_avatar = '' %}
 
       {% for author_item in site.data.authors %}
-        {% if post.author == author_item.slug %}
+        {% if page.author == author_item.slug %}
           {% capture author_slug %}{{ author_item.author }}{% endcapture %}
           {% capture author_name %}{{ author_item.name }}{% endcapture %}
           {% capture author_avatar %}{{ author_item.avatar }}{% endcapture %}
