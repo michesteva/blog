@@ -60,58 +60,36 @@ js_assets:
   <div class="post-relations h-vspace-l">
     <h2 class="relations-title h-txt-center h-vspace-l"><span>MORE ENTRIES</span></h2>  
     <ul class="inb-list lst-post-relations">
+      {% for related_item in site.related_posts limit:4 %}
         <li>
-            <div class="relations-media h-pr h-vspace-xs">
-                <a href="#">
-                    <img src="/img/post-media.jpg" alt="title" />
-                </a>
+          <div class="lst-post-relations-inner">
+            <div class="relations-media h-pr">
+              <a href="{{ related_item.url }}">
+                <img src="{% if related_item.thumbnail %}{{ related_item.thumbnail | prepend: site.baseurl }}{% else %}{{ '/img/related.png' | prepend: site.baseurl }}{% endif %}" alt="{{ related_item.title }}" />
+              </a>
             </div>
-            <h2><a href="#">Change the width of your infowindows</a></h2>
+
+            <h2><a href="{{ related_item.url }}">{{ related_item.title }}</a></h2>
+          </div>
         </li>
-        <li>
-            <div class="relations-media h-pr h-vspace-xs">
-                <a href="#">
-                    <img src="/img/post-media.jpg" alt="title" />
-                </a>
-            </div>
-            <h2><a href="#">Map of the Week: Areas prone to flooding in Norway</a></h2>
-        </li>
-        <li>
-            <div class="relations-media h-pr h-vspace-xs">
-                <a href="#">
-                    <img src="/img/post-media.jpg" alt="title" />
-                </a>
-            </div>
-            <h2><a href="#">Earth Observation for a better world - See you at ESA Space Industry Days</a></h2>
-        </li>
-        <li>
-            <div class="relations-media h-pr h-vspace-xs">
-                <a href="#">
-                    <img src="/img/post-media.jpg" alt="title" />
-                </a>
-            </div>
-            <h2><a href="#">Learn CartoDB for free in NY, hosted by Gilt</a></h2>
-        </li>
+      {% endfor %}
     </ul>
   </div>
 
 
   <p class="post- h-txt-center post-info-subscribe">If you want to keep informed on news and new features on CartoDB, <a href="#">follow us on Twitter</a> or <a href="#">suscribe via RSS</a>.</p>
 
-
-
-
   <div class="blog-navigation h-pr">
     <div class="blog-tags">
         <h2 class="title-module">Categories</h2>
         <ul class="lst-nav-tags">
-            <li><a href="#">CartoDBeers</a></li>
-            <li><a href="#">Customer Stories</a></li>
-            <li><a href="#">Enterprise</a></li>
-            <li><a href="#">How-to guides</a></li>
-            <li><a href="#">Map of the Week</a></li>
-            <li><a href="#">New features</a></li>
-            <li><a href="#">New hires</a></li>
+          <li><a href="#">CartoDBeers</a></li>
+          <li><a href="#">Customer Stories</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">How-to guides</a></li>
+          <li><a href="#">Map of the Week</a></li>
+          <li><a href="#">New features</a></li>
+          <li><a href="#">New hires</a></li>
         </ul>
     </div>
     <div class="blog-subscribe">
