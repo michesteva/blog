@@ -1,10 +1,13 @@
 ---
 layout: default
+js_assets:
+  - '/js/post.js'
 ---
 <div class="post inner">
 
   <header class="post-header h-txt-center">
-    <p class="post-date"><span class="h-iblock h-pr">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span></p>  
+    <p class="post-date"><span class="h-iblock h-pr">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} · {{ page.author }}{% endif %}{% if page.meta %} · {{ page.meta }}{% endif %}</span></p>
+
     <h1 class="post-title">{{ page.title }}</h1>
     {% unless page.tags.size == 0 %}
       <div class="lst-tags">
@@ -41,19 +44,18 @@ layout: default
 
   <div class="post-share h-txt-center">
     <ul class="inb-list h-tupper">
-        <li>
-            <a href="#" class="btn btn-medium btn-blue-fb btn-background">
-                <span class="btn-border">Share on Facebook</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="btn btn-medium btn-blue-tw btn-background">
-                <span class="btn-border">Share on Twitter</span>
-            </a>
-        </li>
+      <li>
+        <a href="{{ page.url | prepend: site.baseurl | prepend: site.url | prepend: 'http://www.facebook.com/sharer/sharer.php?u=' }}" class="btn btn-medium btn-blue-fb btn-background" target="_blank" title="Share on Facebook">
+          <span class="btn-border">Share on Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ page.url | prepend: site.baseurl | prepend: site.url | prepend: '&url=' | prepend: page.title | prepend: 'https://twitter.com/intent/tweet?text=' }}" class="btn btn-medium btn-blue-tw btn-background" target="_blank" title="Share on Twitter">
+          <span class="btn-border">Share on Twitter</span>
+        </a>
+      </li>
     </ul>
   </div>
-
 
   <div class="post-relations h-vspace-l">
     <h2 class="relations-title h-txt-center h-vspace-l"><span>MORE ENTRIES</span></h2>  
