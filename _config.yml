@@ -8,7 +8,7 @@ url: "http://blog.cartodb.com"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:month-:day-:year/:title/
 encoding: utf-8
 exclude: ['README.md']
 gems:
