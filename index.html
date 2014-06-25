@@ -1,5 +1,7 @@
 ---
 layout: default
+js_assets:
+  - '/js/home.js'
 ---
 
 
@@ -11,17 +13,35 @@ layout: default
         <div class="post-header h-txt-center">
           <p class="post-date"><span class="h-iblock h-pr">{{ post.date | date: "%b %-d, %Y" }}</span></p>
           <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <div class="lst-tags">
-            <i class="h-iblock h-malign">tab</i>
-            <ul class="inb-list h-iblock h-malign">
-              <li><a href="#">CartoDBeers</a></li>
-              <li><a href="#">Customer Stories</a></li>
-              <li><a href="#">Enterprise</a></li>
-            </ul>
-          </div>
-          <p class="post-author">by <img src="/img/alvaro.jpg" alt="Álvaro Ortiz" class="h-iblock h-malign" /> <a href="#">Álvaro Ortiz</a></p>
-        </div>
 
+          {% unless post.tags.size == 0 %}
+            <div class="lst-tags">
+              <i class="icon i-xs icons-tag h-malign i-medium"></i>
+              <ul class="inb-list h-iblock h-malign">
+                {% for tag_item in post.tags %}
+                  <!-- TODO: link tags -->
+                  <li>{{ tag_item }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endunless %}
+
+          {% if post.author %}
+            {% assign author_slug = '' %}
+            {% assign author_name = '' %}
+            {% assign author_avatar = '' %}
+
+            {% for author_item in site.data.authors %}
+              {% if post.author == author_item.slug %}
+                {% capture author_slug %}{{ author_item.author }}{% endcapture %}
+                {% capture author_name %}{{ author_item.name }}{% endcapture %}
+                {% capture author_avatar %}{{ author_item.avatar }}{% endcapture %}
+              {% endif %}
+            {% endfor %}
+
+            <p class="post-author">by <img src="{{ author_avatar | prepend: site.baseurl }}" alt="{{ author_name }}" class="h-iblock h-malign" /> {{ author_name }}</p>
+          {% endif %}
+        </div>
 
         <div class="post-inner h-txt-left">
           <p>We are excited to announce the launch of the NGO Aid Map, an InterAction project developed by Simbiótica, a partner of CartoDB. ngoaidmap.org “aims to increase the amount of publicly available data on international development and humanitarian response by providing detailed project information through interactive maps and data visualizations”</p>
