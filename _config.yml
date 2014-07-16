@@ -11,6 +11,7 @@ url: "http://blog.cartodb.com"
 markdown: kramdown
 permalink: /:month-:day-:year/:title/
 paginate: 5
+paginate_path: page/:num
 encoding: utf-8
 exclude: ['README.md']
 gems:
