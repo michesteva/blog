@@ -10,6 +10,7 @@ url: "http://blog.cartodb.com"
 # Build settings
 markdown: kramdown
 permalink: /:month-:day-:year/:title/
+paginate: 5
 encoding: utf-8
 exclude: ['README.md']
 gems:
