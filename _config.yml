@@ -1,3 +1,4 @@
+env: ''
 # Site settings
 title: CartoDB | Blog
 email: your-email@domain.com
@@ -13,3 +14,5 @@ encoding: utf-8
 exclude: ['README.md']
 gems:
   - jekyll-compass
+
+cartodb-baseurl: "http://cartodb.com/"
