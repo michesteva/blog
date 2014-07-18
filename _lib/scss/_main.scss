@@ -23,6 +23,7 @@
   margin-top: -60px;
 
   .post {
+    padding: 60px 20px 40px;
     border: 0;
   }
 }
@@ -122,6 +123,74 @@
 
   iframe {
     margin-bottom: 20px;
+  }
+
+  code {
+    font: 13px Consolas, Menlo, Courier, monospace;
+    padding: 2px;
+    margin: 0;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    color: #666;
+    @include border-radius(4px);
+  }
+
+  pre {
+    overflow: auto;
+    line-height: 19px;
+    margin-bottom: 24px;
+    padding: 18px;
+    background-color: #f8f8f8;
+    @include border-radius(4px);
+
+    code {
+      border: none;
+      padding: 0;
+    }
+  }
+
+  .table {
+    display: block;
+    margin: 20px 0 30px;
+    border: 1px solid #E4E4E4;
+
+    .row {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 0;
+      border-bottom: 1px solid #E4E4E4;
+      letter-spacing: -4px;
+
+      &:after {
+        content: ' ';
+        position: absolute;
+        left: 50%; top: 0;
+        height: 100%;
+        width:1px; background:#E4E4E4;
+      }
+
+      &:first-child p {
+        font-weight: bold !important;
+        text-align: center;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      p {
+        display: inline-block !important;
+        display: -moz-inline-stack;
+        zoom: 1;
+        display: inline;
+        vertical-align: top;
+        width: 287px!important;
+        padding: 15px;
+        margin: 0;
+        letter-spacing: 0;
+      }
+    }
   }
 }
 
@@ -371,3 +440,12 @@ a.btn-blue-tw.btn-background {
     }
   }
 }
+
+
+/* =Gists
+----------------------------------------------- */
+
+.gist-file { overflow: hidden; }
+.gist .gist-file .gist-meta { font-size: 65% !important; }
+.gist-data { font-size: 15px !important;  line-height: 17px !important; background: white !important; }
+.gist-file { margin: 10px 0 21px !important; color: #4B4B4B !important; }
