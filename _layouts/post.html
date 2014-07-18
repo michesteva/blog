@@ -70,9 +70,13 @@ js_assets:
         <li>
           <div class="lst-post-relations-inner">
             <div class="relations-media h-pr">
-              <a href="{{ related_item.url }}">
-                <img src="{% if related_item.thumbnail %}{{ related_item.thumbnail | prepend: site.baseurl }}{% else %}{{ '/img/related.png' | prepend: site.baseurl }}{% endif %}" alt="{{ related_item.title }}" />
-              </a>
+              {% if related_item.layout_color %}
+                <a href="{{ related_item.url }}">
+                  <div style="background-image: url({{ related_item.layout_color | prepend: site.baseurl }})" class="thumbnail"></div>
+                </a>
+              {% else %}
+                <a href="{{ related_item.url }}"><img src="{{ '/img/related.png' | prepend: site.baseurl }}" alt="{{ related_item.title }}" /></a>
+              {% endif %}
             </div>
 
             <h2 class="h-txt-left"><a href="{{ related_item.url }}">{{ related_item.title }}</a></h2>

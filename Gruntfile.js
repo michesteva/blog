@@ -27,13 +27,13 @@ module.exports = function(grunt) {
     },
     shell: {
       prod: {
-        command: "jekyll build --limit_posts 20", // make it fast
+        command: "jekyll build",
         options: {
           async: false
         }
       },
       dist: {
-        command: 'jekyll build',
+        command: "jekyll build --limit_posts 20", // make it fast
         options: {
           async: false
         }
