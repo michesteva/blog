@@ -5,12 +5,6 @@ tags:
   - cartodb partners
   - partners
 categories:
-  - 'CartoDBeers'
-  - 'Customer Stories'
-  - 'Enterprise'
-  - 'How-to guides'
-  - 'Map of the Week'
-  - 'New features'
   - 'New hires'
 author: alvaro
 tumblr_url: http://blog.cartodb.com/post/88941433624/altran-spain-becomes-the-newest-cartodb-partner
