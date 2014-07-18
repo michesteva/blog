@@ -66,22 +66,28 @@ js_assets:
   <div class="post-relations">
     <h2 class="relations-title"><span>MORE ENTRIES</span></h2>  
     <ul class="inb-list lst-post-relations">
-      {% for related_item in site.related_posts limit:4 %}
-        <li>
-          <div class="lst-post-relations-inner">
-            <div class="relations-media h-pr">
-              {% if related_item.layout_color %}
-                <a href="{{ related_item.url }}">
-                  <div style="background-image: url({{ related_item.layout_color | prepend: site.baseurl }})" class="thumbnail"></div>
-                </a>
-              {% else %}
-                <a href="{{ related_item.url }}"><img src="{{ '/img/related.png' | prepend: site.baseurl }}" alt="{{ related_item.title }}" /></a>
-              {% endif %}
-            </div>
+      {% for post in site.posts limit:4 %}
+        {% assign match = false %}
+        {% for tag in post.tags %}
+          {% if page.tags contains tag and page.url != post.url %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
+        {% if match %}
+          <li>
+            <div class="lst-post-relations-inner">
+              <div class="relations-media h-pr">
+                {% if post.layout_color %}
+                  <a href="{{ post.url }}" style="background-image: url({{ post.layout_color | prepend: site.baseurl }})" alt="{{ post.title }}" class="thumbnail with-layout-color"></a>
+                {% else %}
+                  <a href="{{ post.url }}" alt="{{ post.title }}" class="thumbnail"></a>
+                {% endif %}
+              </div>
 
-            <h2 class="h-txt-left"><a href="{{ related_item.url }}">{{ related_item.title }}</a></h2>
-          </div>
-        </li>
+              <h2 class="h-txt-left"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            </div>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
