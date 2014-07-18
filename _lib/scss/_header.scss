@@ -1,0 +1,336 @@
+/* =Header
+----------------------------------------------- */
+
+.navbar {
+  @extend %clearfix;
+  padding: 25px 0 20px;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(#fff, .2);
+  margin-bottom: 50px;
+  font: 700 12px/14px "Proxima Nova Sb";
+}
+
+.navbar-button {
+  display: none;
+  position: absolute;
+  top: 10px; right: 20px;
+}
+
+.icons-mobile-nav { background: image-url('mobile-nav.png'); }
+
+.navbar-brand {
+  display: inline-block;
+  width: 121px;
+  margin-right: 18px;
+  text-indent: -9000px;
+  margin-top: -3px;
+
+  a {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 43px;
+    background: image-url('brand.png');
+  }
+}
+
+.navbar-inner {
+  > li {
+    margin-left: 9px;
+
+    &.selected > a {
+      color: #fff;
+    }
+
+    &.selected,
+    &:hover {
+      > a {
+        background: #2E72A3;
+        background: rgba(#000, .1);
+      }
+    }
+
+    &:hover a {
+      text-decoration: none;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 12px 14px;
+    color: #eee;
+    color: rgba(#fff, .8);
+    @include border-radius(50px);
+    @include transition(background .15s);
+
+    &.navbar-login {
+      padding: 10px 34px;
+      border: 2px solid #fff;
+      @include border-radius(50px);
+
+      &:hover {
+        color: #2E72A3;
+        background: #fff;
+        @include border-radius(50px);
+      }
+    }
+  }
+}
+
+.tooltip {
+  display: none;
+}
+
+.tooltip-inner {
+  padding: 18px 18px 18px 6px;
+  border: 1px solid rgba(#000, .5);
+  @include border-bottom-radius(4px);
+
+  li {
+    margin-bottom: 5px;
+    font: 400 14px 'Proxima Nova Rg';
+    text-transform: none;
+
+    a {
+      display: inline-block;
+      padding: 6px 14px;
+      color: #878787;
+      background: none;
+    }
+
+    &.selected a {
+      background-color: #F5F5F5;
+    }
+  }
+}
+
+.header {
+  position: relative;
+  margin-top: -50px;
+  height: 60px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+}
+
+/* white */
+.offcanvas-inner {
+  background: #3B7EBB;
+
+  &.white {
+    background: #fff image-url('backgrounds/header_bkg.png');
+    color: #333;
+
+    .header:after {
+      @include background-image(linear-gradient(rgba(#fff, 0), rgba(#fff, 1)));
+    }
+
+    .navbar {
+      border-bottom: 1px solid #E7E8E9;
+      border-bottom: 1px solid rgba(#000, .12);
+    }
+
+    .navbar-brand a {
+      background: image-url('brand-blue.png');
+    }
+
+    .navbar-inner {
+      a {
+        color: #999;
+      }
+
+      > li {
+        &.selected,
+        &:hover {
+          > a {
+            background: #e5e5e5;
+          }
+        }
+
+        &.selected > a {
+          color: #555;
+        }
+        &.selected {
+          .tooltip-inner li {
+            &.selected {
+              > a {
+                @include border-radius(14px);
+              }
+            }
+
+            &.selected,
+            &:hover {
+              > a {
+                background: #e5e5e5;
+                background: rgba(#ddd, .3);
+              }
+            }
+
+            a {
+              color: #878787;
+              background: none;
+            }
+          }
+        }
+
+        &:hover {
+          .navbar-login {
+            background: #4B80B7;
+            color: #fff;
+          }
+        }
+
+        .navbar-login {
+          color: #4B80B7;
+          border: 2px solid #4B80B7;
+          @include border-radius(50px);
+        }
+      }
+
+      a {
+        &.navbar-login {
+          &:hover {
+            color: #fff;
+            @include border-radius(50px);
+          }
+        }
+      }
+    }
+
+    .icons-mobile-nav {
+      background: image-url('mobile-nav-blue.png');
+    }
+  }
+}
+
+@media (max-width: $large-width) {
+  .offcanvas-inner {
+    position: relative;
+    right: 0;
+    width: 100%;
+    @include transition(all .15s ease-out);
+
+    &.white {
+      .navbar-inner > li {
+        &.selected,
+        &:hover {
+          > a {
+            background: rgba(#000, .1);
+          }
+        }
+      }
+    }
+
+    .tooltip {
+      display: block !important;
+      position: static;
+      margin-top: 10px;
+      background: transparent;
+      box-shadow: 0 0 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .tooltip-header {
+      display: none;
+    }
+
+    .navbar-inner > li {
+      .tooltip-inner {
+        border: 0;
+
+        li.selected a {
+          background-color: transparent !important;
+        }
+      }
+
+      &.selected {
+        padding: 0;
+
+        li {
+          &.selected,
+          &:hover {
+            a {
+              background: rgba(#333, .3);
+              text-decoration: none;
+            }
+          }
+
+          a {
+            background: none;
+          }
+        }
+      }
+
+      &:hover li a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      right: 80%;
+    }
+  }
+
+  .navbar-header { width: 100%; }
+
+  .navbar-button { display: block; }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 25px; right: -80%;
+    width: 80%;
+    padding: 0 10px;
+  }
+
+  .navbar-inner {
+    width: 100%;
+
+    > li {
+      display: block;
+      margin: 0 0 10px;
+    }
+
+    &.navbar-inner-buttons {
+      margin-bottom: 10px;
+      padding-bottom: 21px;
+      border-bottom: 1px solid rgba(#000, .1);
+
+      > li {
+        float: left;
+        width: 49%;
+        margin-bottom: 0;
+
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+
+    a {
+      color: #eee !important;
+      color: rgba(#fff, .8) !important;
+
+      &.navbar-login {
+        padding: 10px 22px;
+        border: 2px solid #fff !important;
+        text-align: center;
+
+        &:hover {
+          background: #fff !important;
+          color: #397EB9 !important;
+        }
+      }
+    }
+  }
+}

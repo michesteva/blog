@@ -1,4 +1,5 @@
-@import "compass/css3/opacity";
+/* =Icons
+----------------------------------------------- */
 
 @import 'icons/*.png';
 @include all-icons-sprites;
@@ -12,6 +13,8 @@
   &.i-medium { @include opacity(.6); }
   &.i-grey { @include opacity(.35); }
   &.i-light { @include opacity(.2); }
+  &.icons-arrow-right, &.icons-arrow-right-white { width: 15px; height: 10px; }
+  &.icons-mobile-nav, &.icons-mobile-nav-blue { width: 21px; height: 18px; }
 
   &.i-big { width: 72px; height: 72px; }
   &.i-xxl { width: 62px; height: 62px; }
@@ -20,8 +23,10 @@
   &.i-s { width: 16px; height: 16px; }
   &.i-xs { width: 9px; height: 15px; }
   &.i-media { width: 32px; height: 32px; }
-  &.i-flag { width: 16px; height: 11px; }
-  &.i-slides { width: 13px; height: 23px; }
-  &.i-play-solutions { width: 42px; height: 41px; }
-  &.i-solutions { width: 53px; height: 53px; }
+}
+
+.i-xs.icons-arrow-down {
+  width: 7px;
+  height: 4px;
+  margin-left: 4px;
 }

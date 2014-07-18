@@ -1,10 +1,10 @@
-env: ''
-destination: '_site'
+env: 'production'
+destination: '.tmp'
 title: CartoDB Blog
 description: "We love Open Data. CartoDB is a geospatial database on the cloud to allow development of location aware applications quickly and easily."
 keywords: "cartodb, map of the week, nonprofits, cartodb partners, examples"
 baseurl: ""
-url: "http://blog-staging.cartodb.com/"
+url: "http://blog.cartodb.com/"
 
 markdown: kramdown
 permalink: /:title/
@@ -14,7 +14,7 @@ encoding: utf-8
 exclude: ['README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'node_modules', 'Gruntfile.js', 'package.json', 's3_website.yml']
 highlighter: rouge
 
-cartodb-baseurl: 'http://cartodb-staging.com'
+cartodb-baseurl: 'http://cartodb.com'
 academy-baseurl: 'http://academy.cartodb.com/'
 
 analytics_property_id: ''

@@ -1,61 +1,61 @@
 <footer class="footer">
-  <div class="inner">
-  <div class="footer-inner">
-      <ul class="footer-columns">
+  <div class="footer-inner inner">
+    <ul class="footer-columns">
+      <li class="footer-column">
+        <dl>
+          <dt>CartoDB</dt>
+          <dd><a href="{{ '/visualize' | prepend: site.cartodb-baseurl }}">Create beautiful maps</a></dd>
+          <dd><a href="{{ '/analyze' | prepend: site.cartodb-baseurl }}">Analyze your data</a></dd>
+          <dd><a href="{{ '/develop' | prepend: site.cartodb-baseurl }}">Develop your apps</a></dd>
+          <dd><a href="{{ '/gallery' | prepend: site.cartodb-baseurl }}">Gallery</a></dd>
+          <dd><a href="{{ '/pricing' | prepend: site.cartodb-baseurl }}">Pricing</a></dd>
+          <dd><a href="{{ '/media' | prepend: site.cartodb-baseurl }}">About us</a></dd>
+          <dd><a href="{{ '/team' | prepend: site.cartodb-baseurl }}">Team</a></dd>
+        </dl>
+      </li>
 
-        <li class="footer-column">
-          <dl>
-            <dt>CartoDB</dt>
-            <dd><a href="{{ site.baseurl }}visualize">Create beautiful maps</a></dd>
-            <dd><a href="{{ site.baseurl }}analyze">Analyze your data</a></dd>
-            <dd><a href="{{ site.baseurl }}develop">Develop your apps</a></dd>
-            <dd><a href="{{ site.baseurl }}gallery">Gallery</a></dd>
-            <dd><a href="{{ site.baseurl }}pricing">Pricing</a></dd>
-            <dd><a href="{{ site.baseurl }}media">About us</a></dd>
-            <dd><a href="{{ site.baseurl }}team">Team</a></dd>
-          </dl>
-        </li>
+      <li class="footer-column">
+        <dl>
+          <dt>Enterprise</dt>
+          <dd><a href="{{ '/enterprise' | prepend: site.cartodb-baseurl }}">CartoDB for enterprise</a></dd>
+          <dd><a href="{{ '/partners' | prepend: site.cartodb-baseurl }}">Partners</a></dd>
+          <dd><a href="{{ '/gallery' | prepend: site.cartodb-baseurl }}">Case studies</a></dd>
+          <dd><a href="mailto:sales@cartodb.com">Contact sales</a></dd>
+        </dl>
+      </li>
 
-        <li class="footer-column">
-          <dl>
-            <dt>Enterprise</dt>
-            <dd><a href="{{ site.baseurl }}enterprise">CartoDB for enterprise</a></dd>
-            <dd><a href="{{ site.baseurl }}partners">Partners</a></dd>
-            <dd><a href="{{ site.baseurl }}gallery">Case studies</a></dd>
-            <dd><a href="mailto:sales@cartodb.com">Contact sales</a></dd>
-          </dl>
-        </li>
-        <li class="footer-column">
-          <dl>
-            <dt>Learn</dt>
-            <dd><a href="{{ site.blog-baseurl }}">Blog</a></dd>
-            <dd><a href="{{ site.baseurl }}docs">Documentation</a></dd>
-            <dd><a href="http://developers.cartodb.com/tutorials.html">Tutorials</a></dd>
-            <dd><a href="http://developers.cartodb.com/documentation/apis-overview.html">APIs</a></dd>
-            <dd><a href="http://academy.cartodb.com">The Map Academy</a></dd>
-            <dd><a href="{{ site.cartodb-baseurl }}docs#support">Support</a></dd>
-          </dl>
-        </li>
-        <li class="footer-column last">
-          <dl>
-            <dt>Use CartoDB to</dt>
-            <dd><a href="{{ site.cartodb-baseurl }}solutions/twitter-maps">Twitter Maps</a></dd>
-            <dd><a href="{{ site.cartodb-baseurl }}use-cases/map-excel-data">Map Excel Data</a></dd>
-            <dd><a href="{{ site.cartodb-baseurl }}use-cases/situation-room">Situation Room Dashboards</a></dd>
-            <dd><a href="{{ site.cartodb-baseurl }}use-cases/election-maps">Election Maps</a></dd>
-            <dd><a href="{{ site.cartodb-baseurl }}use-cases/build-store-locator">Build a Store Locator</a></dd>
-          </dl>
-        </li>
-      </ul>
+      <li class="footer-column">
+        <dl>
+          <dt>Learn</dt>
+          <dd><a href="{{ site.blog-baseurl }}">Blog</a></dd>
+          <dd><a href="{{ '/docs' | prepend: site.cartodb-baseurl }}">Documentation</a></dd>
+          <dd><a href="{{ '/tutorials.html' | prepend: site.baseurl }}">Tutorials</a></dd>
+          <dd><a href="{{ '/cartodb-platform.html' | prepend: site.baseurl }}">CartoDB Platform</a></dd>
+          <dd><a href="{{ site.academy-baseurl }}">The Map Academy</a></dd>
+          <dd><a href="{{ '/docs#support' | prepend: site.cartodb-baseurl }}">Support</a></dd>
+        </dl>
+      </li>
 
-      <div>
-        <p class="h-left">{{ site.time | date: "%Y" }} CartoDB</a></p>
-        <p class="h-right">
-          <a href="{{ site.cartodb-baseurl }}love">Love</a> - 
-          <a href="{{ site.cartodb-baseurl }}attributions">Attributions</a> - 
-          <a href="mailto:support@cartodb.com">Contact</a> - 
-          <a href="{{ site.cartodb-baseurl }}/terms">Terms of service</a></p>
-      </div>
+      <li class="footer-column last">
+        <dl>
+          <dt>Use CartoDB to</dt>
+          <dd><a href="{{ '/solutions/twitter-maps' | prepend: site.cartodb-baseurl }}">Twitter Maps</a></dd>
+          <dd><a href="{{ '/use-cases/map-excel-data' | prepend: site.cartodb-baseurl }}">Map Excel Data</a></dd>
+          <dd><a href="{{ '/use-cases/situation-room' | prepend: site.cartodb-baseurl }}">Situation Room Dashboards</a></dd>
+          <dd><a href="{{ '/use-cases/election-maps' | prepend: site.cartodb-baseurl }}">Election Maps</a></dd>
+          <dd><a href="{{ '/use-cases/build-store-locator' | prepend: site.cartodb-baseurl }}">Build a Store Locator</a></dd>
+        </dl>
+      </li>
+    </ul>
+
+    <div>
+      <p class="h-left info-footer-credits">{{ site.time | date: "%Y" }} CartoDB</a></p>
+      <p class="h-txt-right info-footer-contact">
+        <a href="{{ '/love' | prepend: site.cartodb-baseurl }}">Love</a> ·
+        <a href="{{ '/attributions' | prepend: site.cartodb-baseurl }}">Attributions</a> ·
+        <a href="mailto:support@cartodb.com">Contact</a> ·
+        <a href="{{ '/terms' | prepend: site.cartodb-baseurl }}">Terms of service</a>
+      </p>
     </div>
   </div>
 </footer>

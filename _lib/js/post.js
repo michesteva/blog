@@ -6,6 +6,12 @@ blog.Views.Post = Backbone.View.extend({
     'click .btn-blue-fb': '_onClickFacebook'
   },
 
+  initialize: function() {
+    this.$offcanvas = this.$('.offcanvas-inner');
+
+    this._initViews();
+  },
+
   _onClickTwitter: function(e) {
     var href = $(e.target).closest('a').attr('href');
 
@@ -22,9 +28,15 @@ blog.Views.Post = Backbone.View.extend({
     ga('send', 'event', 'button', 'click', 'facebook');
 
     return false;
+  },
+
+  _initViews: function() {
+    this.navbar = new blog.ui.Views.Navbar({
+      $offcanvas: this.$offcanvas
+    });
   }
 });
 
 $(function() {
-  window.home = new blog.Views.Post();
+  blog.index = new blog.Views.Post();
 });

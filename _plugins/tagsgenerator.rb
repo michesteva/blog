@@ -23,13 +23,7 @@ module Jekyll
       if site.layouts.key? 'tags_item'
         dir = site.config['tag_dir'] || 'tagged'
 
-        if site.config['env'] == 'production'
-          site.tags.keys.each do |tag|
-            site.pages << TagPage.new(site, site.source, File.join(dir, tag), tag)
-          end
-        else
-          tag = 'cartodb'
-
+        site.tags.keys.each do |tag|
           site.pages << TagPage.new(site, site.source, File.join(dir, tag), tag)
         end
       end

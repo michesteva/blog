@@ -4,29 +4,53 @@
 <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="{% if page.slug %}{{ page.slug }}{% endif %}">
-    <div class="offcanvas">
-    <div class="offcanvas-inner {% if page.layout_color %}{{ page.layout_color }}{% else %}blue{% endif %}">
+<body class="{% if page.slug %}{{ page.slug }}{% endif %}">
+  <div class="offcanvas">
+  <div class="offcanvas-inner {% if page.layout_color %}featured-post{% else %}white{% endif %}">
 
-      {% include header.html %}
+    {% include navigation.html %}
 
-      {{ content }}
+    {% if page.layout_color %}
+    <header class="header" style="background-image: url({{ page.layout_color }});">
+    </header>
+    {% else %}
+    <header class="header">
+    </header>
+    {% endif %}
 
-      {% include footer.html %}
+    <div class="content">
+      <div class="inner h-txt-center">
 
+        {{ content }}
+
+      </div>
     </div>
-    </div>
 
+    {% include aside.html %}
+
+    {% include footer.html %}
+
+  </div>
+  </div>
+
+  {% include footer_scripts.html %}
+
+  {% if site.env == 'production' %}
+    <script src="{{ '/js/blog.min.js' | prepend: site.baseurl }}"></script>
+    {% for js_asset in page.js_assets %}
+      <script src="{{ js_asset | append: '.min.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
+    {% endfor %}
+  {% else %}
     <script src="{{ '/js/vendor/jquery-1.11.1.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/vendor/underscore-min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/vendor/backbone-min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/js/ui/navbar.js' | prepend: site.baseurl }}"></script>
     {% for js_asset in page.js_assets %}
-      <script src="{{ js_asset | prepend: site.baseurl }}"></script>
+      <script src="{{ js_asset | append: '.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
     {% endfor %}
-
-    {% include footer_scripts.html %}
-  </body>
+  {% endif %}
+</body>
 </html>

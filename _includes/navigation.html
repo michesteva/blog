@@ -1,0 +1,44 @@
+<div class="inner">
+  <nav class="navbar">
+    <div class="navbar-header h-pr h-left">
+      <span class="navbar-brand h-malign"><a href="{{ '/' | prepend: site.cartodb-baseurl }}">{{ site.title }}</a></span>
+
+      <a href="#" class="navbar-button h-right">
+        <i class="icon icons-mobile-nav"></i>
+      </a>
+    </div>
+
+    <div class="navbar-collapse h-tupper">
+      <ul class="navbar-inner navbar-inner-buttons h-iblock inb-list h-malign h-right">
+        <li><a href="{{ '/signup' | prepend: site.cartodb-baseurl }}">Sign Up</a></li>
+        <li><a href="{{ '/login' | prepend: site.cartodb-baseurl }}" class="navbar-login">Login</a></li>
+      </ul>
+
+      <ul class="navbar-inner h-iblock inb-list h-malign h-left">
+        <li class="{% if industies %}selected{% endif %}">
+          <a href="#" class="tooltip-link">
+            Industries
+            <i class="icon i-xs icons-arrow-down h-malign i-medium"></i>
+          </a>
+
+          <div class="tooltip h-pa">
+            <h2 class="tooltip-header">All industries</h2>
+
+            <div class="tooltip-inner">
+              <ul>
+                {% for industries_item in site.data.industries %}
+                  <li><a href="{{ industries_item.permalink | prepend: site.cartodb-baseurl }}" class="tooltip-item">{{ industries_item.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="{{ '/gallery' | prepend: site.cartodb-baseurl }}">Gallery</a></li>
+        <li><a href="{{ '/docs' | prepend: site.cartodb-baseurl }}">Help</a></li>
+        <li><a href="{{ '/pricing' | prepend: site.cartodb-baseurl }}">Pricing</a></li>
+        <li><a href="{{ '/enterprise' | prepend: site.cartodb-baseurl }}">Enterprise</a></li>
+        <li class="selected"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

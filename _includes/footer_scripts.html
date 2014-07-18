@@ -1,5 +1,3 @@
-<script src="//cdn.optimizely.com/js/356960264.js"></script>
-
 <!-- start Mixpanel -->
 <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
 for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
@@ -33,7 +31,7 @@ olark.identify('9369-171-10-7255');/*]]>*/</script><noscript><a href="https://ww
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-20934186-3', 'cartodb.com');
+  ga('create', '{{ site.analytics_property_id }}', 'auto');
   ga('send', 'pageview');
 </script>
 
@@ -52,3 +50,26 @@ olark.identify('9369-171-10-7255');/*]]>*/</script><noscript><a href="https://ww
   <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976168062/?value=0&amp;guid=ON&amp;script=0"/>
   </div>
 </noscript>
+
+<script type="text/javascript">
+adroll_adv_id = "WGDBE2YI6JGKPDHQ4HDIPR";
+adroll_pix_id = "UTLCI3MRAZAZFINRL2IJO7";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+<script>
+  mixpanel.people.increment('page_views_blog');
+  mixpanel.track("View page", {"Blog": "{{ page.title }}"});
+</script>

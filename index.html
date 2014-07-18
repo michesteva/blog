@@ -1,96 +1,31 @@
 ---
 layout: default
 js_assets:
-  - '/js/home.js'
+  - 'index'
 ---
 
+<div class="posts-list posts-list-index">
+  <ul>
+  {% for post in paginator.posts %}
 
-<div class="home inner">
+    {% include post_item.html %}
 
-  <ul class="lst-post">
-    {% for post in paginator.posts %}
-      <li class="h-txt-center">
-        <div class="post-header h-txt-center">
-          <p class="post-date"><span class="h-iblock h-pr">{{ post.date | date: "%b %-d, %Y" }}</span></p>
-          <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
-          {% unless post.tags.size == 0 %}
-            <div class="lst-tags">
-              <i class="icon i-xs icons-tag h-malign i-medium"></i>
-              <ul class="inb-list h-iblock h-malign">
-                {% for tag_item in post.tags %}
-                  <!-- TODO: link tags -->
-                  <li>{{ tag_item }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endunless %}
-
-          {% if post.author %}
-            {% assign author_slug = '' %}
-            {% assign author_name = '' %}
-            {% assign author_avatar = '' %}
-
-            {% for author_item in site.data.authors %}
-              {% if post.author == author_item.slug %}
-                {% capture author_slug %}{{ author_item.author }}{% endcapture %}
-                {% capture author_name %}{{ author_item.name }}{% endcapture %}
-                {% capture author_avatar %}{{ author_item.avatar }}{% endcapture %}
-              {% endif %}
-            {% endfor %}
-
-            <p class="post-author">by <img src="{{ author_avatar | prepend: site.baseurl }}" alt="{{ author_name }}" class="h-iblock h-malign" /> {{ author_name }}</p>
-          {% endif %}
-        </div>
-
-        <div class="post-inner h-txt-left">
-          {% if post.content contains '<!--more-->' %}
-            {{ post.content | split:'<!--more-->' | first }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-
-          <div class="h-txt-center post-more">
-            <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-medium btn-blue btn-background h-tupper">
-              <span class="btn-border">Read more</span>
-            </a>
-          </div>
-
-        </div>
-
-      </li>
-    {% endfor %}
+  {% endfor %}
   </ul>
 
-  <div class="blog-navigation h-pr">
-    <div class="blog-tags">
-      <h2 class="title-module">Categories</h2>
-      <ul class="lst-nav-tags">
-      {% for category in site.categories %}
-        <li>{{ category | first | capitalize}}</li>
-      {% endfor %}
-      </ul>
-    </div>
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn btn-medium btn-blue h-tupper h-left">
+        <span class="btn-border">Newer</span>
+      </a>
+    {% endif %}
 
-    <div class="blog-subscribe">
-      <h2 class="title-module">Subscribe</h2>
-      <p class="txt-default h-vspace-l">Stay tuned and subscribe to our mailing list</p>
-
-      {% include mailchimp.html %}
-    </div>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: '/' | replace: '//', '/' }}" class="btn btn-medium btn-blue h-tupper h-right">
+        <span class="btn-border">Older</span>
+      </a>
+    {% endif %}
   </div>
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
   {% endif %}
 </div>
