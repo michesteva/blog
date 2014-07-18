@@ -27,7 +27,7 @@ module.exports = function(grunt) {
     },
     shell: {
       prod: {
-        command: "jekyll build",
+        command: "jekyll build --config '_config-prod.yml'",
         options: {
           async: false
         }
