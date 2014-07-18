@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Altran Spain becomes the newest CartoDB Partner'
 date: '2014-06-23T10:07:00+02:00'
 tags:
