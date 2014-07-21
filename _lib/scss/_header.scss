@@ -106,8 +106,7 @@
 
 .header {
   position: relative;
-  margin-top: -50px;
-  height: 60px;
+  padding-bottom: 60px;
 
   &:after {
     content: "";
@@ -121,11 +120,16 @@
   }
 }
 
-/* white */
 .offcanvas-inner {
   background: #3B7EBB;
 
-  &.white {
+  /* dark */
+  &.dark_layout {
+    background: #384047;
+  }
+
+  /* white */
+  &.white_layout {
     background: #fff image-url('backgrounds/header_bkg.png');
     color: #333;
 
