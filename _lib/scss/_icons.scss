@@ -21,8 +21,14 @@
   &.i-xl { width: 44px; height: 44px; }
   &.i-m { width: 24px; height: 24px; }
   &.i-s { width: 16px; height: 16px; }
-  &.i-xs { width: 9px; height: 15px; }
+  &.i-xs { 
+    width: 9px; height: 15px;
+    &.i-pagination {
+      width: 6px; height: 10px;
+    }
+  }
   &.i-media { width: 32px; height: 32px; }
+
 }
 
 .i-xs.icons-arrow-down {
@@ -30,3 +36,19 @@
   height: 4px;
   margin-left: 4px;
 }
+
+.i-s.icons-twitter-blue { width: 19px; }
+
+.blog-subscribe .icons-rss { margin-left: 8px; }
+
+
+.icon-pagination { 
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+  background: rgba(#C5C5C5, .5);
+  .icon {
+    margin-left: -2px;
+  }
+}
+

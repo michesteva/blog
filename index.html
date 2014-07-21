@@ -14,17 +14,31 @@ js_assets:
   </ul>
 
   {% if paginator.total_pages > 1 %}
-  <div class="pagination">
+  <div class="pagination  h-tupper">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="btn btn-medium btn-blue h-tupper h-left">
-        <span class="btn-border">Newer</span>
-      </a>
+    <div class="h-left">
+      <span class="icon-pagination icon-pagination-prev h-txt-center h-malign h-iblock h-valign">
+        <span class="icon i-xs icons-pag-prev h-malign i-pagination"></span>
+      </span>
+      <p class="h-iblock h-malign">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          Newer
+        </a>
+      </p>
+    </div>
     {% endif %}
 
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: '/' | replace: '//', '/' }}" class="btn btn-medium btn-blue h-tupper h-right">
-        <span class="btn-border">Older</span>
-      </a>
+    <div class="h-right">
+      <p class="h-iblock h-malign">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: '/' | replace: '//', '/' }}">
+         Older
+        </a>
+      </p>
+      <span class="icon-pagination icon-pagination-next h-txt-center h-malign h-iblock h-valign ">
+        <span class="icon i-xs icons-pag-next h-malign i-pagination"></span>
+      </span>
+    </div>
     {% endif %}
   </div>
   {% endif %}
