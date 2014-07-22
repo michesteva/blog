@@ -84,16 +84,17 @@
 }
 
 .tooltip {
-  display: none;
+  display: block;
   position: absolute;
   z-index: 6;
-  top: 46px;
+  top: 36px;
   right: 0;
   margin-right: -194px;
   min-width: 240px;
   background: #fff;
   box-shadow: 0 0 2px rgba(#000, .3);
   @include border-radius(4px);
+  @include opacity(0);
 
   &:before {
     content:"";
