@@ -39,7 +39,7 @@
 
 .post-meta {
   font: 200 14px 'Proxima Nova Lt';
-  color: #B2B2B2;
+  color: #999;
 }
 
 .post-date {
@@ -76,6 +76,10 @@
       display: none;
     }
   }
+}
+
+.post-author a {
+  color: #999;
 }
 
 .post-title {
@@ -241,6 +245,7 @@ a.btn-blue-tw.btn-background {
 
 .post-relations {
   border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .lst-post-relations {
@@ -293,8 +298,7 @@ a.btn-blue-tw.btn-background {
 }
 
 .post-info-subscribe {
-  padding: 40px 0 20px;
-  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
   color: #666;
   font: 200 14px 'Proxima Nova Lt';
 }
@@ -304,6 +308,11 @@ a.btn-blue-tw.btn-background {
   margin: 60px 0 0;
   padding: 40px 0 0;
   border-top: 1px solid #e5e5e5;
+  font: 700 12px 'Proxima Nova Sb';
+  p { margin-top: 2px; }
+  .icon-pagination-prev { margin-right: 4px; }
+  .icon-pagination-next { margin-left: 4px; }
+
 }
 
 .blog-aside {
@@ -315,7 +324,7 @@ a.btn-blue-tw.btn-background {
     width: 50%;
 
     &:first-child {
-      border-right: 1px solid rgba(#fff, .1);
+      border-right: 1px solid rgba(#000, .15);
     }
   }
 }
@@ -330,17 +339,21 @@ a.btn-blue-tw.btn-background {
 }
 
 .description-module {
-  color: rgba(#fff, .7);
   line-height: 1;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .lst-nav-tags {
   font: 700 15px/20px 'Proxima Nova Sb';
+  margin-left: 4px;
 
   > li  {
-    border-top: 1px solid rgba(#fff, .1);
+    border-bottom: 1px solid #EEEEEE;
     padding: 18px 0;
+    display: inline-block;
+    width: 50%;
+    margin-left: -4px;
+    &:last-child { border: 0; }
   }
 }
 
@@ -437,6 +450,31 @@ a.btn-blue-tw.btn-background {
         width: 100%;
       }
     }
+  }
+}
+
+/* =Icons
+----------------------------------------------- */
+
+.i-s.icons-twitter-blue {
+  width: 19px;
+}
+
+.i-xxs.i-pagination {
+  width: 6px;
+  height: 10px;
+}
+
+.icons-rss { margin-left: 8px; }
+
+.icon-pagination {
+  width: 23px;
+  height: 23px;
+  border-radius: 4px;
+  background: rgba(#C5C5C5, .5);
+
+  .icon {
+    margin-left: -2px;
   }
 }
 

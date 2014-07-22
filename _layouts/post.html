@@ -14,11 +14,11 @@ js_assets:
       <h2 class="tit-section-s-lt post-title">{{ page.title }}</h2>
 
       <div class="post-meta">
-        {% unless page.tags.size == 0 %}
+        {% unless post.categories.size == 0 %}
           <p class="post-tags">
             <i class="icon i-xs icons-tag h-malign i-medium"></i>
-            {% for tag_item in page.tags %}
-              <a href="{{ '/tagged/' | append: tag_item | prepend: site.baseurl }}">{{ tag_item }}</a>{% unless forloop.last %}, {% endunless %}
+            {% for categories_item in page.categories %}
+              <a href="{{ '/categories/' | append: category | prepend: site.baseurl }}">{{ category | first | capitalize}}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </p>
         {% endunless %}
@@ -30,7 +30,7 @@ js_assets:
 
           {% for author_item in site.data.authors %}
             {% if page.author == author_item.slug %}
-              {% capture author_slug %}{{ author_item.author }}{% endcapture %}
+              {% capture author_slug %}{{ author_item.slug }}{% endcapture %}
               {% capture author_name %}{{ author_item.name }}{% endcapture %}
               {% capture author_avatar %}{{ author_item.avatar }}{% endcapture %}
             {% endif %}
@@ -66,8 +66,8 @@ js_assets:
     <ul class="inb-list lst-post-relations">
       {% for post in site.posts limit:4 %}
         {% assign match = false %}
-        {% for tag in post.tags %}
-          {% if page.tags contains tag and page.url != post.url %}
+        {% for cat in post.categories %}
+          {% if page.categories contains cat and page.url != post.url %}
             {% assign match = true %}
           {% endif %}
         {% endfor %}
@@ -90,5 +90,4 @@ js_assets:
     </ul>
   </div>
 
-  <p class="post-info-subscribe">If you want to keep informed on news and new features on CartoDB, <a href="#">follow us on Twitter</a> or <a href="#">suscribe via RSS</a>.</p>
 </div>

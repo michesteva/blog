@@ -9,10 +9,10 @@ module Jekyll
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'authors_item.html')
-      self.data['author'] = author
+      self.data['author'] = author['slug']
 
-      author_title_prefix = site.config['author_title_prefix'] || 'Author: '
-      self.data['title'] = "#{author_title_prefix}#{author}"
+      author_title_prefix = site.config['author_title_prefix'] || 'Posts by: '
+      self.data['title'] = "#{author_title_prefix}#{author['name']}"
     end
   end
 
@@ -24,7 +24,7 @@ module Jekyll
         dir = site.config['authors_dir'] || 'author'
 
         site.data['authors'].each do |author|
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, author['slug'].gsub(/[^A-Za-z0-9]/, '-')), author['slug'])
+          site.pages << AuthorPage.new(site, site.source, File.join(dir, author['slug'].gsub(/[^A-Za-z0-9]/, '-')), author)
         end
       end
     end

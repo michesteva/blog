@@ -9,13 +9,11 @@ js_assets:
 
   <ul>
   {% for post in site.posts %}
+  {% if post.tags contains page.tag %}
 
-    {% if post.tags contains page.tag %}
+    {% include post_item.html %}
 
-      {% include post_item.html %}
-
-    {%endif%}
-
+  {% endif %}
   {% endfor %}
   </ul>
 </div>

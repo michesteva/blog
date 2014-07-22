@@ -1,4 +1,4 @@
-<section class="section dark">
+<section class="section">
   <div class="inner">
       <div class="blog-aside">
         <div class="blog-categories">
@@ -6,8 +6,8 @@
             <h2 class="title-module">Categories</h2>
 
             <ul class="lst-nav-tags">
-            {% for category in site.categories %}
-              <li>{{ category | first | capitalize}}</li>
+            {% for cat in site.categories %}
+              <li><a href="{{ '/categories/' | append: cat[0] | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat[0] | capitalize }}</a></li>
             {% endfor %}
             </ul>
           </div>
@@ -19,7 +19,17 @@
             <p class="description-module">Stay tuned and subscribe to our mailing list</p>
 
             {% include mailchimp.html %}
+
+            <p class="post-info-subscribe"> 
+              <i class="icon i-s icons-twitter-blue h-malign"></i>
+              <a href="#" class="h-iblock h-malign">Follow us on Twitter</a>
+              <span class="h-iblock h-malign">
+                or
+              </span>
+              <i class="icon i-s icons-rss h-malign"></i>
+              <a href="#" class="h-iblock h-malign">Subscribe via RSS</a>.</p>
           </div>
+
         </div>
       </div>
   </div>
