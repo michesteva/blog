@@ -14,7 +14,9 @@ There are several things happening in Berlin during the week of July 14th:
 
 <a href="http://csvconf.com"><img alt="image" src="http://i.imgur.com/3Vz3Rai.png"/></a>
 
-**The <a href="http://csvconf.com">CSV Conf</a>** is going to take place in Berlin as part of the fringe events of the <a href="http://2014.okfestival.org/">OKFestival</a>. We couldn’t miss it since CSV is one of the core formats CartoDB will visualize for you. Our very own <a href="https://twitter.com/javier">Javier Arce</a> will be representing us with the session <a href="http://csvconf.com/#javierarce">So you have CSVs, now what?</a>.
+<!--more-->
+
+The <a href="http://csvconf.com">CSV Conf</a> is going to take place in Berlin as part of the fringe events of the <a href="http://2014.okfestival.org/">OKFestival</a>. We couldn’t miss it since CSV is one of the core formats CartoDB will visualize for you. Our very own <a href="https://twitter.com/javier">Javier Arce</a> will be representing us with the session <a href="http://csvconf.com/#javierarce">So you have CSVs, now what?</a>.
 
 <a href="http://openmappingberlin.splashthat.com/"><img alt="image" src="http://i.imgur.com/JoSc8i9.png"/></a>
 
