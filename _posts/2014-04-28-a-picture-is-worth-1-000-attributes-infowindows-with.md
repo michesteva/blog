@@ -24,7 +24,13 @@ We are generating a map of the trees downed by Hurricane Sandy (October 2012). F
 
 On the SQL view of my tree table I wrote this SQL: 
 
-{% gist jatorre/11371647 %}
+ {% highlight sql %}
+ SELECT *,
+'http://maps.googleapis.com/maps/api/streetview?size=300x190&location='||
+ST_Y((the_geom))||','||ST_X((the_geom))
+||'&sensor=false&fov=110' as image 
+FROM table_2012_entire_tree_down_complaints_sandy
+{% endhighlight %}
 
 Like you can see here:
 

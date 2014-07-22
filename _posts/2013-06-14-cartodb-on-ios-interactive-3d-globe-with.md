@@ -44,11 +44,26 @@ It's all up on <a href="https://github.com/mousebird/cartodbexample">GitHub</a>,
 
 Let's start with the basics.  We want to toss up a globe and we want to get the user taps back via the delegate.
 
-{% gist mousebird/5775058 %}
+ {% highlight text %}
+ // Create an empty globe and tie it in to the view hierarchy
+globeViewC = [[WhirlyGlobeViewController alloc] init];
+globeViewC.delegate = self;
+[self.view addSubview:globeViewC.view];
+globeViewC.view.frame = self.view.bounds;
+[self addChildViewController:globeViewC];
+{% endhighlight %}
+
 
 Next, we want a nice base layer to look at and we'll rotate to San Francisco on startup.
 
-{% gist mousebird/5775200 %}
+ {% highlight text %}
+ // This is a nice base layer with water and elevation, but no labels or boundaries
+MaplyQuadEarthWithRemoteTiles *layer = [[MaplyQuadEarthWithRemoteTiles alloc] initWithBaseURL:@"http://a.tiles.mapbox.com/v3/mousebird.map-2ebn78d1/" ext:@"png" minZoom:0 maxZoom:12];
+[globeViewC addLayer:layer];
+
+ // Let's start up over San Francisco, center of the universe
+[globeViewC animateToPosition:MaplyCoordinateMakeWithDegrees(-122.4192, 37.7793) time:1.0];
+{% endhighlight %}
 
 Here's what that gets you: An interactive globe with an automatically paging tiled base map.
 
@@ -56,7 +71,46 @@ Here's what that gets you: An interactive globe with an automatically paging til
 
 Cool, but the whole point is display the country where the user taps.  We can get that by filling in one of the delegate methods and then kicking off a query to CartoDB.
 
-{% gist mousebird/5775717 %}
+ {% highlight text %}
+ - (void)globeViewController:(WhirlyGlobeViewController *)viewC didTapAt:(WGCoordinate)coord
+{
+    // We need degrees for the query, even if we work in radians internally
+    float lat = coord.y * 180.0 / M_PI;
+    float lon = coord.x * 180.0 / M_PI;
+
+    // We want the geometry and a couple of attributes for just one feature under the point
+    NSString *account = @"mousebird";
+    NSString *admin0Table = @"table_10m_admin_0_map_subunits";
+    NSString *queryStr = [NSString stringWithFormat:
+            @"http://%@.cartodb.com/api/v2/sql?format=GeoJSON&q=\
+                          SELECT sovereignt,adm0_a3,the_geom FROM %@ \
+                          WHERE ST_Intersects(the_geom,ST_SetSRID(ST_Point(%f,%f),4326)) \
+                          LIMIT 1",account,admin0Table,lon,lat];
+
+    // Kick off the request with AFNetworking.  We can deal with the result in a block
+    NSURLRequest *request = [NSURLRequest requestWithURL:
+                             [NSURL URLWithString:[queryStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+    AFJSONRequestOperation *operation =
+    [AFJSONRequestOperation JSONRequestOperationWithRequest:request
+            success:
+     // We'll do this if we succeed
+     ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+     {
+         // Convert to GeoJSON and add the country outline
+         [self addCountry:[MaplyVectorObject VectorObjectFromGeoJSONDictionary:(NSDictionary *) JSON]];
+     }
+            failure:
+     // And nothing if we fail
+     ^(NSURLRequest *request, NSHTTPURLResponse *response,NSError *error, id JSON)
+     {
+     }
+     ];
+    
+    // Kick off the network request
+    [operation start];
+}
+{% endhighlight %}
+
 
 I'm using <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a> here which is a really nice library for doing network calls on iOS and it uses a lot of modern Objective-C constructs, like <a href="http://developer.apple.com/library/ios/#documentation/cocoa/Conceptual/Blocks/Articles/00_Introduction.html">blocks</a>.  Block syntax often looks like a cat puked on your keyboard, but it works really, really well.
 
@@ -69,7 +123,33 @@ All we're doing here is:
 
 Adding the vector outline and label looks like this.
 
-{% gist mousebird/5775825 %}
+ {% highlight text %}
+ // Add an admin0 (country, basically) outline and label
+- (void)addCountry:(MaplyVectorObject *)vecs
+{
+    if (!vecs)
+        return;
+    
+    // Add the the vectors to the globe with a line width a color and other parameters
+    [globeViewC addVectors:@[vecs] desc:
+     @{kMaplyColor: [UIColor whiteColor],kMaplyVecWidth: @(5.0),kMaplyDrawOffset: @(4.0),kMaplyFade: @(1.0)}];
+    // But hey, what about a label?  Let's figure out where it should go.
+    MaplyCoordinate center = [vecs center];
+    NSString *name = vecs.attributes[@"sovereignt"];
+    if (name)
+    {
+        // We'll create a 2D (screen) label at that point and the layout engine will control it
+        MaplyScreenLabel *admin0Label = [[MaplyScreenLabel alloc] init];
+        admin0Label.text = name;
+        admin0Label.loc = center;
+        admin0Label.selectable = NO;
+        admin0Label.layoutImportance = 1.0;
+        [globeViewC addScreenLabels:@[admin0Label] desc:
+         @{kMaplyColor: [UIColor whiteColor],kMaplyFont: [UIFont boldSystemFontOfSize:20.0],kMaplyShadowColor: [UIColor blackColor], kMaplyShadowSize: @(1.0), kMaplyFade: @(1.0)}];
+    }    
+}
+{% endhighlight %}
+
 
 We toss the vector feature up there with a little styling and then do the same for the label.  Tap around a little bit and you'll get something like this.
 

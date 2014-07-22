@@ -34,10 +34,25 @@ We've also given you a lot more control over how your shared maps look. That inc
 
 Another thing that makes 2.0 even more exciting, CartoDB now supports some new and exciting additions to CartoCSS. Now you are able to add in such things as buildings, 3D visualizations, new blending abilities, the use of query results as variables in the style, and a host of other neat stuff. The example above is even more interesting than just adding dimension, it also uses a value returned by SQL to style the buildings with. The data here is a small set of polygons form Open Street Map, without an estimate of building height, I needed to make it up. 
 
-{% gist andrewxhill/4217947 %}
+ {% highlight sql %}
+ SELECT 
+    the_geom_webmercator, 
+    st_area(the_geom_webmercator)/400 as height 
+FROM osm_export_polygon
+{% endhighlight %}
+
 
 In the above, I simply created a &#8216;height' column by measuring the area of the polygon (and then making it a reasonably smaller value by dividing it by 400). Next, I used the new CartoCSS capabilities based, sizing building by the returned height value,
 
-{% gist andrewxhill/4217963 %}
+ {% highlight sql %}
+ #osm_export_polygon{
+   line-width: 8;
+   line-color: rgba(0,0,0,0.3);
+   building-fill:#aaaa77;
+   building-fill-opacity: 1;
+   building-height: '[height]';
+}
+{% endhighlight %}
+
 
 You can see it in the &#8216;[height]' portion of the above. There are many other neat features. One of my favorites is the ability to to color compositing. We have a simple tutorial that will help you explore some of those methods. Check it out over at the <a href="http://developers.cartodb.com/tutorials/intensity_map.html">Intensity maps tutorial</a>.
