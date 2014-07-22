@@ -52,8 +52,6 @@
 }
 
 .post-tags {
-  margin-bottom: 8px;
-
   li {
     &:after {
       content:", ";
@@ -69,10 +67,6 @@
   color: #999;
 }
 
-.post-title {
-  margin-bottom: 8px;
-}
-
 .post-inner {
   max-width: 640px;
   margin: 0 auto;
@@ -83,6 +77,10 @@
     margin-bottom: 20px;
     font: 18px/28px 'Proxima Nova Rg';
     color: #666;
+  }
+
+  p {
+    position: relative;
   }
 
   ul,
@@ -101,6 +99,8 @@
 
   img {
     display: inline-block;
+    position: relative;
+    z-index: 10;
     max-width: 100%;
     @include border-radius(4px);
   }
@@ -180,6 +180,27 @@
   }
 }
 
+.post-highlight {
+  width: 940px;
+  margin-left: -150px;
+  margin-right: -150px;
+  text-align: center;
+
+  a,
+  img {
+    display: inline-block;
+  }
+}
+
+.wrap {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+  @include box-shadow(0 0 0 1px rgba(#000, .2) inset);
+  @include border-radius(4px);
+}
+
 
 /* =Post
 ----------------------------------------------- */
@@ -193,6 +214,18 @@
 
     &:after {
       display: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 0;
+      pointer-events: none;
+      @include background-image(linear-gradient(rgba(#000, .3), rgba(#000, .3), rgba(#000, 0)));
     }
   }
 

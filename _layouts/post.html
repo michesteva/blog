@@ -11,11 +11,11 @@ js_assets:
         <span class="post-date h-iblock h-pr">{{ page.date | date: "%b %-d, %Y" }}</span>
       </p>
 
-      <h2 class="tit-section-s-lt post-title">{{ page.title }}</h2>
+      <h2 class="tit-section-s-lt h-vspace-s">{{ page.title }}</h2>
 
       <div class="post-meta">
         {% unless page.categories.size == 0 %}
-          <p class="post-tags">
+          <p class="h-vspace-s">
             <i class="icon i-s icons-tag h-malign i-medium"></i>
             {% for cat in page.categories %}
               <a href="{{ '/categories/' | append: cat | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat | capitalize }}</a>{% unless forloop.last %}, {% endunless %}

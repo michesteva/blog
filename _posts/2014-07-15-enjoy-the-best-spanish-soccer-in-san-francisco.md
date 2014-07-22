@@ -10,7 +10,7 @@ tags:
 - lfp
 categories:
 - 'Events and conferences'
-layout_color: '/img/posts/2014-07-15-enjoy-the-best-spanish-soccer-in-san-francisco/1IscSAT.jpg'
+layout_color: '/img/posts/2014-07-15-enjoy-the-best-spanish-soccer-in-san-francisco/atleti-tickets.jpg'
 ---
 
 Do you want more soccer after the World Cup and you are in San Francisco? We invite you to attend a match between **Atlético de Madrid (2013 Spanish League winners, no less) and San Jose Earthquakes**.
