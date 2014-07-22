@@ -4,6 +4,8 @@ date: '2014-03-05T17:17:00+01:00'
 tags:
 - cebit
 - cartodb
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/yApcq0H.png" alt=""/>

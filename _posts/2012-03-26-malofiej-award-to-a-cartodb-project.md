@@ -10,6 +10,8 @@ tags:
 - National Geographic
 - Internet Group do Brasil
 - Universidad de Navarra
+categories:
+- 'Events and conferences'
 ---
 
 <img align="top" alt="RTVE elections 2011" height="422" src="http://cartodb.s3.amazonaws.com/tumblr/posts/rtve.png" width="690"/>

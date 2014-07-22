@@ -8,6 +8,8 @@ tags:
 - san francisco
 - icex
 - lfp
+categories:
+- 'Events and conferences'
 layout_color: '/img/posts/2014-07-15-enjoy-the-best-spanish-soccer-in-san-francisco/1IscSAT.jpg'
 ---
 

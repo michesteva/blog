@@ -1,6 +1,8 @@
 ---
 title: "We're going travelling, come meet us on Tour."
 date: '2013-01-11T20:57:00+01:00'
+categories:
+- 'Events and conferences'
 ---
 
 <img alt="image" height="350" src="http://i.imgur.com/no2Fr.png" width="650"/>

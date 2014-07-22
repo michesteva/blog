@@ -6,6 +6,8 @@ tags:
 - csvconf
 - mapbox
 - openstreetmap
+categories:
+- 'Events and conferences'
 ---
 
 There are several things happening in Berlin during the week of July 14th:

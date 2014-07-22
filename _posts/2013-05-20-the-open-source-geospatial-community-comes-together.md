@@ -5,6 +5,8 @@ tags:
 - foss4g
 - open source
 - conference
+categories:
+- 'Events and conferences'
 ---
 
 <a href="http://foss4g-na.org/"><img alt="image" src="http://i.imgur.com/ygRgE4x.png" width="650px"/></a>

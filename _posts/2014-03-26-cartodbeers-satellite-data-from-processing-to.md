@@ -9,7 +9,7 @@ tags:
 - esa
 - earth observation
 categories:
-- 'Cartodbeers'
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/8wYT3zx.jpg" alt=""/>

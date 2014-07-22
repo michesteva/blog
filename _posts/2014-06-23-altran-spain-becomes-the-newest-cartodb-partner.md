@@ -5,7 +5,7 @@ tags:
   - cartodb partners
   - partners
 categories:
-  - 'New hires'
+  - 'Enterprise'
 author: alvaro
 ---
 

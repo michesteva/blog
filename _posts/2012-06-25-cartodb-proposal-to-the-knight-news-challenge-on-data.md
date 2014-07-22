@@ -5,6 +5,8 @@ tags:
 - Knight Foundation News Challenge
 - CartoDB
 - open source
+categories:
+- 'Events and conferences'
 ---
 
 Lots of things going on lately, we're sorry we haven't been able to update the blog. We've been attending interesting meetings here and there (Paris, Berlin, NY, Madrid"), giving workshops, releasing new updates, and working on a new set of functionalities to be included in the next version of CartoDB. If you follow the <a href="http://blog.vizzuality.com/post/25647286145/a-collaborative-tool-for-documenting-endangered">blog</a> of Vizzuality (the developers of CartoDB), you may know by now that we're also launching new projects &#8212;check out the <a href="http://vizzuality.com/projects/endangeredlanguages">Endangered Languages Project</a> collaborative effort. More to come in the following weeks. 

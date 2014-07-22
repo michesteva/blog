@@ -7,6 +7,8 @@ tags:
 - deimos
 - coverage maps
 - visualization
+categories:
+- 'Customer stories'
 ---
 
 <img src="http://i.imgur.com/A5CiOkQ.jpg"/>

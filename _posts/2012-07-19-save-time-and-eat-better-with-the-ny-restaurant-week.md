@@ -6,6 +6,8 @@ tags:
 - Restaurant Week
 - NYC
 - Data Visualization
+categories:
+- 'Customer stories'
 ---
 
 This year marks the twentieth anniversary of Restaurant Week in New York City, and in order to commemorate its longevity, the dining celebration has been extended to a very un-weekly 20+ days, creating a somewhat good problem for New Yorkers to have.

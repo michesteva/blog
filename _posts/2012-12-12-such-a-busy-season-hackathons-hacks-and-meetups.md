@@ -6,6 +6,8 @@ tags:
 - meetups
 - community
 - ecohack
+categories:
+- 'Events and conferences'
 ---
 
 **Hackathons**

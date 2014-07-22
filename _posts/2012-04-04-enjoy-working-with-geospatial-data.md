@@ -5,6 +5,8 @@ tags:
 - Where Conference
 - CartoDB 1.0
 - OpenStreetMaps
+categories:
+- 'Events and conferences'
 ---
 
 <a href="http://speakerdeck.com/u/jatorre/p/cartodb-how-working-with-geospatial-data-can-be-a-joy-and-not-a-pain"><img src="http://cartodb.s3.amazonaws.com/tumblr/posts/whereslides.png"/></a>

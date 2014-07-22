@@ -7,7 +7,7 @@ tags:
 - nyc
 - randolphbeer
 categories:
-- 'Cartodbeers'
+- 'Events and conferences'
 ---
 
 On **Monday, May 19th at 7PM** we are going to be getting together for happy hour in NYC. This will be a fun time for us to meet with some of our awesome users and chat with anyone interested in maps, technology, or what we do at CartoDB. We have an awesome user community in NYC, so we love any opportunity to bring them together. 

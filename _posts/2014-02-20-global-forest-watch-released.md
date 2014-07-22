@@ -5,6 +5,8 @@ tags:
 - GFW
 - Global Forest Watch
 - Deforestation
+categories:
+- 'Customer stories'
 ---
 
 <img alt="image" src="http://i.imgur.com/b9PpCKv.jpg" width="637"/>

@@ -7,6 +7,8 @@ tags:
 - panel
 - mwc
 - mwc 2014
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/RFK0Z1S.png"/>

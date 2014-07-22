@@ -4,6 +4,8 @@ date: '2012-04-17T00:41:00+02:00'
 tags:
 - open data
 - open goverment
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/opg.png"/>

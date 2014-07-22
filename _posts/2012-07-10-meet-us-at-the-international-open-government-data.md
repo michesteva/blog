@@ -6,6 +6,8 @@ tags:
 - open goverment
 - World Bank
 - data.gov
+categories:
+- 'Events and conferences'
 ---
 
 Putting data to work. That's the next step of the open data movement and the theme of the second <a href="http://www.data.gov/communities/conference">International Open Government Data Conference</a> (IOGDC), starting today at the World Bank Headquarters in Washington. World Bank's president <a href="http://en.wikipedia.org/wiki/Jim_Yong_Kim">Jim Young Kim</a> first public speech is kicking off the meeting, co-sponsored by the U.S. General Services Administration, Data.gov, the World Bank Open Data Initiative and the Open Development Technology Alliance.

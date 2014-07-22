@@ -6,7 +6,7 @@ tags:
 - days
 - vizzuality
 categories:
-- 'Cartodbeers'
+- 'Events and conferences'
 layout_color: '/img/posts/2011-04-01-cartodays/cartodays_blog.jpg'
 ---
 

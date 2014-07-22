@@ -5,6 +5,8 @@ tags:
 - cartodb
 - Where Conference
 - video
+categories:
+- 'Events and conferences'
 ---
 
 <iframe frameborder="0" height="315" src="http://www.youtube.com/embed/bFCFlNEK070" width="637"></iframe>

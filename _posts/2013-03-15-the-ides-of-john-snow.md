@@ -5,6 +5,8 @@ tags:
 - johnsnow
 - disscount
 - promo
+categories:
+- 'New features'
 ---
 
 March 15th is more widely known as the Ides of March, and the day that Julius Caesar was assassinated in the Roman senate. However for those of us in the mapping, data visualization and Epidemiology March 15th is the birthday of John Snow, an English physician and a leader in the adoption of <a href="http://en.wikipedia.org/wiki/Anaesthesia">anaesthesia</a> and medical <a href="http://en.wikipedia.org/wiki/Hygiene">hygiene</a>. 

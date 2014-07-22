@@ -6,6 +6,8 @@ tags:
 - cartodb
 - ecohack
 - ecohacknyc
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/Y2Ptq0k.jpg" alt=""/>
