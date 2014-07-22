@@ -36,16 +36,20 @@ img { display: block; padding: 0; margin: 0; -ms-interpolation-mode: bicubic; }
 .inner {
   @extend %clearfix;
   position: relative;
+  z-index: 1;
   max-width: $max-width;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.section {
+.content {
   background: #fff;
+}
+
+.section {
   padding: 60px 0;
 
-  &.dark {
+  &.dark-section {
     background: #384047;
     color: #fff;
 
@@ -55,12 +59,20 @@ img { display: block; padding: 0; margin: 0; -ms-interpolation-mode: bicubic; }
       &:hover {
         text-decoration: underline;
       }
+
+      &.btn-white {
+        &:hover {
+          color: #333;
+        }
+      }
+
+      &.btn {
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
-}
-
-.section-inner {
-  margin-bottom: 40px;
 }
 
 .grey-section {

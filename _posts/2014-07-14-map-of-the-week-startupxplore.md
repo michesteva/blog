@@ -32,7 +32,7 @@ A couple of progress bars later, all my data was set, like a magic trick! The lo
 
 But wait a minute, don’t count the chickens before they hatch: what is the Basemap link? Are you really telling me that with a couple of clicks I can choose between the maps from different providers (Nokia, Google, Open Street Map…) and all my data will continue to show at the right place without touch a line of code? Chickens hatching and beer toasts.
 
-<img src="http://i.imgur.com/os80EUJ.png" alt="Imgur"/>
+{% img http://i.imgur.com/os80EUJ.png %}
 
 Of course, I did test the loading of the map on my iPad, and it was rendered smoothly, 40k markers without any problem. Taking into account that our previous release was broken if the number was higher than 3K, that was an astonishing figure to us.
 

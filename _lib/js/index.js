@@ -9,26 +9,10 @@ blog.Views.Index = Backbone.View.extend({
     this.$content = this.$('.post-inner');
 
     this._initViews();
-    this._initBindings();
   },
 
   _closeDialogs: function() {
     this.tooltip.close();
-  },
-
-  _buildImgWrappers: function() {
-    this.$content.find("img").each(function(i, el) {
-      return $(el).after('<div class="wrap" style="height: '+$(this).height()+'px; width: '+$(this).width()+'px"></div>');
-    });
-  },
-
-  _initBindings: function() {
-    var that = this;
-
-    $(window)
-      .on('load', function() {
-        that._buildImgWrappers();
-      });
   },
 
   _initViews: function() {

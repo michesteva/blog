@@ -33,8 +33,10 @@ blog.ui.Views.Tooltip = Backbone.View.extend({
 
     if (this.model.get('hidden')) {
       this.open();
+      this.$el.addClass('selected');
     } else {
       this.close();
+      this.$el.removeClass('selected');
     }
   },
 
@@ -51,11 +53,24 @@ blog.ui.Views.Tooltip = Backbone.View.extend({
   },
 
   _openTooltip: function() {
-    this.$tooltip.show();
+    this.$tooltip.css({
+      display: 'block',
+      top: 36
+    }).animate({
+      opacity: 1,
+      top: 46
+    }, 150);
   },
 
   _closeTooltip: function() {
-    this.$tooltip.hide();
+    var that = this;
+
+    this.$tooltip.animate({
+      opacity: 0,
+      top: 56
+    }, 150, function() {
+      that.$tooltip.hide();
+    });
   },
 
   _toggleTooltip: function() {
