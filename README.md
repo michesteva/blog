@@ -10,6 +10,7 @@ CartoDB Blog uses a mix of [Jekyll](http://jekyllrb.com/) and [Grunt](http://gru
 
 ```
 bundle install
+npm install -g grunt-cli
 npm install
 ```
 
