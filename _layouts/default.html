@@ -48,6 +48,7 @@
     <script src="{{ '/js/vendor/backbone-min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/js/ui/navbar.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/js/ui/tooltip.js' | prepend: site.baseurl }}"></script>
     {% for js_asset in page.js_assets %}
       <script src="{{ js_asset | append: '.js' | prepend: '/js/' | prepend: site.baseurl }}"></script>
     {% endfor %}

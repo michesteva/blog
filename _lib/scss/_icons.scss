@@ -25,3 +25,12 @@
   &.i-xxs { width: 9px; height: 15px; }
   &.i-media { width: 32px; height: 32px; }
 }
+
+.i-xs {
+  &.icons-arrow-down,
+  &.icons-arrow-down-white {
+    width: 7px;
+    height: 4px;
+    margin-left: 4px;
+  }
+}

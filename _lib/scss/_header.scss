@@ -10,6 +10,11 @@
   font: 700 12px/14px "Proxima Nova Sb";
 }
 
+.navbar-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
 .navbar-button {
   display: none;
   position: absolute;
@@ -36,6 +41,7 @@
 
 .navbar-inner {
   > li {
+    position: relative;
     margin-left: 9px;
 
     &.selected > a {
@@ -79,6 +85,35 @@
 
 .tooltip {
   display: none;
+  position: absolute;
+  z-index: 6;
+  top: 46px;
+  right: 0;
+  margin-right: -194px;
+  min-width: 240px;
+  background: #fff;
+  box-shadow: 0 0 2px rgba(#000, .3);
+  @include border-radius(4px);
+
+  &:before {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 18px;
+    top: -12px;
+    border: 6px solid transparent;
+    border-bottom: 6px solid  #384047;
+  }
+}
+
+.tooltip-header {
+  background: #384047;
+  padding: 18px;
+  color: #fff;
+  font: 700 14px 'Proxima Nova Bd';
+  text-transform: none;
+  @include border-top-radius(4px);
 }
 
 .tooltip-inner {
@@ -96,10 +131,16 @@
       padding: 6px 14px;
       color: #878787;
       background: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    &.selected a {
-      background-color: #F5F5F5;
+    &.selected {
+      a {
+        background-color: #F5F5F5;
+      }
     }
   }
 }
@@ -216,23 +257,18 @@
     width: 100%;
     @include transition(all .15s ease-out);
 
-    &.white {
-      .navbar-inner > li {
-        &.selected,
-        &:hover {
-          > a {
-            background: rgba(#000, .1);
-          }
-        }
-      }
+    .icons-arrow-down,
+    .icons-arrow-down-white {
+      display: none;
     }
+
 
     .tooltip {
       display: block !important;
       position: static;
       margin-top: 10px;
       background: transparent;
-      box-shadow: 0 0 0;
+      @include box-shadow(none);
 
       &:before {
         display: none;
@@ -268,10 +304,6 @@
             background: none;
           }
         }
-      }
-
-      &:hover li a:hover {
-        text-decoration: underline;
       }
     }
 

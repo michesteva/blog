@@ -5,7 +5,7 @@ blog.ui.Models.Navbar = Backbone.Model.extend({
 });
 
 blog.ui.Views.Navbar = Backbone.View.extend({
-  el: '.navbar',
+  el: '.offcanvas-inner',
 
   events: {
     'click .navbar-button': '_toggle'
@@ -17,8 +17,6 @@ blog.ui.Views.Navbar = Backbone.View.extend({
     this.model = new blog.ui.Models.Navbar();
 
     this.model.on("change:hidden", this._toggleNav, this);
-
-    this.$offcanvas = this.options.$offcanvas;
   },
 
   _toggle: function(e) {
@@ -29,9 +27,9 @@ blog.ui.Views.Navbar = Backbone.View.extend({
 
   _toggleNav: function() {
     if (this.model.get('hidden')) {
-      this.$offcanvas.removeClass('active');
+      this.$el.removeClass('active');
     } else {
-      this.$offcanvas.addClass('active');
+      this.$el.addClass('active');
     }
   }
 });

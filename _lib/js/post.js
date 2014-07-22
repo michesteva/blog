@@ -3,12 +3,11 @@ blog.Views.Post = Backbone.View.extend({
 
   events: {
     'click .btn-blue-tw': '_onClickTwitter',
-    'click .btn-blue-fb': '_onClickFacebook'
+    'click .btn-blue-fb': '_onClickFacebook',
+    'click': '_closeDialogs'
   },
 
   initialize: function() {
-    this.$offcanvas = this.$('.offcanvas-inner');
-
     this._initViews();
   },
 
@@ -30,10 +29,13 @@ blog.Views.Post = Backbone.View.extend({
     return false;
   },
 
+  _closeDialogs: function() {
+    this.tooltip.close();
+  },
+
   _initViews: function() {
-    this.navbar = new blog.ui.Views.Navbar({
-      $offcanvas: this.$offcanvas
-    });
+    this.tooltip = new blog.ui.Views.Tooltip();
+    this.navbar = new blog.ui.Views.Navbar();
   }
 });
 
