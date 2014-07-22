@@ -17,11 +17,11 @@ js_assets:
   <div class="pagination h-tupper">
     {% if paginator.previous_page %}
     <div class="h-left">
-      <span class="icon-pagination icon-pagination-prev h-txt-center h-malign h-iblock h-valign">
-        <span class="icon i-xxs icons-pag-prev h-malign i-pagination"></span>
-      </span>
       <p class="h-iblock h-malign">
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+          <span class="icon-pagination icon-pagination-prev h-txt-center h-malign h-iblock h-valign">
+            <span class="icon i-xxs icons-pag-prev h-malign i-pagination"></span>
+          </span>
           Newer
         </a>
       </p>
@@ -32,12 +32,12 @@ js_assets:
     <div class="h-right">
       <p class="h-iblock h-malign">
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: '/' | replace: '//', '/' }}">
-         Older
-        </a>
+           Older
+          <span class="icon-pagination icon-pagination-next h-txt-center h-malign h-iblock h-valign ">
+            <span class="icon i-xxs icons-pag-next h-malign i-pagination"></span>
+          </span>
+      </a>
       </p>
-      <span class="icon-pagination icon-pagination-next h-txt-center h-malign h-iblock h-valign ">
-        <span class="icon i-xxs icons-pag-next h-malign i-pagination"></span>
-      </span>
     </div>
     {% endif %}
   </div>
