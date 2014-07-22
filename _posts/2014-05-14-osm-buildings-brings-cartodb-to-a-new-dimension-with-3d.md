@@ -5,6 +5,8 @@ tags:
 - cartodb
 - osmbuildings
 - berlin
+categories:
+- 'New hires'
 ---
 
 <img alt="" src="http://i.imgur.com/AdDtMGF.png"/>

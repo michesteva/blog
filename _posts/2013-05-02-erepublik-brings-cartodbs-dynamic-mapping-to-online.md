@@ -1,6 +1,8 @@
 ---
 title: eRepublik Brings CartoDB’s Dynamic Mapping to Online Gaming
 date: '2013-05-02T15:37:52+02:00'
+categories:
+- 'New features'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/erep.jpg"/>

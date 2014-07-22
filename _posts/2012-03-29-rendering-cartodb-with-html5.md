@@ -9,6 +9,8 @@ tags:
 - carto
 - api
 - sql api
+categories:
+- 'New features'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/nyc_distrincts_vecnik.png"/>

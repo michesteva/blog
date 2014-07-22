@@ -2,6 +2,8 @@
 title: 'Guest Post: CartoDB Goes Native Mobile Interactive with Nutiteq''s Android
   SDK'
 date: '2013-06-13T15:39:00+02:00'
+categories:
+- 'How-to guides'
 ---
 
 We are always working to improve CartoDB, so we’re thrilled when we find great partners to help us take the platform even further faster for our users. Today we’re excited to share a guest post from mobile mapping software leader <a href="http://www.nutiteq.com/">Nutiteq</a>, our newest partner. Welcome to greater mapping mobile interactivity.

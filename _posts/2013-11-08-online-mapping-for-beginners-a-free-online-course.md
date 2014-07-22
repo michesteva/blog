@@ -5,6 +5,8 @@ tags:
 - online mapping
 - training
 - data visualization
+categories:
+- 'How-to guides'
 ---
 
 <img src="http://i.imgur.com/nUh0Odu.png" width="637px"/>

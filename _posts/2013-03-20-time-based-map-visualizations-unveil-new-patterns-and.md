@@ -6,6 +6,8 @@ tags:
 - temporal
 - visualization
 - conservation
+categories:
+- 'Customer stories'
 ---
 
 Over the past months you have probably come to realize, we love data that moves. Moving data can make your maps and visualizations really come to life and data you can use to build these visualizations can come in a lot of forms. Whether it's data that <a href="http://www.guardian.co.uk/news/datablog/interactive/2012/oct/01/first-world-war-royal-navy-ships-mapped" title="guardian data blog">crawls and zips</a> across a map through time, data that<a href="http://mwcimpact.com/" title="MWC"> bursts and comes to life</a> as you watch, or data that changes <a href="http://vizzuality.github.com/rollingstonesmap/" title="Rolling Stones">form</a> or <a href="http://cartodb.github.com/bcn_traffic_map/" title="Traffic map">intensity</a>, it all can lead not to some really amazing visualizations.

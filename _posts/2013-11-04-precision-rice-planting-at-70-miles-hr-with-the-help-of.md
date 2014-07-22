@@ -6,6 +6,8 @@ tags:
 - mobile
 - agriculture
 - maps
+categories:
+- 'Customer stories'
 ---
 
 <img alt="image" src="http://blog.agroguia.es/blog/wordpress/wp-content/uploads/2013/06/avioneta1.jpg" width="637"/>

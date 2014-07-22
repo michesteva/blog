@@ -5,6 +5,8 @@ tags:
 - smartcity
 - comparing
 - real-time
+categories:
+- 'How-to guides'
 ---
 
 We often find ourselves exploring what interesting things can be found in data that changes through time. In recent blog posts about the Mobile World Congress (MWC), we have published a couple interesting experiments with temporal data. In the first, we showed how CartoDB could be used to map traffic in Barcelona.

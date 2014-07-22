@@ -7,6 +7,8 @@ tags:
 - infowindows
 - cartocss
 - markers
+categories:
+- 'New features'
 ---
 
 <img src="http://i.imgur.com/a8HPEHF.gif" alt=""/>

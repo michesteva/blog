@@ -1,6 +1,8 @@
 ---
 title: ST_GeomFromGeoJSON arriving to PostGIS
 date: '2011-11-22T18:57:00+01:00'
+categories:
+- 'How-to guides'
 ---
 
 We, web developers, love JSON, so having a way to use <a href="http://geojson.org/">GeoJSON</a> on PostGIS it is kind of a no brainer. Well, thanks to <a href="https://twitter.com/#!/krasul">Kashif Rasul</a>, <a href="http://opengeo.org/">OpenGeo</a> and a bit of financial help from <a href="http://www.vizzuality.com/">Vizzuality</a>, now we have it available!

@@ -5,6 +5,8 @@ tags:
 - legends
 - data visualization
 - gis
+categories:
+- 'New features'
 ---
 
 Almost since the first release of <a href="https://cartodb.com/">CartoDB</a> a couple years back, we have regularly received requests for easier legends in embedded and shared maps. We understand fully where these people were coming from, heck, we wanted legends pretty badly ourselves. For a lot of the time in between, we have focused our small team on bringing you faster maps, easier visualizations, and improved publishing tools. So,we take it as a sign of just how far CartoDB has come that we finally integrated legends into the user-interface.

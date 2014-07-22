@@ -6,6 +6,8 @@ tags:
 - Show up your maps
 - Mapping Moscow
 - Us Department of Energy
+categories:
+- 'Customer stories'
 ---
 
 We recently announced a "Show up your maps" initiative to see and share with the community the types of things CartoDB users were building. Thus far we’ve had some pretty cool responses and while we’d love to show you all of them, we’ve for the time being selected three projects.

@@ -7,6 +7,8 @@ tags:
 - StoryMap
 - HTML5
 - Knight News Challenge
+categories:
+- 'New features'
 ---
 
 We’ve submitted a proposal to <a href="http://newschallenge.tumblr.com/">Knight News Challenge</a> for a new project called StoryMap, an open source tool to easily create visualizations based on a narrative on map. You can read the full description of the project <a href="http://newschallenge.tumblr.com/post/19405323345/storymap">here</a>, and vote or comment if you like it. 

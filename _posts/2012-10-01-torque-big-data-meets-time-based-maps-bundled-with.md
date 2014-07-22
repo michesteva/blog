@@ -4,6 +4,8 @@ date: '2012-10-01T12:00:00+02:00'
 tags:
 - Old Weather
 - The Guardian
+categories:
+- 'How-to guides'
 ---
 
 At CartoDB, it is our goal to give our users the tools necessary to create compelling visualizations with their data. We are continuously looking for new innovative technologies that will enable data-driven storytelling.

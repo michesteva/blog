@@ -5,6 +5,8 @@ tags:
 - cartodb
 - public pages
 - examples
+categories:
+- 'Customer stories'
 ---
 
 <img src="http://i.imgur.com/AdU7hx9.jpg" alt=""/>

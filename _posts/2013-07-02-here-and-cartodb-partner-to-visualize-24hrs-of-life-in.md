@@ -6,7 +6,8 @@ tags:
 - maps
 - visualization
 - Smartcity
-tumblr_url: http://blog.cartodb.com/post/54428171327/here-and-cartodb-partner-to-visualize-24hrs-of-life-in
+categories:
+- 'How-to guides'
 ---
 <a href="http://here.com/livingcities/" title="Living Cities visualization"><img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/%20livingcities4.png"/></a>
 

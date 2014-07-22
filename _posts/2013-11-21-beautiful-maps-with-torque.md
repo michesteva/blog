@@ -6,6 +6,8 @@ tags:
 - data visualization
 - animated
 - mapping
+categories:
+- 'Customer stories'
 ---
 
 <iframe frameborder="0" height="450" src="http://saleiva2.cartodb.com/viz/c6faf7bc-5004-11e3-9bc3-6805ca057b7f/embed_map?title=true&amp;description=true&amp;search=false&amp;shareable=true&amp;cartodb_logo=true&amp;layer_selector=false&amp;legends=false&amp;scrollwheel=false&amp;sublayer_options=1%7C1&amp;sql=&amp;zoom=4&amp;center_lat=36.069064479478754&amp;center_lon=-98.0419921875" width="637"></iframe>

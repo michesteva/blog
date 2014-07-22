@@ -5,6 +5,8 @@ tags:
 - infoWindows
 - new features
 - cartodb
+categories:
+- 'New features'
 ---
 
 <img src="http://i.imgur.com/LFkDPf8.gif" alt=""/>

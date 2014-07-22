@@ -6,6 +6,8 @@ tags:
 - map
 - editing
 - clean
+categories:
+- 'New features'
 ---
 
 <a href="http://cartodb.com" title="CartoDB" target="_blank"><img alt="Open feature metadata window CartoDB" src="http://cartodb.s3.amazonaws.com/tumblr/posts/featuremetadata1.png" width="650"/></a>

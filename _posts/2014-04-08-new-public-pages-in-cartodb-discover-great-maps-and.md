@@ -7,6 +7,8 @@ tags:
 - public pages
 - changelog
 - new features
+categories:
+- 'new features'
 ---
 
 <img src="http://i.imgur.com/2XF3VsP.jpg" alt=""/>
@@ -35,7 +37,7 @@ When creating new content, you will be able to select the privacy level you want
 
 **Public on the web** means it will be listed in your public page. **Anyone with a link** means it will not be listed in your public listed, but will be accessible to anyone who gets the link.
 
-**For our free accounts**, all content (tables and visualizations) created prior to April 7th 2014 will not be listed in your public profile (although they remain accessible if someone has the URL, as they always have been). You can easily access your visualizations and tables and choose to show them publicly. **But beware**, once you select that a visualization or table is publicly listed, you won't be able to go back ;) 
+**For our free accounts**, all content (tables and visualizations) created prior to April 7th 2014 will not be listed in your public profile (although they remain accessible if someone has the URL, as they always have been). You can easily access your visualizations and tables and choose to show them publicly. **But beware**, once you select that a visualization or table is publicly listed, you won't be able to go back ;)
 
 Tables and visualizations that you create from now on will be listed in your public profile. So if you are publishing sensitive content that must remain private, remember to upgrade your account.
 

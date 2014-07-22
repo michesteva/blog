@@ -5,6 +5,8 @@ date: '2014-02-06T19:14:00+01:00'
 tags:
 - cartodb
 - github
+categories:
+- 'CartoDBeers'
 ---
 
 <img src="http://i.imgur.com/cIZbe1B.jpg" alt=""/>

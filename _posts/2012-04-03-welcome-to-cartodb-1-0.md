@@ -6,6 +6,8 @@ tags:
 - '1.0'
 - Open Data
 - Open Street Maps
+categories:
+- 'New features'
 ---
 
 We are happy to announce you that CartoDB 1.0 is already live. 

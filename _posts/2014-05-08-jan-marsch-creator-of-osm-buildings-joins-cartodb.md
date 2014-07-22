@@ -6,6 +6,8 @@ tags:
 - osmbuildings
 - osm
 - openstreetmap
+categories:
+- 'New hires'
 ---
 
 <img src="http://i.imgur.com/oKFFI0r.png" alt=""/>

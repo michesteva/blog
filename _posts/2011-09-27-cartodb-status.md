@@ -1,6 +1,8 @@
 ---
 title: CartoDB status
 date: '2011-09-27T22:16:00+02:00'
+categories:
+- 'New features'
 ---
 
 This has been a crazy week for CartoDB. We presented the platform at last FOSS4G in Denver and since then the response from users had been great.

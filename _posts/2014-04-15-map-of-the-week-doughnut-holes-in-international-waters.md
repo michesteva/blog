@@ -6,8 +6,9 @@ tags:
 - cartodb
 - how-to
 - guide
-- map of the week
 - examples
+categories:
+- 'Map of the week'
 ---
 
 We welcome Dmitriy Skougarevskiy who is a doctoral candidate at <a href="http://graduateinstitute.ch/" target="_blank">The Graduate Institute of International and Development Studies</a> in this guest post to let him tell us about his pet project on the loopholes in the Law of the Sea, called <a href="http://donutholes.ch/">donutholes.ch</a>.

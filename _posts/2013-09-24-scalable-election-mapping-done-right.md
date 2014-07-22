@@ -5,6 +5,8 @@ tags:
 - elections
 - journalism
 - visualization
+categories:
+-'Customer stories'
 ---
 
 Last weekend there were elections in Germany, and that means a lot of mapping! Maps are a fundamental tool to explain voting results, differences between regions, possible coalitions, and more. And during election night they become one of the most fundamental visualization techniques for showing the status of results.

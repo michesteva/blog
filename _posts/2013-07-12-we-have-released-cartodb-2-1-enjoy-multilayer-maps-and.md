@@ -6,9 +6,11 @@ tags:
 - release
 - '2.1'
 - features
+categories:
+- 'New features'
 ---
 
-We have been working on the next big release of CartoDB for some months now. Affectionately given the title, 2.1, this release is really a major step forward for the platform. We have added in tons of new features, design and usability improvements, and most of all, multilayer support. Multilayer support, in combination with new filters, new style wizards, and CartoDB’s built in SQL and CartoCSS capabilities will give you the ability to make some of the web’s most amazing maps. 
+We have been working on the next big release of CartoDB for some months now. Affectionately given the title, 2.1, this release is really a major step forward for the platform. We have added in tons of new features, design and usability improvements, and most of all, multilayer support. Multilayer support, in combination with new filters, new style wizards, and CartoDB’s built in SQL and CartoCSS capabilities will give you the ability to make some of the web’s most amazing maps.
 
 <a href="http://cartodb.com"><img src="http://i.imgur.com/FDPGHnb.png" width="637px"/></a>
 

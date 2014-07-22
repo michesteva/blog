@@ -5,6 +5,8 @@ tags:
 - html5
 - twitter
 - nba
+categories:
+- 'Customer stories'
 ---
 
 In our second post this week about Twitter visualizations, we want to show you a cool visualization of tweets from throughout the <a href="https://blog.twitter.com/2013/the-nba-finals-visualized">NBA Finals visualized using CartoDB</a>. Like the <a href="http://blog.cartodb.com/post/55027221213/introducing-social-infowindows-display-your-tweets-the">Wimbledon map</a> we showed you yesterday, this map makes use of a neat set of ~70,000 geospatially tagged tweets. The tweets are <a href="http://vizzuality.github.io/tweets_nba/">visualized in two distinct ways</a>. In the first map, all tweets are displayed by location and with a color according to the team the tweet identifies with,

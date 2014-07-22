@@ -6,6 +6,8 @@ tags:
 - example
 - libraries
 - data
+categories:
+- 'New features'
 ---
 
 From its very beginning, CartoDB has always been about making it easier for you to create map driven applications online. 

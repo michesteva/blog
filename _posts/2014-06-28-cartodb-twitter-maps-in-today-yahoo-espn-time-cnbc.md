@@ -6,6 +6,8 @@ tags:
 - twitter
 - cartodb
 - twitter maps
+categories:
+- 'Customer stories'
 ---
 
 <img src="http://i.imgur.com/GXkqPhP.jpg" alt=""/>

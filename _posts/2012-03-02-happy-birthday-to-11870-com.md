@@ -7,6 +7,8 @@ tags:
 - SQL query
 - carto css
 - madrid
+categories:
+- 'How-to guides'
 ---
 
 <iframe frameborder="0" height="300" src="https://viz2.cartodb.com/tables/hoteles_madrid_11870/embed_map" width="645"></iframe>

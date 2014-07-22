@@ -4,6 +4,8 @@ date: '2013-07-17T18:52:00+02:00'
 tags:
 - open source
 - announcement
+categories:
+- 'New hires'
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cholmes.jpg" width="637px"/>

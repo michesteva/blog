@@ -5,6 +5,8 @@ tags:
 - info-windows
 - customization
 - feature
+categories:
+- 'New features'
 ---
 
 <img alt="New header info-window template" height="400" src="http://cartodb.s3.amazonaws.com/tumblr/posts/headerImage-infowindow2.png" width="650"/>

@@ -1,6 +1,8 @@
 ---
 title: 'Our highspeed map tiler: Windshaft'
 date: '2011-09-14T00:14:00+02:00'
+categories:
+- 'New features'
 ---
 
 We often find ourselves needing a simple, high speed and decoupled map tile server to generate maps from PostGIS as fast as possible without sacrificing developmental flexibility.

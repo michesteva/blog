@@ -4,6 +4,8 @@ date: '2014-05-20T16:10:00+02:00'
 tags:
 - election maps
 - cartodb
+categories:
+- 'How-to guides'
 ---
 
 <img src="http://i.imgur.com/FTvfdEq.png" alt=""/>
@@ -18,7 +20,7 @@ The key point is to avoid the continuous invalidation of the generated caches by
 
 1. Only update data when new data is really available
 2. Update your data within reason and in batch. 5 minutes seems perfect
-3. Make updates with a single statement (as explained in <a href="http://blog.cartodb.com/post/53301057653/faster-data-updates-with-cartodb"> 
+3. Make updates with a single statement (as explained in <a href="http://blog.cartodb.com/post/53301057653/faster-data-updates-with-cartodb">
 Faster data updates with CartoDB
 </a>)
 4. Make sure to use the latest version of <a href="http://developers.cartodb.com/documentation/cartodb-js.html">cartodb.js library</a>

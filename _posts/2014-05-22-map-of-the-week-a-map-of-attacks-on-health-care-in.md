@@ -3,10 +3,11 @@ title: 'Map of the Week: A Map of Attacks on Health Care in Syria'
 date: '2014-05-22T16:29:00+02:00'
 tags:
 - cartodb
-- map of the week
 - phrusa
 - syria
 - nonprofits
+categories:
+- 'Map of the Week'
 ---
 
 Physicians for Human Rights (<a href="http://www.twitter.com/P4HR">@P4HR</a>) is an independent organization that uses medicine and science to stop mass atrocities and severe human rights violations. They are supported by the expertise and passion of health professionals and concerned citizens alike. We welcome <a href="http://www.twitter.com/elise__baker">Elise Baker</a> to tell us about how they have created this comprehensive map.

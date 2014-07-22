@@ -5,6 +5,8 @@ tags:
 - ui
 - hints
 - comp-op
+categories:
+- 'How-to guides'
 ---
 
 <a href="http://cartodb.com" title="cartodb window" target="_blank"><img alt="Multiply Composite Operation" height="300" src="http://cartodb.s3.amazonaws.com/tumblr/posts/postComposite.png" width="650"/></a>

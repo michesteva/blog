@@ -6,6 +6,8 @@ tags:
 - animated maps
 - data visualization
 - historical maps
+categories:
+- 'How-to guides'
 ---
 
 Mapping historic and temporal data can be challenging. A lot of times you need to think about clever ways to aggregate or filter that data so you can highlight and tell a story without losing too much of the overall picture. But with our recent <a href="http://blog.cartodb.com/post/66687861735/torque-is-live-try-it-on-your-cartodb-maps-today">release of Torque maps</a>, we <a href="http://blog.cartodb.com/post/67674300140/beautiful-maps-with-torque">expanded your options</a> for mapping temporal data, giving your viewers the ability to play, pause, and backup animated data in order to explore how the data changes over time. We just pushed an awesome little enhancement to Torque visualizations: cumulative visualizations.

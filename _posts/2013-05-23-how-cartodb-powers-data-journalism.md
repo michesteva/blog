@@ -5,6 +5,8 @@ tags:
 - okf
 - data journalism
 - diy
+categories:
+- 'Customer stories'
 ---
 
 From its beginning, CartoDB been a powerful tool for journalists because it's easy, flexible, scalable and open source. With this simple-to-use tool journalists everywhere are discovering the immense power data visualization gives them for research and telling stories.

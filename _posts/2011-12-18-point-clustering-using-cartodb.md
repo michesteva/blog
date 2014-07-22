@@ -1,6 +1,8 @@
 ---
 title: Point clustering using CartoDB
 date: '2011-12-18T17:04:00+01:00'
+categories:
+- 'New features'
 ---
 
 This week we wrote a few new examples in the CartoDB Gallery. One of the examples was to show off a feature that allows you to set styles through the URL. Until recently, setting Carto styles in CartoDB required the use of the Developer Console, but now with a bit of new functionality and some sweet new caching, it is possible to set styles through your Maps API URL request. For example,

@@ -4,11 +4,13 @@ date: '2012-12-27T22:32:53+01:00'
 tags:
 - cartodb.js
 - release
+categories:
+- 'New features'
 ---
 
 <img alt="CartoDB.js" height="300" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cartodbjs.png" width="650"/>
 
-For some months now we have been developing a new, more powerful, and easy to use <a href="https://github.com/cartodb/cartodb.js" title="CartoDB JavaScript Library">JavaScript library for CartoDB</a>. Today, we are announcing the beta release of <a href="https://github.com/cartodb/cartodb.js" title="cartodb.js">CartoDB.js</a> for all of you to use. While some of you have caught wind and <a href="http://btvvotes.geosprocket.org/demography/8wards.html" title="geosprocket">started development with the library early</a>, for the rest, we want to take a moment to go over some of the key benefits of switching to CartoDB.js for your online geospatial development. 
+For some months now we have been developing a new, more powerful, and easy to use <a href="https://github.com/cartodb/cartodb.js" title="CartoDB JavaScript Library">JavaScript library for CartoDB</a>. Today, we are announcing the beta release of <a href="https://github.com/cartodb/cartodb.js" title="cartodb.js">CartoDB.js</a> for all of you to use. While some of you have caught wind and <a href="http://btvvotes.geosprocket.org/demography/8wards.html" title="geosprocket">started development with the library early</a>, for the rest, we want to take a moment to go over some of the key benefits of switching to CartoDB.js for your online geospatial development.
 
 **Continuous improvement**
 
@@ -38,7 +40,7 @@ There is nothing worse than having someone else's library break something you wo
 
 **It's in beta, so don't be bashful**
 
-Anytime you release a tool in beta, it means you feel good about what you have developed but know somebody is going to find an edge case or a quirky behaviour. We're ready for that! Please report your bugs and questions to <a href="https://groups.google.com/forum/#!forum/cartodb" title="CartoDB Users" target="_blank">our user thread</a>. We are going to be working quickly to fix anything you might find! 
+Anytime you release a tool in beta, it means you feel good about what you have developed but know somebody is going to find an edge case or a quirky behaviour. We're ready for that! Please report your bugs and questions to <a href="https://groups.google.com/forum/#!forum/cartodb" title="CartoDB Users" target="_blank">our user thread</a>. We are going to be working quickly to fix anything you might find!
 
 **Examples using CartoDB.js**
 

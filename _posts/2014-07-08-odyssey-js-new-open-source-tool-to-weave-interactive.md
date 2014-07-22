@@ -7,6 +7,8 @@ tags:
 - journalism
 - storytelling
 - knight foundation
+categories:
+- 'New features'
 ---
 
 <img src="http://i.imgur.com/9jG2O2v.jpg" alt="Imgur"/>
