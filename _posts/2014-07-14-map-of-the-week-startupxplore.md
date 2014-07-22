@@ -56,7 +56,66 @@ Our users are able to interact with our maps in three different ways (disclaimer
 
 a. Hovering over a marker, a tooltip with the organization name is shown. That feature has been developed using the cartodb.js library.
 
-{% gist nachoorme/30ed748370227d767ef6 %}
+ {% highlight javascript %}
+ function main() {
+var mapOptions = {
+            styles: mapStyles
+          };
+             cartodb.createVis('map_canvas', '<?= $cartodbConfig['url_vis'] ?>', {
+                 shareable: false,
+                 title: false,
+                 description: false,
+                 search: false,
+                 tiles_loader: true,
+                 center_lat: <?php echo "$lati"; ?>,
+                 center_lon: <?php echo "$longi"; ?>,
+                 zoom: <?php echo "$zoomi"; ?>,
+                 legends: false
+             })
+             .done(function(vis, layers) {
+                 // layer 0 is the base layer, layer 1 is cartodb layer
+                 nativeMap = vis.getNativeMap();
+                 nativeMap.setOptions(mapOptions);
+                 cartodbLayer = layers[1];
+                 cartodbLayerEvent = layers[0];
+     
+                 sublayer0 = cartodbLayer.getSubLayer(0);
+     
+                 sublayer0.setInteraction(true);
+                 sublayer0.infowindow.set('fields', [{name: 'cartodb_id'}, {name: 'title'}, {name: 'description'}, {name: 'address'}, {name: 'uri'}]);
+                 sublayer0.infowindow.set('template', $('#infowindow_template').html());
+                 sublayer0.set({interactivity: 'cartodb_id,title'});
+     
+     
+                 vis.addOverlay({
+                         layer: sublayer0,
+                         type: 'tooltip',
+                         template: '<p>{{title}}</p>'
+                     });
+                 sublayer1 = cartodbLayer.getSubLayer(1);
+     
+                 sublayer1.setInteraction(true);
+                 sublayer1.infowindow.set('fields', [{name: 'cartodb_id'}, {name: 'title'}, {name: 'description'}, {name: 'address'}, {name: 'uri'},{name:'start_date'}]);
+                 sublayer1.infowindow.set('template', $('#infowindow_template_events').html());
+                 sublayer1.set({interactivity: 'cartodb_id,title'});
+     
+                 vis.addOverlay({
+                         layer: sublayer1,
+                         type: 'tooltip',
+                         template: '<p>{{title}}</p>'
+                     });    
+    
+                 updateMap();   
+             })
+             .error(function(err) {
+                 console.log(err);
+             });
+         }
+    
+window.onload = main;
+{% endhighlight %}
+
+
 
 <img src="http://i.imgur.com/2ZyPWn5.png" alt="Imgur"/>
 
@@ -64,11 +123,57 @@ b. Clicking on a marker, an info window is shown with the most important fields 
 
 As we are technical guys, we got this behavior tip from The Hobbit Locations map source code.
 
-{% gist nachoorme/f7d002c3fd237d6600fd %}
+{% highlight javascript %}
+sublayer0 = cartodbLayer.getSubLayer(0);
+                     
+sublayer0.setInteraction(true);
+sublayer0.infowindow.set('fields', [{name: 'cartodb_id'}, {name: 'title'}, {name: 'description'}, {name: 'address'}, {name: 'uri'}]);
+sublayer0.infowindow.set('template', $('#infowindow_template').html());
+sublayer0.set({interactivity: 'cartodb_id,title'});
+
+
+vis.addOverlay({
+     layer: sublayer0,
+     type: 'tooltip',
+     template: '<p>{{title}}</p>'
+ });
+{% endhighlight %}
 
 In the previous snippet, we are initializing the sublayer 0 (where the markers live) to show an info window on each marker with the fields we want. The info window has been customized using our own css styles and a little trick to show a screenshot from the organization url:
 
-{% gist nachoorme/bd762e41527a71ec0334 %}
+{% highlight text %}
+<script type="infowindow/html" id="infowindow_template">
+     <div class="infowindow-custom">
+      	<a href="#close" class="cartodb-popup-close-button close">x</a>
+      	<div class="cartodb-popup-content-wrapper" style="padding:20px">
+               <div class="cartodb-popup-content">
+                	<div class='marker_title' style='font-size:120%;font-weight:bold;'>{{content.data.title}}</div>
+                    <div class='marker_uri'><a target='_blank' href='{{content.data.uri}}'>{{content.data.uri}}</a></div>
+                	<div class='marker_desc'>{{content.data.description}}</div>                              
+                    <div id='marker_canvas' class='marker_img'><img id="screenshot" src="#"/></div>
+                	<div class='marker_address'>{{content.data.address}}</div>
+           	</div>
+          </div>	                          
+     </div>
+     <div class="cartodb-popup-tip-container" ></div>
+     <script> 
+          var urlName = "{{content.data.uri}}";                                                                    
+          if (urlName!=""){                                      
+             if (!urlName.match("^http")){                                        
+                    urlName='http://'+urlName;  
+             }                                                                            
+             urlName=decode_url(urlName);
+             var uri = parse_url(urlName);                                      
+             $("#screenshot").attr("src","images/screenshots/"+uri.host+".png");
+             $("#screenshot").hide();
+             $("#screenshot").show();
+          }else{
+             $("#screenshot").hide();
+             $("#marker_canvas").hide();
+          }                                
+     </script>
+</script>
+{% endhighlight %}
 
 The result is something like this:
 
@@ -76,11 +181,60 @@ The result is something like this:
 
 c. Our users can open some specific info windows, clicking on external links from our application. We made it possible with a javascript function that triggers a click event over the marker:
 
-{% gist nachoorme/ee8ee01354e8167e3982 %}
+{% highlight javascript %}
+function openInfowindow(layer, latlng, id, sublayer) {
+     layer.trigger('featureClick', null, latlng, null, {cartodb_id: id}, sublayer);
+}
+{% endhighlight %}
 
 d.And finally, our users are able to show and hide a group of markers by type using external links for that purpose.
 
-{% gist nachoorme/1ac490aa22bc7cc44d8d %}
+ {% highlight javascript %}
+
+var filterList = [];
+var types = ['startup', 'accelerator', 'incubator', 'service', 'coworking', 'hackerspace', 'education', 'investor', 'award','event'];
+
+// hide all markers of a given type
+function hide(type) {
+      if (type==='event'){
+         cartodbLayer.getSubLayer(1).hide();
+      }else{
+          filterList.push("'"+type+"'");
+          updateMap();
+      }
+      
+      $("#filter_" + type).addClass("inactive");
+}
+
+// show all markers of a given type
+function show(type) {
+      if (type==='event'){
+          cartodbLayer.getSubLayer(1).show();
+      }else{
+          var index=$.inArray("'"+type+"'",filterList);
+          if (index > -1) {
+             filterList.splice(index, 1);
+          }
+          updateMap();
+      }
+     
+      $("#filter_" + type).removeClass("inactive");
+}
+function updateMap(){
+      if (filterList.length>0){
+          var filter = {
+              sql: "SELECT * FROM <?= $placesTable ?> where approved='1' and type not in ("+filterList.join(", ")+")",	      
+          }
+      }else{
+          var filter = {
+              sql: "SELECT * FROM <?= $placesTable ?> where approved='1' ",	      
+          }
+      }
+      var sublayer = cartodbLayer.getSubLayer(0);
+      sublayer.set(filter);
+}
+{% endhighlight %}
+
 
 Hurrah! Techie part is over!
 

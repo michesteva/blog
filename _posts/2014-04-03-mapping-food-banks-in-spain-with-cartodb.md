@@ -48,11 +48,21 @@ In the list only georeferenced food banks are being shown. I'm not showing those
 
 Even if you don't know much about Ruby, the code is pretty self explanatory:
 
-<div class="gist"><a href="https://gist.github.com/furilo/9954401">https://gist.github.com/furilo/9954401</a></div>
+ {% highlight sql %}
+ sql = "SELECT * from bancosdealimentos WHERE the_geom is not NULL"
+url = "https://danilat.cartodb.com/api/v2/sql?q=#{sql}&api_key=#{ENV['API_KEY']}"
+response = RestClient.get URI.escape(url) 
+data = JSON.parse(response)
+{% endhighlight %}
+
 
 Adding new food banks is also quite evident with a minimum knowledge of SQL, as shown in this code snippet:
 
-<div class="gist"><a href="https://gist.github.com/furilo/9955356">https://gist.github.com/furilo/9955356</a></div>
+ {% highlight sql %}
+ sql = "INSERT INTO bancosdealimentos (full_address, contact, type) VALUES ('#{address}', '#{contact}', '')"
+url = "https://danilat.cartodb.com/api/v2/sql?api_key=#{ENV['API_KEY']}"
+response = RestClient.post URI.escape(url), :q => sql
+{% endhighlight %}
 
 <img src="http://i.imgur.com/goRd1UL.png" alt="bancosdealimentos.herokuapp.com"/>
 

@@ -23,13 +23,28 @@ The SQL API also gives developers a few options for data formats, those include 
 
 Getting the data from your cartodb account to your JavaScript application can be done really easily using <a href="http://github.com/cartodb/cartodb.js" title="CartoDB js" target="_blank">CartoDB.js</a>. Here is an example of the JavaScript API:
 
-{% gist javisantana/25d62c1a9dca447b771e %}
+ {% highlight sql %}
+ var sql = new cartodb.SQL({ user: 'examples', format: 'geojson' });
+  sql.execute("SELECT * FROM table").done(function(geojson) {
+      console.log("here is the geojson", geojson);
+  });
+{% endhighlight %}
+
 
 ### Rendering vector data using Leaflet
 
 Using Leaflet as an example, we render that GeoJSON data on our map with just two more lines of code:
 
-{% gist javisantana/f571b8938618c706fd0b %}
+ {% highlight sql %}
+ var sql = new cartodb.SQL({ user: 'examples', format: 'geojson' });
+ 
+  // create the layer and add to the map, then will be filled with data
+  var countriesLayer = L.geoJson().addTo(map);
+  sql.execute("SELECT * FROM european_countries_e").done(function(geojson) {
+    countriesLayer.addData(geojson);
+  });
+{% endhighlight %}
+
 
 You can see it running <a href="http://cartodb.github.io/cartodb.js/examples/leaflet_vector.html" title="Leaflet vector example" target="_blank">here</a>.
 
@@ -47,7 +62,12 @@ Okay, that was fun but the best thing is yet to come. CartoDB is a dynamic servi
 
 Imagine you want to get the countries of a particular size, say 1,000,000 Sq Km. Here, we’ll use the SQL API with a little bit of geospatial filtering (ST_Area is going to return meters, so we divide by 1 Sq Km):
 
-{% gist javisantana/3936f073bf5f4ab5ddab %}
+ {% highlight sql %}
+ sql.execute("SELECT * FROM european_countries_e WHERE ST_Area(the_geom::geography)/1000000 > {{area}}", { area: 1000000 }).done(function(geojson) {
+        countriesLayer.addData(geojson);
+});
+{% endhighlight %}
+
 
 Here, we can query for only the points close to known location, specifically the wifi hotspots nearest a viewer.
 
@@ -59,15 +79,33 @@ See the <a href="http://cartodb.github.io/cartodb.js/examples/leaflet_vector_que
 ### <br/>Simplify geometries
 Sometimes geometries, such as country borders, are really complex, meaning they also make for large files to transfer over the web. We can fix this easily with CartoDB and on-demand geometry simplification over the SQL API:
 
-{% gist javisantana/d5b5eddf75a555d82ce6 %}
+ {% highlight sql %}
+ sql.execute("select ST_Simplify(the_geom, 2) as the_geom from european_countries_e").done(function(geojson) {
+    countriesLayer.addData(geojson);
+  });
+{% endhighlight %}
 
 This can be really useful for developing mobile applications, where data transferred is a very important consideration.
 
 ### Hover effects
 
 Now that we are rendering data directly in the browser, hover effects are as simple as changing the style of the target:
+ 
+ {% highlight sql %}
+     sql.execute("select cartodb_id, area, ST_Simplify(the_geom, 0.1) as the_geom from european_countries_e").done(function(geojson) {
+        countriesLayer.addData(geojson);
+        countriesLayer.on('mouseover', function(e) {
+          e.layer.setStyle({
+            weight: 3,
+            opacity: 1
+          });
+        })
+        countriesLayer.on('mouseout', function(e) {
+          countriesLayer.resetStyle(e.layer);
+        });
+    });
+{% endhighlight %}
 
-{% gist javisantana/7db55fce5d9c7d65b354 %}
 
 See the <a href="http://cartodb.github.io/cartodb.js/examples/leaflet_vector_hover.html" title="Leaflet hover example" target="_blank">hover example</a> for a full example.
 
