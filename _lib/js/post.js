@@ -25,7 +25,7 @@ blog.Views.Post = Backbone.View.extend({
 
   _buildImgWrappers: function() {
     this.$content.find("img").each(function(i, el) {
-      return $(el).after('<div class="wrap" style="height: '+$(this).height()+'px"></div>');
+      return $(el).after('<div class="wrap" style="height: '+$(this).height()+'px; width: '+$(this).width()+'px"></div>');
     });
   },
 

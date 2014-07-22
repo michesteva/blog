@@ -101,6 +101,7 @@
     display: inline-block;
     position: relative;
     z-index: 10;
+    margin: 20px 0 10px;
     max-width: 100%;
     @include border-radius(4px);
   }
@@ -194,7 +195,7 @@
 
 .wrap {
   position: absolute;
-  top: 0;
+  top: 20px; // same than img
   z-index: 11;
   width: 100%;
   @include box-shadow(0 0 0 1px rgba(#000, .2) inset);
