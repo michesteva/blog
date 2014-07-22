@@ -1,5 +1,5 @@
 <li class="post">
-  <div class="section-inner">
+  <div class="h-vspace-m">
     <p class="post-meta">
       <span class="post-date h-iblock h-pr">{{ post.date | date: "%b %-d, %Y" }}</span>
     </p>
@@ -36,7 +36,9 @@
 
   <div class="post-inner h-txt-left">
     {% if post.layout_color %}
-      <p class="post-highlight"><a href="{{ post.url }}"><img src="{{ post.layout_color }}" alt="{{ post.title }}" /></a></p>
+      <div class="wrap">
+        <p><a href="{{ post.url }}" class="wrap-border"><img src="{{ post.layout_color }}" alt="{{ post.title }}" /></a></p>
+      </div>
     {% endif %}
 
     {% if post.content contains '<!--more-->' %}

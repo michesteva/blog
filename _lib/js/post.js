@@ -11,7 +11,6 @@ blog.Views.Post = Backbone.View.extend({
     this.$content = this.$('.post-inner');
 
     this._initViews();
-    this._initBindings();
   },
 
   _onClickTwitter: function(e) {
@@ -21,12 +20,6 @@ blog.Views.Post = Backbone.View.extend({
     ga('send', 'event', 'button', 'click', 'twitter');
 
     return false;
-  },
-
-  _buildImgWrappers: function() {
-    this.$content.find("img").each(function(i, el) {
-      return $(el).after('<div class="wrap" style="height: '+$(this).height()+'px; width: '+$(this).width()+'px"></div>');
-    });
   },
 
   _onClickFacebook: function(e) {
@@ -40,15 +33,6 @@ blog.Views.Post = Backbone.View.extend({
 
   _closeDialogs: function() {
     this.tooltip.close();
-  },
-
-  _initBindings: function() {
-    var that = this;
-
-    $(window)
-      .on('load', function() {
-        that._buildImgWrappers();
-      });
   },
 
   _initViews: function() {

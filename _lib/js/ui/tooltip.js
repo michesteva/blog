@@ -33,8 +33,10 @@ blog.ui.Views.Tooltip = Backbone.View.extend({
 
     if (this.model.get('hidden')) {
       this.open();
+      this.$el.addClass('selected');
     } else {
       this.close();
+      this.$el.removeClass('selected');
     }
   },
 
