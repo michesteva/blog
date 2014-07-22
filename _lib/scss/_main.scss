@@ -6,16 +6,8 @@
   background: #fff;
 }
 
-.posts-list {
-  padding: 0 0 40px;
-}
-
 .posts-list-index {
   margin-top: -40px;
-}
-
-.posts-list-tags {
-  padding: 0 0 60px;
 }
 
 .post-single {
@@ -30,11 +22,6 @@
 .post {
   padding: 60px 20px;
   border-bottom: 1px solid #e5e5e5;
-
-  &:last-child {
-    border: 0;
-    padding-bottom: 0;
-  }
 }
 
 .post-meta {
@@ -178,10 +165,6 @@
         text-align: center;
       }
 
-      &:last-child {
-        border-bottom: 0;
-      }
-
       p {
         display: inline-block !important;
         display: -moz-inline-stack;
@@ -307,16 +290,17 @@ a.btn-blue-tw.btn-background {
   @extend %clearfix;
   margin: 60px 0 0;
   padding: 40px 0 0;
-  border-top: 1px solid #e5e5e5;
   font: 700 12px 'Proxima Nova Sb';
+
   p { margin-top: 2px; }
+
   .icon-pagination-prev { margin-right: 4px; }
   .icon-pagination-next { margin-left: 4px; }
-
 }
 
 .blog-aside {
-  margin: 0 -40px;
+  @extend %clearfix;
+  margin: 0 -40px 20px;
 
   > div {
     display: block;
@@ -353,6 +337,7 @@ a.btn-blue-tw.btn-background {
     display: inline-block;
     width: 50%;
     margin-left: -4px;
+
     &:last-child { border: 0; }
   }
 }
