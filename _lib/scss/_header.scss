@@ -152,17 +152,11 @@
       }
 
       > li {
-        &.selected,
-        &:hover {
-          > a {
-            background: #e5e5e5;
-          }
-        }
-
-        &.selected > a {
-          color: #555;
-        }
         &.selected {
+          > a {
+            color: #555;
+          }
+
           .tooltip-inner li {
             &.selected {
               > a {
