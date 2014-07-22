@@ -300,7 +300,8 @@ a.btn-blue-tw.btn-background {
 
 .blog-aside {
   @extend %clearfix;
-  margin: 0 -40px 20px;
+  margin-left: -40px;
+  margin-right: -40px;
 
   > div {
     display: block;
@@ -337,8 +338,6 @@ a.btn-blue-tw.btn-background {
     display: inline-block;
     width: 50%;
     margin-left: -4px;
-
-    &:last-child { border: 0; }
   }
 }
 
@@ -413,6 +412,10 @@ a.btn-blue-tw.btn-background {
     > div {
       width: 100%;
 
+      &:first-child {
+        border-right: 0;
+      }
+
       &:last-child {
         .blog-aside-inner {
           padding-top: 40px;
@@ -425,18 +428,16 @@ a.btn-blue-tw.btn-background {
   .blog-aside-inner {
     margin: 0 20px;
   }
+}
 
+@media (max-width: $small-width) {
   .lst-nav-tags {
     li {
-      width: 50%;
-      float: left;
-
-      &:last-child {
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 }
+
 
 /* =Icons
 ----------------------------------------------- */
