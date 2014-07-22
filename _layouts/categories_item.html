@@ -1,5 +1,19 @@
 ---
 layout: default
+js_assets:
+  - "index"
 ---
 
-{{ content }}
+<div class="posts-list posts-list-tags">
+  <h3 class="tit-section-s-lt">{{ page.title }}</h3>
+
+  <ul>
+  {% for post in site.posts %}
+  {% if post.categories contains page.category %}
+
+    {% include post_item.html %}
+
+  {% endif %}
+  {% endfor %}
+  </ul>
+</div>

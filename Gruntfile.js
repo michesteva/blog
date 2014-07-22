@@ -81,11 +81,13 @@ module.exports = function(grunt) {
       prod: {
         files : [
           {
+            expand: true,
             cwd: '.tmp/',
             dest: '_site/',
             src: [
               '*.{ico,png,txt}',
               'fonts/{,*/}*.*',
+              '**/*.html',
               'img/**/*.*'
             ]
           },
@@ -146,7 +148,7 @@ module.exports = function(grunt) {
     concurrent: {
       prod: [
         'cssmin',
-        'htmlmin'
+        // 'htmlmin'
       ],
       dist: [
         'compass:dist',

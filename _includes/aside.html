@@ -6,8 +6,8 @@
             <h2 class="title-module">Categories</h2>
 
             <ul class="lst-nav-tags">
-            {% for category in site.categories %}
-              <li><a href="#">{{ category | first | capitalize}}</a></li>
+            {% for cat in site.categories %}
+              <li><a href="{{ '/categories/' | append: cat[0] | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat[0] | capitalize }}</a></li>
             {% endfor %}
             </ul>
           </div>

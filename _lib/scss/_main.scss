@@ -39,7 +39,7 @@
 
 .post-meta {
   font: 200 14px 'Proxima Nova Lt';
-  color: #B2B2B2;
+  color: #999;
 }
 
 .post-date {
@@ -76,6 +76,10 @@
       display: none;
     }
   }
+}
+
+.post-author a {
+  color: #999;
 }
 
 .post-title {
