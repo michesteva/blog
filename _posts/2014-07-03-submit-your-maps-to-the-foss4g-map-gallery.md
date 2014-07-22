@@ -3,6 +3,8 @@ title: Submit your maps to the FOSS4G Map Gallery
 date: '2014-07-03T16:22:00+02:00'
 tags:
 - foss4g
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/ZT0nRIb.png" alt=""/>

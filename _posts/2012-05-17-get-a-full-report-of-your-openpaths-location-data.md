@@ -4,6 +4,8 @@ date: '2012-05-17T22:20:00+02:00'
 tags:
 - openpaths
 - Science Hack Day
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/geostats.png"/>

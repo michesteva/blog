@@ -4,6 +4,8 @@ date: '2012-10-09T18:33:00+02:00'
 tags:
 - Red Bull Stratos
 - Real-time
+categories:
+- 'Events and conferences'
 ---
 
 When we read about Felix Baumgartner plans to ascend to 120,000 feet and make a freefall jump rushing toward earth at supersonic speeds before parachuting to the ground in Rosswell, New Mexico, we were pretty excited.

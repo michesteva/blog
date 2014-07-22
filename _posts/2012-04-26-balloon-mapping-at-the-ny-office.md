@@ -7,6 +7,8 @@ tags:
 - Air Quality Project
 - The Public Laboratory
 - ecohacknyc
+categories:
+- 'Events and conferences'
 ---
 
 This week we've been experimenting with <a href="http://publiclaboratory.org/tool/balloon-mapping">balloon mapping</a>. <a href="http://sensemake.rs/">Sense Maker</a> (the team behind the Air Quality Egg and other projects) donated helium for the EcoHackNYC, and there was some left. After the first tests, and thanks to the big help of Liz and Leaf from <a href="http://publiclaboratory.org/">The Public Laboratory</a>, we flied our own balloon over the office in NYC. 

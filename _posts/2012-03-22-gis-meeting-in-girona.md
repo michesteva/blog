@@ -8,6 +8,8 @@ tags:
 - saleiva
 - open street maps
 - GIS
+categories:
+- 'Events and conferences'
 ---
 
 We are participating today in the sixth edition of "SIG Libre", a conference on GIS organized by Universitat de Girona. It's one of the main events of its kind held in Spain, with a special focus on free tools for cartography, statistical analysis, and database technology. You can check the <a href="http://www.sigte.udg.edu/jornadassiglibre2012/programa/jornadas">full program</a> and the <a href="http://www.sigte.udg.edu/jornadassiglibre2012/programa/ponentes">keynote speakers</a> at the conference <a href="http://www.sigte.udg.edu/jornadassiglibre2012/">website</a>. 

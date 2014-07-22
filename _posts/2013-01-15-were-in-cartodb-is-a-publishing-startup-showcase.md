@@ -6,6 +6,8 @@ tags:
 - publishing
 - startup showcase
 - toc
+categories:
+- 'Events and conferences'
 ---
 
 <a href="http://www.toccon.com/toc2013/public/schedule/detail/27033?cmp=ba-toc-tc13-startup-showcase-finalist"><img alt="image" height="220" src="http://i.imgur.com/g3eBY.png" width="618"/></a>

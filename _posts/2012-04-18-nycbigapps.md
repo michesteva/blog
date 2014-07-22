@@ -5,6 +5,8 @@ tags:
 - nycbigapps
 - open data
 - new york
+categories:
+- 'Events and conferences'
 ---
 
 The Award Ceremony for the NYC BigApps3.0 competition was held yesterday. Ninety-six apps were submitted to this city-run contest that encourages developers to play with government data. There were 4 apps, that we know!, using CartoDB:

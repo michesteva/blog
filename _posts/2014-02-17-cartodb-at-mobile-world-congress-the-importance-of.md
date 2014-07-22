@@ -8,6 +8,8 @@ tags:
 - mapbox
 - factual
 - barcelona
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/O31WSZE.jpg" alt="Location and ham"/>

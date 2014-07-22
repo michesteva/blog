@@ -7,6 +7,8 @@ tags:
 - nycbigapps
 - Open Data
 - Alastair Coote
+categories:
+- 'Customer stories'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/taxonomy.jpg" width="640"/>

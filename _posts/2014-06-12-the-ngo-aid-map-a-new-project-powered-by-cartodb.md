@@ -8,6 +8,8 @@ tags:
 - cartodb partners
 - simbiotica
 - examples
+categories:
+- 'Customer stories'
 ---
 
 <a href="http://ngoaidmap.org/"><img src="http://i.imgur.com/raiss2l.jpg"/></a>

@@ -5,6 +5,8 @@ tags:
 - cartodb
 - climate change
 - grants
+categories:
+- 'Customer stories'
 ---
 
 <img alt="" src="http://i.imgur.com/YU8IWxa.png"/>

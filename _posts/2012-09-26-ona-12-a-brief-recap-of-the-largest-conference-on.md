@@ -5,6 +5,8 @@ tags:
 - Online News Association
 - The Midway
 - Data Journalism
+categories:
+- 'Events and conferences'
 ---
 
 We had a great time last week at the <a href="http://ona12.journalists.org/">Online News Association</a> (ONA) annual conference, held in San Francisco. The world's largest and most important conference on online journalism was an opportunity to hear about "what’s happening now and what will be happening in the future" in online media, as Stanford's <a href="http://knight.stanford.edu/news-notes/2012/what-i-saw-at-ona-12/">Jim Bettinger</a> says. There were more than 1,400 people in attendance and <a href="http://www.huffingtonpost.com/craig-kanalley/ona12-in-tweets-conference_b_1913956.html#slide=more252863">34,505 tweets</a> labelled with the hashtag #ona12. 

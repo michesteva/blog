@@ -5,6 +5,8 @@ tags:
 - ONA
 - 2012 Online Journalism Award
 - Gannet Foundation Award
+categories:
+- 'Events and conferences'
 ---
 
 The <a href="http://journalists.org/">Online News Association</a> (ONA) and its academic partner, the <a href="http://com.miami.edu/">School of Communication at the University of Miami</a>, have announced the finalist for the 2012 Online Journalism Award. <a href="http://cartodb.com" title="Cartodb website" target="_blank">CartoDB</a> is nominated for the Gannett Foundation Award for Technical Innovation in the Service of Digital Journalism. 

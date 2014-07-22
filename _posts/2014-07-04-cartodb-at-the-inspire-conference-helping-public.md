@@ -7,6 +7,8 @@ tags:
 - inspire
 - public sector
 - reuse
+categories:
+- 'Events and conferences'
 ---
 
 <iframe src="//player.vimeo.com/video/98426706" width="637" height="475" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

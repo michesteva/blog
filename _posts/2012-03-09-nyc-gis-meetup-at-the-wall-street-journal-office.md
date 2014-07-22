@@ -8,6 +8,8 @@ tags:
 - Street Easy
 - OpenStreetMaps
 - MapBox
+categories:
+- 'Events and conferences'
 ---
 
 <img height="431" src="http://cartodb.s3.amazonaws.com/tumblr/posts/mapa648.png" width="648"/>

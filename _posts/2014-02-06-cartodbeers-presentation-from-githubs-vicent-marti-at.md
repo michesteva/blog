@@ -6,7 +6,7 @@ tags:
 - cartodb
 - github
 categories:
-- 'CartoDBeers'
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/cIZbe1B.jpg" alt=""/>

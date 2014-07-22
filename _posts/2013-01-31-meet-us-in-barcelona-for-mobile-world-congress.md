@@ -1,6 +1,8 @@
 ---
 title: 'Meet us in Barcelona for Mobile World Congress '
 date: '2013-01-31T23:32:00+01:00'
+categories:
+- 'Events and conferences'
 ---
 
 <img alt="image" src="http://media.tumblr.com/230946003f027b55e48f07ca27a9a6f3/tumblr_inline_mhi5cicU9K1qz4rgp.jpg" width="650"/>

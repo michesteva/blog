@@ -6,6 +6,8 @@ tags:
 - dynamic
 - mapping
 - data visualization
+categories:
+- 'Customer stories'
 ---
 
 Even though our blog gives a lot of attention to maps, CartoDB is a great tool for a lot more than just maps. We have <a href="http://blog.cartodb.com/post/45750027785/exploring-the-differences-in-dynamic-data-through-time" target="_blank">seen</a> in the <a href="http://blog.cartodb.com/post/39680106243/cartodb-makes-d3-maps-a-breeze" target="_blank">past</a> how the CartoDB APIs can do all sorts of dynamic queries to CartoDB hosted data. While dynamic queries CartoDB can be geospatial in nature, even returning GeoJSON formatted results, we haven’t spent much time highlighting the fact that they don’t have to be geospatial. That is why we are excited by the latest project released by the <a href="http://climatepolicyinitiative.org/" target="_blank">Climate Policy Initiative</a>, the <a href="http://www.thepolicyclimate.org/">Policy Climate Interactive</a>.

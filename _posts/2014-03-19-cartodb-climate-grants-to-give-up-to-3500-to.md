@@ -6,6 +6,8 @@ tags:
 - Grants
 - Climate Change
 - Nonprofit
+categories:
+- 'Customer stories'
 ---
 
 <img src="http://i.imgur.com/Vfq3DKX.jpg" width="637"/>

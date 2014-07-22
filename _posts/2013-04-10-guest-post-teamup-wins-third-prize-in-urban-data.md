@@ -5,6 +5,8 @@ tags:
 - guest post
 - torque
 - cartodb
+categories:
+- 'Events and conferences'
 ---
 
 _Today we here from <a href="http://twitter.com/chongzixin">Chong Zi Xin</a> and a team of hackers that took part in the recent, <a href="http://urbanprototyping.org/prototype/challenges/urban-data-challenge-zurich-sf-geneva/" title="Urban Data Challenge">Urban Data Challenge</a>. The team reached out a few months ago about using CartoDB for their challenge entry and the other day we found that their entry had won 3rd place. We were really impressed with some of the maps they produced, including perspective views with integrated bar charts (wow!)._

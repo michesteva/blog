@@ -6,6 +6,8 @@ tags:
 - map
 - visualization
 - MWC
+categories:
+- 'Events and conferences'
 ---
 
 <a href="http://mwcimpact.com" title="mwc impact data visualization" target="_blank"><img alt="mwcimpact visualization" src="http://cartodb.s3.amazonaws.com/tumblr/posts/mwcimpact_blog.png"/></a>

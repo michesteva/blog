@@ -1,6 +1,8 @@
 ---
 title: Develop geo apps and maps at NYC BigApps 2013 with CartoDB
 date: '2013-04-06T18:43:00+02:00'
+categories:
+- 'Events and conferences'
 ---
 
 <a href="http://nycbigapps.com/#"><img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/nycbigapps.png" width="650"/></a>

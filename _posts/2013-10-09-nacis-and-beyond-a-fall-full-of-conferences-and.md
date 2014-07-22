@@ -5,6 +5,8 @@ tags:
 - meetings
 - conferences
 - workshop
+categories:
+- 'Events and conferences'
 ---
 
 Well, it is the start of a long stretch of Fall conferences and events where we will be demonstrating how to use CartoDB andtalking the future of our platform. Tomorrow we'll kick it all off with NACIS in Greenville, South Carolina. It is the first time we have been able to get to NACIS, heck, it's the first time we've been to a lot of these events. If you are planning on coming to one, be sure to check out one of our workshops or presentations. We look for seeing you in person!

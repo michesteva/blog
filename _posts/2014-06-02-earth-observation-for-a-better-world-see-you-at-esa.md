@@ -5,6 +5,8 @@ tags:
 - cartodb
 - esa
 - industry space days
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/2fRHegI.png" alt=""/>

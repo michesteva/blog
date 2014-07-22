@@ -6,6 +6,8 @@ tags:
 - cartodb
 - sxsw
 - sxsw2014
+categories:
+- 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/K2yPJyI.png" alt="SXSW 2014"/>
