@@ -4,7 +4,8 @@ date: '2014-07-14T19:25:39+02:00'
 tags:
 - cartodb
 - starupxplore
-- map of the week
+categories:
+- 'Map of the Week'
 ---
 
 We welcome <a href="https://twitter.com/nacho_orme">Nacho Ormeño</a> to our Map Of The Week series. Ormeño is a co-founder of <a href="https://startupxplore.com/">Startupxplore</a>, a global platform created to connect and promote the blooming startup community and its main actors. Startupxplore enables visitors to browse startups, investors, entrepreneurs, events, companies giving services&#8230; They started up us a startup map, so maps are an important part of their project. Learn how they have been integrating data maps in their web app using CartoDB.

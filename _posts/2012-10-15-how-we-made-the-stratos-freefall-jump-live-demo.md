@@ -6,6 +6,8 @@ tags:
 - stratos
 - Felix Braumgartner
 - live map
+categories:
+- 'How-to guides'
 ---
 
 Eight million people followed yesterday the YouTube live stream from the <a href="http://www.redbullstratos.com/">Red Bull Stratos Challenge</a>. According to the video service, it was the largest-ever simultaneous viewing for a web audience.

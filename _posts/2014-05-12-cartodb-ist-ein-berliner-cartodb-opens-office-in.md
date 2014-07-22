@@ -7,6 +7,8 @@ tags:
 - offices
 - berlin
 - cartodbeers
+categories:
+ - 'Cartodbeers'
 ---
 
 <img src="http://i.imgur.com/GfIK76P.png" alt=""/>

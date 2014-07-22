@@ -1,6 +1,8 @@
 ---
 title: Do protected areas attract civil conflicts? A cool analysis made using CartoDB
 date: '2011-11-07T04:19:00+01:00'
+categories:
+- 'Customer stories'
 ---
 
 <a title="Does protected areas attract civil conflicts map" target="_blank" href="http://www.ecohacknyc.org/projects/conflicts_and_protected_areas/"><img src="http://vizzuality.s3.amazonaws.com/temp/map.jpg" alt="map preview" width="650" height="400"/></a>

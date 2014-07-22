@@ -1,8 +1,10 @@
 ---
-title: 'Odyssey.js: examples in the wild '
+title: 'Odyssey.js: examples in the wild'
 date: '2014-07-10T17:22:54+02:00'
 tags:
 - odyssey
+categories:
+- 'Customer stories'
 ---
 
 Following the release of the <a href="http://blog.cartodb.com/post/91149570719/odyssey-js-new-open-source-tool-to-weave-interactive">new Odyssey.js tool</a> to create map based interactive stories, here you have some projects that are already using it:

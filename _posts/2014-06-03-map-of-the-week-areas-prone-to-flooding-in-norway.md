@@ -2,10 +2,12 @@
 title: 'Map of the Week: Areas prone to flooding in Norway'
 date: '2014-06-03T15:49:00+02:00'
 tags:
-- map of the week
 - cartodb
 - norway
 - nrk
+- "Øyvind bye skille"
+categories:
+- 'Map of the Week'
 ---
 
 Welcome <a href="https://twitter.com/Byeskille">Øyvind Bye Skille</a> to our Map of the Week series. Øyvind works for NRK (the Norwegian Broadcasting Corp.), the public broadcaster of Norway which produces content for both radio, TV and digital. Almost 9 out of 10 Norwegians <a href="http://www.nrk.no/about/a-gigantic-small-broadcaster-1.3698462">use content from the NRK every week</a> (88% in 2013). All development and production of web content these days require it to work both on mobile devices and desktop computers.

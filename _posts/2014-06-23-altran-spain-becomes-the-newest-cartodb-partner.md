@@ -5,12 +5,6 @@ tags:
   - cartodb partners
   - partners
 categories:
-  - 'CartoDBeers'
-  - 'Customer Stories'
-  - 'Enterprise'
-  - 'How-to guides'
-  - 'Map of the Week'
-  - 'New features'
   - 'New hires'
 author: alvaro
 ---

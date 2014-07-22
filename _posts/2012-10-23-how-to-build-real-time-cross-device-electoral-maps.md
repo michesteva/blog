@@ -5,6 +5,8 @@ tags:
 - real time maps
 - big data
 - iPad
+categories:
+- 'How-to guides'
 ---
 
 With US Presidential Election just around the corner, we want to show you how to use CartoDB to power dynamic, fully scalable, cross-device maps that update instantly, with no need to refresh the browser. 

@@ -5,6 +5,8 @@ tags:
 - feature
 - info-windows
 - tutorials
+categories:
+- 'New features'
 ---
 
 <img alt="" src="http://cartodb.s3.amazonaws.com/tumblr/posts/htmlinfowindowscreenshot.jpg"/>

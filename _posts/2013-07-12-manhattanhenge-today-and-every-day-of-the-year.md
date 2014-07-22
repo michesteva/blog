@@ -5,6 +5,8 @@ tags:
 - Manhattanhenge
 - Vecnik
 - OSM
+categories:
+- 'How-to guides'
 ---
 
 <a href="http://nychenge.com"><img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cityhenge_home.jpg" width="637px"/></a>

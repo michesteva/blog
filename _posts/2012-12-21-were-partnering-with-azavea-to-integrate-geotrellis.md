@@ -7,6 +7,8 @@ tags:
 - geographic data processing
 - GeoTrellis
 - azavea
+categories:
+- 'New hires'
 ---
 
 <img alt="image" height="273" src="http://i.imgur.com/abZa0.png" width="636"/>

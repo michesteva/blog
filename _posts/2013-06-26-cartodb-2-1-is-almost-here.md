@@ -4,6 +4,8 @@ date: '2013-06-26T17:05:45+02:00'
 tags:
 - announcement
 - preview
+categories:
+- 'New features'
 ---
 
 As many of you already know, we have been working on the 2.1 version of CartoDB for several months now. In the upcoming release, we are incorporating multi-layer support, new visualization wizards, and a new and improved way to publish and save your visualizations.

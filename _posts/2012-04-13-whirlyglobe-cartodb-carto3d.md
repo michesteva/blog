@@ -6,8 +6,10 @@ tags:
 - cartodb
 - Carto3D
 - WhereCamp
-tumblr_url: http://blog.cartodb.com/post/21015598565/whirlyglobe-cartodb-carto3d
+categories:
+- 'How-to guides'
 ---
+
 Last Wherecamp in SF was very fruitful. We met Steve Gifford, an experienced software developer and the creator of <a href="http://code.google.com/p/whirlyglobe/">WhirlyGlobe</a>, an Open Source 3D globe engine for iPad. WhirlyGlobe take cares of managing the globe with the performance of OpenGL, and allows you to overlay data on top of it.
 
 The <a href="WhirlyGlobe%20+%20CartoDB:%20Carto3D!">integration</a> with CartoDB was obvious. CartoDB is a great backend to manage geospatial data and then use it dynamically on applications, so WhirlyGlobe can retrieve the data from CartoDB and present it for interaction on its 3D globe. Check out this video to see it in action:

@@ -5,6 +5,9 @@ tags:
 - cartodb
 - map gallery
 - examples
+categories:
+- 'New features'
+tumblr_url: http://blog.cartodb.com/post/89167602909/introducing-our-map-gallery
 ---
 
 <a href="http://cartodb.com/gallery" title="Map Gallery"><img src="http://i.imgur.com/K918Utd.png" alt="Map gallery"/></a>

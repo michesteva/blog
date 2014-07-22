@@ -6,6 +6,8 @@ tags:
 - cartodb
 - tutorial
 - storytelling
+categories:
+- 'How-to guides'
 ---
 
 <img src="http://i.imgur.com/Re3vQCK.png" alt="Imgur"/>

@@ -5,6 +5,8 @@ tags:
 - developers
 - templates
 - publishing
+categories:
+- 'New features'
 ---
 
 <a href="http://developers.cartodb.com/" title="CartoDB developers page" target="_blank"><img alt="Responsive cartodb publishing templates" src="http://cartodb.s3.amazonaws.com/tumblr/posts/templates-photo.png"/></a>

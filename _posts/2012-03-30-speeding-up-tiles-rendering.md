@@ -6,6 +6,9 @@ tags:
 - cartodb
 - data
 - mapnik
+categories:
+- 'New features'
+- 'New hires'
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/mapnik_patch.png"/>

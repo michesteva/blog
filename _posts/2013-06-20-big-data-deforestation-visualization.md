@@ -1,6 +1,8 @@
 ---
 title: 'Big Data from Space: Using CartoDB to track environmental change'
 date: '2013-06-20T11:52:27+02:00'
+categories:
+- 'How-to guides'
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/bigdatafromspace.jpg"/>

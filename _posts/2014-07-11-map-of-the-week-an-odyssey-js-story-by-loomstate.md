@@ -7,6 +7,8 @@ tags:
 - odyssey
 - loomstate
 - interactivestory
+categories:
+- 'Map of the Week'
 ---
 
 Welcome our own <a href="https://twitter.com/lauraagzmn">Laura Guzman</a> to our Map of the Week series. Guzman is a Technical Intern in our New York office, and she teamed up with sustainable clothing company <a href="http://www.loomstate.org">Loomstate</a> to build an <a href="http://blog.cartodb.com/post/91149570719/odyssey-js-new-open-source-tool-to-weave-interactive">Odyssey.js</a> visualization of how Loomstate’s newest product is made.

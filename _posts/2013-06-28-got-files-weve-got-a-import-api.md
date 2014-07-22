@@ -5,6 +5,8 @@ tags:
 - demo
 - tutorials
 - APIs
+categories:
+- 'How-to guides'
 ---
 
 We often get questions and support tickets from people that want to upload files to CartoDB without having to do it through the browser. For these people, we needed a file API, where they could point a script or application to upload a file and have it turned into a table. Today, we wanted to show you our Import API and a few helpful little tools that you can use to get started.

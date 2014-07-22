@@ -1,6 +1,8 @@
 ---
 title: 'Dropbox CartoDB integration: A step forward for a full Cloud Mapping environment'
 date: '2013-08-08T18:39:00+02:00'
+categories:
+- 'New features'
 ---
 
 We have designed CartoDB from day one to be an entirely cloud based solution for your mapping and data visualization needs. This gives us tremendous flexibility in the ways we can bring you speed, new features, and a better service all around. We take a lot of inspiration from other cloud services like Dropbox, the tool that has changed the way many of us share, store and organize our files. With <a href="http://thenextweb.com/insider/2013/07/09/dropbox-hits-175m-users-an-increase-of-75m-in-8-months/">nearly 200 million users worldwide</a>, Dropbox services <a href="http://onesecond.designly.com/">700,000 file uploads every minute</a>! 

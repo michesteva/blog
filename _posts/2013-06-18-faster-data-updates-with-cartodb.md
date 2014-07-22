@@ -5,6 +5,8 @@ tags:
 - SQL
 - hints
 - code
+categories:
+- 'new features'
 ---
 
 A feature of CartoDB that makes it stand out from most other mapping platforms out there is the ability to create maps and build applications on top of data that grows and changes. The dynamic nature of the CartoDB stack is what makes it such a fun and powerful platform for so many of our users. Users that build applications or link CartoDB to their other technology, most often perform these updates and modifications through the <a href="http://developers.cartodb.com/documentation/sql-api.html" title="CartoDB SQL API">SQL API</a>. 
@@ -39,7 +41,7 @@ The same method can be used to perform more efficient INSERTs into your tables. 
 
 **The UPDATE/INSERT double-whammy**
 
-Now, what about applications that want to UPDATE some records and INSERT some new records at the same time? In the inefficient implementation, we would first run the UPDATE and the INSERT as two distinct queries, taking two complete table scans. There is actually a really neat approach that some applications use to combine the two statements into one and thus also reducing table scans down to one at the same time. The approach works by running the UPDATE and then INSERTing only the records that were not involved in the UPDATE. 
+Now, what about applications that want to UPDATE some records and INSERT some new records at the same time? In the inefficient implementation, we would first run the UPDATE and the INSERT as two distinct queries, taking two complete table scans. There is actually a really neat approach that some applications use to combine the two statements into one and thus also reducing table scans down to one at the same time. The approach works by running the UPDATE and then INSERTing only the records that were not involved in the UPDATE.
 
 An example is maintaining a table of last access date from IP addresses. New IP addresses (not seen before) require an INSERTion, while already known addresses need an UPDATE.  This kind of operation is also known as an "upsert".  
 
@@ -47,7 +49,7 @@ Let’s take a look at an example using a <a href="http://www.postgresql.org/doc
 
 {% gist anonymous/5814488 %}
 
-To get the same, single table scan performance with a batch upsert, we can write the query as follows, 
+To get the same, single table scan performance with a batch upsert, we can write the query as follows,
 
 {% gist anonymous/5814504 %}
 

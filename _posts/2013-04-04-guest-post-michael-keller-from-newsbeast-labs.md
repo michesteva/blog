@@ -7,6 +7,8 @@ tags:
 - the daily beast
 - newsbeast labs
 - templates
+categories:
+- 'Customer stories'
 ---
 
 _As some of you may already know, Newsweek / The Daily Beast has been using CartoDB for some time now, and as such today's blog post comes from Michael Keller of Newsbeast labs. We'd also like to take the opportunity thank Michael for his amazing contributions to the CartoDB community. Thanks!_

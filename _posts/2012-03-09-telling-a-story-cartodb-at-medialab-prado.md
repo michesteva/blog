@@ -6,7 +6,8 @@ tags:
 - data visualization
 - cartodb
 - Google Fusion
-tumblr_url: http://blog.cartodb.com/post/19005435697/telling-a-story-cartodb-at-medialab-prado
+categories:
+- 'How-to guides'
 ---
 <iframe frameborder="0" height="480" src="http://player.vimeo.com/video/38232915?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="648"></iframe>
 

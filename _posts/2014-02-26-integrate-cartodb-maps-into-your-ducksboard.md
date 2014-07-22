@@ -6,6 +6,8 @@ tags:
 - cartodb
 - dashboard
 - integration
+categories:
+- 'How-to guides'
 ---
 
 <img src="http://i.imgur.com/mD9ZjD2.png" alt="Ducksboard Integration"/>

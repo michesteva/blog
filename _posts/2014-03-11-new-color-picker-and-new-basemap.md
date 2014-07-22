@@ -7,6 +7,8 @@ tags:
 - new-features
 - basemaps
 - color picker
+categories:
+- 'New features'
 ---
 
 Two new small improvements  this week (watch our for bigger ones in the coming ones!!).

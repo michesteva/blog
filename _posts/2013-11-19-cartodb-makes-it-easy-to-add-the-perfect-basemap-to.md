@@ -7,6 +7,8 @@ tags:
 - data visualization
 - WMS
 - XYZ
+categories:
+- 'New features'
 ---
 
 **Basemaps tailored to data visualization**

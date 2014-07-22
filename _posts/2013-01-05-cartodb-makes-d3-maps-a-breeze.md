@@ -6,6 +6,8 @@ tags:
 - TopoJSON
 - D3
 - SQL API
+categories:
+- 'How-to guides'
 ---
 
 <iframe frameborder="0" height="300" src="http://cartodb.s3.amazonaws.com/tumblr/posts/iframe.html" width="640"></iframe>

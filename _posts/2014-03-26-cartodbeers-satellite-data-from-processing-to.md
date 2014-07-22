@@ -8,6 +8,8 @@ tags:
 - chiara solimini
 - esa
 - earth observation
+categories:
+- 'Cartodbeers'
 ---
 
 <img src="http://i.imgur.com/8wYT3zx.jpg" alt=""/>

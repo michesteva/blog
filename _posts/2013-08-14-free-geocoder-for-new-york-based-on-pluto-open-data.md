@@ -7,6 +7,8 @@ tags:
 - data service
 - geocoder
 - nyc
+categories:
+- 'How-to guides'
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/flatiron-1.jpg" width="637px"/>

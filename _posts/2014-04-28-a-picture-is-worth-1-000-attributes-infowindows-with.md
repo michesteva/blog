@@ -8,6 +8,8 @@ tags:
 - NYC
 - maps
 - pictures
+categories:
+- 'New features'
 ---
 
 Google Street View is a fantastic <a href="https://www.google.com/maps/views/streetview?gl=us">Google technology</a> that provides panoramic views of many streets worldwide.  The service has some really curious pictures, and everybody loves using it to look for a restaurant or a museum. It kind of provides the last meter from map to actual object.

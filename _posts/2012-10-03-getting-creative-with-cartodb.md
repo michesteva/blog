@@ -5,6 +5,8 @@ tags:
 - example
 - sql
 - styles
+categories:
+- 'How-to guides'
 ---
 
 The combination of styling with SQL on CartoDB gives a surprising range of freedom to create data visualizations. I find myself often thinking about creative solutions to mapping data in interesting ways.

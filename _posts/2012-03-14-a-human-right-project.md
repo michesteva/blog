@@ -1,5 +1,5 @@
 ---
-title: 'A Human Right project  '
+title: 'A Human Right project'
 date: '2012-03-14T12:29:00+01:00'
 tags:
 - A Human Right
@@ -9,6 +9,8 @@ tags:
 - telemedicine
 - education
 - nonprofit
+categories:
+- 'Customer stories'
 ---
 
 <img alt="A Human Right" src="http://cartodb.s3.amazonaws.com/tumblr/posts/logo_ahr.png" title="A Human Right"/>

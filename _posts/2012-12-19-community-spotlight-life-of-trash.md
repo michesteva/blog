@@ -6,6 +6,8 @@ tags:
 - life of trash
 - mobile
 - spotlight
+categories:
+- 'Customer stories'
 ---
 
 <a href="http://www.lifeoftrash.com"><img alt="image" height="389" src="http://i.imgur.com/YDSF1.jpg" width="650"/></a>
@@ -24,7 +26,7 @@ What’s interesting about this specifically is that you never really think abou
 
 <a href="http://www.lifeoftrash.com"><img alt="image" height="389" src="http://i.imgur.com/fqYmR.jpg" width="650"/></a>
 
-Best of all he’s putting together a mobile application that will enable others to track the life of trash or recycling. By running the app on a mobile phone and then releasing it into the wild, “Life of Trash” will dynamically update the location of your trash and or recycling. 
+Best of all he’s putting together a mobile application that will enable others to track the life of trash or recycling. By running the app on a mobile phone and then releasing it into the wild, “Life of Trash” will dynamically update the location of your trash and or recycling.
 
 The experiment starts these evening and you can track the whole thing over at his <a href="http://www.lifeoftrash.com/">site</a>. 
 

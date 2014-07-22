@@ -7,6 +7,8 @@ tags:
 - password-protected
 - new-features
 - private tables
+categories:
+- 'New features'
 ---
 
 <img src="http://i.imgur.com/y8asLnx.png" alt=""/>

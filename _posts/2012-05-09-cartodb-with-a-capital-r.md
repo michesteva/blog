@@ -5,6 +5,8 @@ tags:
 - R
 - cartodb
 - Rstats
+categories:
+- 'New features'
 ---
 
 We love <a href="http://cran.r-project.org/">R</a> users, and for a while now we have known that R users would probably love CartoDB. Getting the two together has taken some time and our commitment to that goal is far from over. But today, we are happy to show off our first attempt at helping more R users to analyze and share their geospatial data, our new <a href="https://github.com/Vizzuality/cartodb-r">R package for CartoDB</a>.

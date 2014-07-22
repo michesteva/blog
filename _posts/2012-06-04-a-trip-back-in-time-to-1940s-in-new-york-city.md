@@ -6,6 +6,8 @@ tags:
 - census data
 - nyc
 - spatiality blog
+categories:
+- 'Customer stories'
 ---
 
 In 1943, four NYC newspapers published a local market analysis aimed at advertisers. The document was based on the 1940 Census and included hundreds of photos &amp; color-coded maps portraying the geographic patterns of monthly rent levels across the city. It also featured statistics and short narratives about the neighborhoods.

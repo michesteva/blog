@@ -6,6 +6,8 @@ tags:
 - Columbia Journalism School
 - Michael Keller
 - Data Journalism
+categories:
+- 'Customer stories'
 ---
 
 Which are the blocks in New York City that had the most New York Police Department stops in 2011? 

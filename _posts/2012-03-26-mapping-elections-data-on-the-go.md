@@ -7,6 +7,8 @@ tags:
 - Elections
 - Data journalism
 - Media
+categories:
+- 'How-to guides'
 ---
 
 <a href="http://vizzuality.s3.amazonaws.com/andalucia_map/index.html"><img align="top" alt="Elecciones Andalucía 2012" height="378" src="http://cartodb.s3.amazonaws.com/tumblr/posts/andalucia.png" width="690"/></a>

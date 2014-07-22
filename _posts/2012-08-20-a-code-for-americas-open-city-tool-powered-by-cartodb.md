@@ -5,6 +5,8 @@ tags:
 - code for america
 - open source
 - tools
+categories:
+- 'How-to guides'
 ---
 
 <a href="http://codeforamerica.org/">Code for America</a> is a non-profit organization developing open source projects for city governments. Through several initiatives, it's building a network of cities, citizens, community groups, and startups "committed to reimagining government for the 21st century".

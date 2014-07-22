@@ -8,6 +8,8 @@ tags:
 - guide
 - food banks
 - spain
+categories:
+- 'Customer stories'
 ---
 
 We welcome <a href="https://twitter.com/dani_latorre">Dani Latorre</a> in this guest post to let him tell us about a little project in which he has used CartoDB as part of the development. Stay tuned for more stories like this, and if you want, just write and tell us your stories@cartodb.com

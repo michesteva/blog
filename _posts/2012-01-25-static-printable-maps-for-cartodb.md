@@ -1,6 +1,8 @@
 ---
 title: Static, printable maps for CartoDB
 date: '2012-01-25T17:19:34+01:00'
+categories:
+- 'New features'
 ---
 
 <img height="450" src="https://github.com/silverbiology/cartodb-staticmap-php/raw/master/examples/images/point1.png" width="650"/>

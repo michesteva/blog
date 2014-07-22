@@ -4,6 +4,8 @@ date: '2012-07-26T18:14:00+02:00'
 tags:
 - The Wall Street Journal
 - Political Moneyball
+categories:
+- 'Customer stories'
 ---
 
 This week, The Wall Street Journal rolled out its <a href="http://graphics.wsj.com/political-moneyball/#">Political Moneyball graphic</a>, a visualization of the connections between political action committees, super PACS, campaigns and individuals. Based on the latest official Federal Election Commission data for the 2012 election, the project visualizes more than one million connections between donors and committees. The data is updated every month.

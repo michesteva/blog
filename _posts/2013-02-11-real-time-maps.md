@@ -5,6 +5,8 @@ tags:
 - real-time
 - traffic
 - opendata
+categories:
+- 'How-to guides'
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/traffic-BCN.png"/>

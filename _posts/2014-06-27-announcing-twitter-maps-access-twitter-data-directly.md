@@ -4,6 +4,8 @@ date: '2014-06-27T14:03:00+02:00'
 tags:
 - twitter maps
 - twitter
+categories:
+- 'New features'
 ---
 
 <img src="http://i.imgur.com/Ddn0h2m.png" alt=""/>

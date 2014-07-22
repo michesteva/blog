@@ -6,6 +6,8 @@ tags:
 - cartodb
 - release
 - OpenStreetMaps
+categories:
+- 'New features'
 ---
 
 <iframe frameborder="0" height="300" src="http://cartodb.s3.amazonaws.com/examples/hexagon/index.html" width="630"></iframe>
