@@ -14,11 +14,11 @@ js_assets:
       <h2 class="tit-section-s-lt post-title">{{ page.title }}</h2>
 
       <div class="post-meta">
-        {% unless post.categories.size == 0 %}
+        {% unless page.categories.size == 0 %}
           <p class="post-tags">
-            <i class="icon i-xs icons-tag h-malign i-medium"></i>
-            {% for categories_item in page.categories %}
-              <a href="{{ '/categories/' | append: category | prepend: site.baseurl }}">{{ category | first | capitalize}}</a>{% unless forloop.last %}, {% endunless %}
+            <i class="icon i-s icons-tag h-malign i-medium"></i>
+            {% for cat in page.categories %}
+              <a href="{{ '/categories/' | append: cat | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </p>
         {% endunless %}
@@ -62,16 +62,46 @@ js_assets:
   </div>
 
   <div class="post-relations">
-    <h2 class="relations-title"><span>MORE ENTRIES</span></h2>  
+    <h2 class="relations-title"><span>MORE ENTRIES</span></h2>
     <ul class="inb-list lst-post-relations">
-      {% for post in site.posts limit:4 %}
-        {% assign match = false %}
-        {% for cat in post.categories %}
-          {% if page.categories contains cat and page.url != post.url %}
-            {% assign match = true %}
+      {% assign counter = '4' %}
+
+      {% for page in site.pages %}
+        {% if page.layout == 'course' and page.published %}
+          {% capture counter %}{{ counter | minus:1 }}{% endcapture %}
+        {% endif %}
+      {% endfor %}
+
+      {% if page.categories.size != 0 %}
+        {% for post in site.posts %}
+          {% assign match = false %}
+          {% for cat in post.categories %}
+            {% if page.categories contains cat and page.url != post.url %}
+              {% assign match = true %}
+            {% endif %}
+          {% endfor %}
+
+          {% if match %}
+            {% capture counter %}{{ counter | minus:1 }}{% endcapture %}
+            {% unless counter contains '-' %}
+            <li>
+              <div class="lst-post-relations-inner">
+                <div class="relations-media h-pr">
+                  {% if post.layout_color %}
+                    <a href="{{ post.url }}" style="background-image: url({{ post.layout_color | prepend: site.baseurl }})" alt="{{ post.title }}" class="thumbnail with-layout-color"></a>
+                  {% else %}
+                    <a href="{{ post.url }}" alt="{{ post.title }}" class="thumbnail"></a>
+                  {% endif %}
+                </div>
+
+                <h2 class="h-txt-left"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+              </div>
+            </li>
+            {% endunless %}
           {% endif %}
         {% endfor %}
-        {% if match %}
+      {% else %}
+        {% for post in site.related_posts limit:4 %}
           <li>
             <div class="lst-post-relations-inner">
               <div class="relations-media h-pr">
@@ -85,9 +115,8 @@ js_assets:
               <h2 class="h-txt-left"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             </div>
           </li>
-        {% endif %}
-      {% endfor %}
+        {% endfor %}
+      {% endif %}
     </ul>
   </div>
-
 </div>

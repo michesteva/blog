@@ -345,7 +345,7 @@ a.btn-blue-tw.btn-background {
 
 .lst-nav-tags {
   font: 700 15px/20px 'Proxima Nova Sb';
-  margin-left: 4px;
+  margin: -18px 0 0 4px;
 
   > li  {
     border-bottom: 1px solid #EEEEEE;
@@ -364,7 +364,7 @@ a.btn-blue-tw.btn-background {
   overflow: hidden;
 
   input[type="text"] {
-    float: left; 
+    float: left;
     display: inline;
     padding: 12px;
     border: 0;
