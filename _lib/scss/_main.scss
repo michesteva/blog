@@ -4,6 +4,7 @@
 
 .content {
   background: #fff;
+  overflow: hidden;
 }
 
 .posts-list-index {
@@ -81,6 +82,7 @@
 
   p {
     position: relative;
+    z-index: 1; 
   }
 
   ul,
