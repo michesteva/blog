@@ -1,5 +1,5 @@
 blog.Views.Index = Backbone.View.extend({
-  el: document.body,
+  el: 'body',
 
   events: {
     'click': '_closeDialogs'

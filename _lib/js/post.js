@@ -1,5 +1,5 @@
 blog.Views.Post = Backbone.View.extend({
-  el: document.body,
+  el: 'body',
 
   events: {
     'click .btn-blue-tw': '_onClickTwitter',

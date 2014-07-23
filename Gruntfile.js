@@ -105,7 +105,8 @@ module.exports = function(grunt) {
           '_lib/js/vendor/underscore-min.js',
           '_lib/js/vendor/backbone-min.js',
           '_lib/js/app.js',
-          '_lib/js/ui/navbar.js'
+          '_lib/js/ui/navbar.js',
+          '_lib/js/ui/tooltip.js'
         ],
         dest: '.tmp/js/blog.js',
       }
