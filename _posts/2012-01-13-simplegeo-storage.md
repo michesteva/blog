@@ -28,7 +28,7 @@ Some time ago I loaded a dataset of public bathrooms in NY to SG Storage. It loo
 
 Unfortunately there is no easy way to just download the data from the UI and neither there is from the API. So I programmed a little Ruby script that uses the SimpleGeo official Ruby library to load all the data from a particular layer and exports it to a CSV.
 
- {% highlight text %}
+{% highlight ruby %}
 require 'rubygems'
 require 'simplegeo'
 require 'csv'
@@ -38,31 +38,27 @@ SimpleGeo::Client.set_credentials(oauth_token, oauth_secret)
 CSV.open("#{sg_layer.gsub(".","_")}.csv", "wb") do |csv|
   next_cursor=""
   header=false
-  #loop until next_cursor is nil  (pagination)
+  #loop until next_cursor is nil (pagination)
   #the query basically look for all records within the whole world as I couldnt find a way to download a full layer
-  while next_cursor do 
+  while next_cursor do
     puts "."
-    res = SimpleGeo::Client.get_nearby_records(sg_layer, 
-        :lat => 0,:lon => 0, :bbox=>'-90,-180,90,180', :limit=>500,:cursor=>next_cursor)
+    res = SimpleGeo::Client.get_nearby_records(sg_layer,
+        :lat => 0, :lon => 0, :bbox=>'-90,-180,90,180', :limit=>500, :cursor=>next_cursor)
     next_cursor = res[:next_cursor]
     res[:records].each do |row|
-  
+
     #add headers
     if !header
       csv << ["id", "lat", "lon","created"] + row[:record].properties.keys.map(&:to_s) - ["layer"]
       header=true
     else
-    #add records  
-      csv << [row[:record].id,row[:record].lat,row[:record].lon, row[:record].created.strftime("%Y-%m-%d %H:%M:%S")] + 
+    #add records
+      csv << [row[:record].id,row[:record].lat,row[:record].lon, row[:record].created.strftime("%Y-%m-%d %H:%M:%S")] +
         row[:record].properties.values - [sg_layer]
-    end    
-    
     end
   end
 end
-
 {% endhighlight %}
-
 
 _(update: Here is <a href="https://gist.github.com/1610866">another version</a> that will download all layers in your account)_
 
@@ -90,9 +86,12 @@ Now let say you want to perform API queries like <a href="https://simplegeo.com/
 
 {% highlight sql %}
 http://vizzuality.cartodb.com/api/v1/sql?q=
-SELECT * FROM (SELECT lat,lon,name, 
-ST_Distance(ST_SetSRID(ST_MakePoint(-73.9967,40.724805),4326)::geography,the_geom::geography) as distance_meters 
-FROM com_vizzuality_nycbathrooms) as q WHERE distance_meters < 1500
+SELECT * FROM (
+  SELECT lat,lon,name,
+         ST_Distance(ST_SetSRID(ST_MakePoint(-73.9967,40.724805),4326)::geography,the_geom::geography) as distance_meters
+  FROM com_vizzuality_nycbathrooms
+) as q
+WHERE distance_meters < 1500
 {% endhighlight %}
 
 <a href="http://vizzuality.cartodb.com/api/v1/sql?q=SELECT%20*%20FROM%20(SELECT%20lat,lon,name,%20ST_Distance(ST_SetSRID(ST_MakePoint(-73.9967,40.724805),4326)::geography,the_geom::geography)%20as%20distance_meters%20FROM%20com_vizzuality_nycbathrooms)%20as%20q%20WHERE%20distance_meters%20%3C%201500">Run this query yourself</a>

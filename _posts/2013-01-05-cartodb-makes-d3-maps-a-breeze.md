@@ -20,8 +20,8 @@ We have done a lot of client-side rendering expirements over the past year or so
 
 Using CartoDB's SQL API, you can load GeoJSON straight from your CartoDB table into your D3 application. CartoDB will turn any of your geometries into valid GeoJSON on the fly through the SQL API. All you have to do is include the format=geojson parameter on your requests. From there, making maps is simple and you can use D3's Ajax support to directly access your data from CartoDB as follows, 
 
- {% highlight json %}
- d3.json("http://account_name.cartodb.com/api/v2/sql?q=SELECT * FROM table_name WHERE the_geom IS NOT NULL&format=geojson&dp=5", function(collection) { 
+{% highlight javascript %}
+d3.json("http://account_name.cartodb.com/api/v2/sql?q=SELECT * FROM table_name WHERE the_geom IS NOT NULL&format=geojson&dp=5", function(collection) {
   svg.select("#layer_id")
     .selectAll("path")
     .data(collection.features)
@@ -30,7 +30,6 @@ Using CartoDB's SQL API, you can load GeoJSON straight from your CartoDB table i
     .attr("d", path.projection(xy));
 });
 {% endhighlight %}
-
 
 Paired with <a href="https://github.com/mbostock/d3/wiki/Geo-Paths">d3.geo</a>, you can quickly develop maps. If you are eager to dive in, take a look at a few code examples: basic <a href="http://bl.ocks.org/4448106" title="CartoDB D3 Choropleth">Choropleth</a>, <a href="http://bl.ocks.org/4448162" title="CartoDB D3">Bubble map</a>, and <a href="http://bl.ocks.org/4455569" title="CartoDB D3">Earthquakes</a>.
 

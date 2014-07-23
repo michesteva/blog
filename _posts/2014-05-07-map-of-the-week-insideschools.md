@@ -26,13 +26,12 @@ Most recently I helped Insideschools map **newly launched pre-kindergarden progr
 
 The first thing I had to do to map this data was clean up two datasets, one for total pre-k programs and another for just the new programs being added to public schools. **I did this by first selecting the data from their Excel sheets, copying them to new files, removing white spaces in column headers and saving the data in a CSV format**. I then imported both tables to CartoDB and used CartoDB's geocoding service to map the addresses of each school to lattitude and longitude coordinates. As there was no clear way to tell which programs were the additions in the data set for the total pre-k programs I merged both datasets using the school's unique identifier (DBN number) to determine which programs were new additions and which were existing. With the newly merged table I made in CartoDB I determined any rows that had <code>null</code> values from all the 2nd table's columns to be existing programs.
 
-
 ### Styling
 
 From here I styled the data so that new programs stood out on the map in an yellow-orange marker while existing programs fell towards the back in a blue marker style. I chose CartoDB's "GMaps Gray Roadmap style" so that the map colors wouldn't conflict with the data I was visualizing. (I prefer this basemap style when the user still needs to view details on the map such as street labels, landmarks and parks). To help the new programs stand out even further I used a basic <code>SQL</code> statement that ensures markers representing new programs will be on top of the data stacking order (or so that the yellow-orange markers wouldn't be covered by the blue markers).
 
- {% highlight sql %}
- SELECT * FROM pre_k_adds_merge ORDER BY expansion_type DESC
+{% highlight sql %}
+SELECT * FROM pre_k_adds_merge ORDER BY expansion_type DESC
 {% endhighlight %}
 
 ### Infowindows
