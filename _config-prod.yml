@@ -1,7 +1,7 @@
 env: 'production'
 destination: '.tmp'
 title: CartoDB Blog
-description: "We love Open Data. CartoDB is a geospatial database on the cloud to allow development of location aware applications quickly and easily."
+description: "All things CartoDB. New features, how-to guides, updates on events and conferences. Learn about CartoDB and online mapping with our blog."
 keywords: "cartodb, map of the week, nonprofits, cartodb partners, examples"
 baseurl: ""
 url: "http://blog.cartodb.com"
