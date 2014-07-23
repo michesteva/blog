@@ -19,6 +19,7 @@ academy-baseurl: 'http://academy.cartodb.com'
 
 analytics_property_id: ''
 mixpanel_token: ''
+mailchimp_id: ''
 
 defaults:
   -
