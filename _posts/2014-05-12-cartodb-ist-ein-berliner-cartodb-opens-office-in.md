@@ -8,7 +8,7 @@ tags:
 - berlin
 - cartodbeers
 categories:
- - 'Cartodbeers'
+ - 'Events and conferences'
 ---
 
 <img src="http://i.imgur.com/GfIK76P.png" alt=""/>
