@@ -53,28 +53,26 @@ The loaded shapefile and baselayer will give you this:
 
 Great, I can see the doughnut hole (and the Cuban EEZ), but the colors are all the same! CartoCSS comes to rescue. My attributes table has a ‘color’ column that ranges from 1 to 16. Each integer indicates a distinctive color that I manually assigned to each EEZ (<a href="http://en.wikipedia.org/wiki/Four_color_theorem">Four-colour theorem</a> won't work here because of the non-contiguous overseas territories). So assigning colours now is a matter of writing the conditional CartoCSS:
 
-{ {% highlight css %}
+{% highlight scss %}
 #eez [zoom>=0]{
-   opacity: 0.7;
-   line-opacity: 0.4;
-   line-color:#b8dee6;
-   line-width:0.8;
-   line-join:round;
-   line-opacity:0.4;
+  opacity: 0.7;
+  line-opacity: 0.4;
+  line-color:#b8dee6;
+  line-width:0.8;
+  line-join:round;
+  line-opacity:0.4;
 }
 #eez[color=1] {
-   polygon-fill: #7B00B4;
+  polygon-fill: #7B00B4;
 }
- 
 #eez[color=2] {
-   polygon-fill: #A6CEE3;
+  polygon-fill: #A6CEE3;
 }
 #eez[color=3] {
-   polygon-fill: #CAB2D6;
+  polygon-fill: #CAB2D6;
 }
 ...
 {% endhighlight %}
-
 
 However, a cursory look at the South China Sea reveals numerous disputed EEZs:
 
@@ -82,8 +80,8 @@ However, a cursory look at the South China Sea reveals numerous disputed EEZs:
 
 How one should colour them? I chose to use stripes: if the dispute is between a yellow-color EEZ and an orange-color EEZ, the contested area will be filled with <img src="http://i.imgur.com/ylyTjYp.png" class="inline"/>. My CartoCSS would then specify:
 
- {% highlight css %}
- #eez[country="Australia / Papua New Guinea"] {
+{% highlight scss %}
+#eez[country="Australia / Papua New Guinea"] {
   polygon-pattern-file:url('img/australia_papua.png');
 }
 {% endhighlight %}
@@ -98,14 +96,14 @@ Now that I have EEZs mapped on top of the seabed, it's time for doughnut holes t
 
 Each row is a donut hole with its point-wise location (the_geom), name, description and sources used in the description. I style a custom infowindow:
 
- {% highlight html %}
- <div class="cartodb-popup dark">
+{% highlight html %}
+<div class="cartodb-popup dark">
   <a href="#close" class="cartodb-popup-close-button close">x</a>
   <div class="cartodb-popup-content-wrapper">
     <div class="cartodb-popup-content">
       <h4>{{name}}</h4>
-		<p>{{{description}}}</p>
-		<p class="sources">Sources: {{{sources}}}</p>
+      <p>{{{description}}}</p>
+      <p class="sources">Sources: {{{sources}}}</p>
     </div>
   </div>
   <div class="cartodb-popup-tip-container"></div>
@@ -126,45 +124,44 @@ The user should always know the EEZ sovereignty. Javi Santana developed a nice <
 
 Some would also love to explore the complex ocean floor that shapes the doughnut holes. This can be done by setting the #eez [zoom&gt;=0]{polygon-opacity: 0;} on button click. With <a href="https://jqueryui.com/">jQuery UI</a>, it goes along these lines:
 
- {% highlight css %}
- $('#colorpoly').bind('change', function(){
-	if($(this).is(':checked')){
-		// "color polygons" box was checked
-		layer.getSubLayer(0).setCartoCSS('#eez [zoom>=0]{ opacity: 0.7; }');
-	}
-	else {
-		layer.getSubLayer(0).setCartoCSS('#eez [zoom>=0]{ polygon-opacity: 0;}');
-	}
-});	
+{% highlight scss %}
+$('#colorpoly').bind('change', function(){
+  if($(this).is(':checked')){
+    // "color polygons" box was checked
+    layer.getSubLayer(0).setCartoCSS('#eez [zoom>=0]{ opacity: 0.7; }');
+  } else {
+    layer.getSubLayer(0).setCartoCSS('#eez [zoom>=0]{ polygon-opacity: 0;}');
+  }
+});
 {% endhighlight %}
 
 This code uses <a href="http://developers.cartodb.com/documentation/cartodb-js.html#sec-3-28">setCartoCSS()</a> from CartoDB.js to style the polygons with a given CSS.
 Finally, the impatient few might want to jump from one doughnut hole to another, so I provide the list:
 
- {% highlight css %}
- <ul>
-	<li><a href="#" class="donutholes">Gulf of Mexico</a></li>
-	<li><a href="#" class="donutholes">Barents Sea</a></li>
-	<li><a href="#" class="donutholes">Bering Sea</a></li>
-	<li><a href="#" class="donutholes">Philippine Sea</a></li>
-	<li><a href="#" class="donutholes">Sea of Okhotsk</a></li>
+{% highlight html %}
+<ul>
+  <li><a href="#" class="donutholes">Gulf of Mexico</a></li>
+  <li><a href="#" class="donutholes">Barents Sea</a></li>
+  <li><a href="#" class="donutholes">Bering Sea</a></li>
+  <li><a href="#" class="donutholes">Philippine Sea</a></li>
+  <li><a href="#" class="donutholes">Sea of Okhotsk</a></li>
 </ul>
 {% endhighlight %}
 
 Clicking on each item will zoom the map there with the aid of the following jQuery UI + CartoDB.js:
 
- {% highlight sql %}
- $(".donutholes").click(function(e) {
-	// Get the name of the clicked hole
-		var donuthole = event.target.text;
-		sql.getBounds("select * From donutholes where name Like '" + donuthole + "'").done(function(bounds) {
-		// Extend the pointwise bounds by 10 degrees to enjoy higher zoom level when zooming to feature
-			var p1 = bounds[0][0] - 10;
-			var p2 = bounds[0][1] - 10;
-			var p3 = bounds[1][0] + 10;
-			var p4 = bounds[1][1] + 10;
-			map.fitBounds([[p1,p2],[p3,p4]]);
-		});          
+{% highlight javascript %}
+$(".donutholes").click(function(e) {
+  // Get the name of the clicked hole
+  var donuthole = event.target.text;
+  sql.getBounds("select * From donutholes where name Like '" + donuthole + "'").done(function(bounds) {
+    // Extend the pointwise bounds by 10 degrees to enjoy higher zoom level when zooming to feature
+    var p1 = bounds[0][0] - 10;
+    var p2 = bounds[0][1] - 10;
+    var p3 = bounds[1][0] + 10;
+    var p4 = bounds[1][1] + 10;
+    map.fitBounds([[p1,p2],[p3,p4]]);
+  });
 });
 {% endhighlight %}
 

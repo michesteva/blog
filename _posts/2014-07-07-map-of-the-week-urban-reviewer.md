@@ -40,18 +40,18 @@ Urban Reviewer uses a <a href="http://leafletjs.com/">Leaflet</a> map with a <a 
 
 We style the lots using some pretty basic CartoCSS that makes the lines around the lots thicker when zoomed out:
 
- {% highlight css %}
- #lots {
-        polygon-fill: #FFFFFF;
-        polygon-opacity: 0.7;
-        line-color: #000;
-        line-width: 0.5;
-        line-opacity: 0.75;
- 
-        [zoom < 14] {
-            line-width: 1;         
-        }     
-    }
+{% highlight scss %}
+#lots {
+  polygon-fill: #FFFFFF;
+  polygon-opacity: 0.7;
+  line-color: #000;
+  line-width: 0.5;
+  line-opacity: 0.75;
+
+  [zoom < 14] {
+    line-width: 1;
+  }
+}
 {% endhighlight %}
 
 ### Interactivity
@@ -67,17 +67,18 @@ First of all, it's helpful to be able to see the boundaries of a plan while movi
 **This is one area where CartoDB's SQL API really shines**. Traditionally you would need to write code on a server that would collect the relevant geometries and process them. With the SQL API we could write a few lines of JavaScript that ask CartoDB for exactly what we needed. **We created a <a href="http://postgis.net/docs/manual-2.0/">PostGIS</a> SQL query that selects all the lots in a plan, combines their shapes, finds the convex hull of this shape, then buffers that shape a bit to add some space between the lots and the boundary line.**
 
 
- {% highlight sql %}
- SELECT ST_Buffer(ST_ConvexHull(ST_Union(l.the_geom)), 0.0001) AS the_geom     FROM lots l LEFT JOIN plans p ON p.cartodb_id = l.plan_id
-    WHERE p.name = 'PLAN_NAME'
+{% highlight sql %}
+SELECT ST_Buffer(ST_ConvexHull(ST_Union(l.the_geom)), 0.0001) AS the_geom
+FROM lots l LEFT JOIN plans p ON p.cartodb_id = l.plan_id
+WHERE p.name = 'PLAN_NAME'
 {% endhighlight %}
 
 After testing the query in CartoDB's SQL console, we added code to get the results as a GeoJSON file and add them to a Leaflet <a href="http://leafletjs.com/reference.html#geojson">GeoJSON layer</a> in just a few more lines:
 
- {% highlight sql %}
- var sql = 'SELECT ST_Buffer ...'; // The rest of our SQL query, as above
+{% highlight javascript %}
+var sql = 'SELECT ST_Buffer ...'; // The rest of our SQL query, as above
 $.getJSON('http://urbanreviewer.cartodb.com/api/v2/sql/?format=GeoJSON&sql=' + sql, function (data) {
-    addBoundaryToLeaflet(data);
+  addBoundaryToLeaflet(data);
 });
 {% endhighlight %}
 
@@ -89,11 +90,11 @@ When a plan is selected we also highlight the lots within that plan:
 
 We accomplish this by <a href="http://developers.cartodb.com/documentation/cartodb-js.html#sec-3-28">setting the layer's CartoCSS</a> using the CartoCSS above and adding a little more:
 
- {% highlight css %}
- // Plan-higlighting CartoCSS
-    #lots[plan_name="PLAN_NAME"]{
-        polygon-fill: #FFFFCC;
-    }
+{% highlight scss %}
+// Plan-higlighting CartoCSS
+#lots[plan_name="PLAN_NAME"]{
+  polygon-fill: #FFFFCC;
+}
 {% endhighlight %}
 
 The slightly tricky part is that in our JavaScript code, before we set the layer's CartoCSS, we dynamically replace <code>PLAN_NAME</code> with the name of the plan that was selected. You can see more details of how we do this in <a href="https://github.com/596acres/urbanreviewer/blob/gh-pages/js/plansmap.js#L222-L237">the code</a> if that's your thing.
@@ -102,9 +103,10 @@ The slightly tricky part is that in our JavaScript code, before we set the layer
 
 Finally, when you mouse over a lot (either in the list view or on the map) the lot is highlighted in a similar way to how we highlight the plans. First we grab the lot's geometry with some SQL:
 
- {% highlight sql %}
- SELECT l.the_geom AS the_geom     FROM lots l
-    WHERE [...] // Where lot is the one the user is hovering over
+{% highlight sql %}
+SELECT l.the_geom AS the_geom
+FROM lots l
+WHERE [...] // Where lot is the one the user is hovering over
 {% endhighlight %}
 
 And then we get the geometry using the SQL API and add the GeoJSON to a Leaflet layer. This is nice because we can overlay an outline around the lot without updating the layer's CartoCSS. That would force the entire layer to refresh just to add a line around one shape!

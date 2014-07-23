@@ -48,18 +48,17 @@ In the list only georeferenced food banks are being shown. I'm not showing those
 
 Even if you don't know much about Ruby, the code is pretty self explanatory:
 
- {% highlight sql %}
- sql = "SELECT * from bancosdealimentos WHERE the_geom is not NULL"
+{% highlight ruby %}
+sql = "SELECT * from bancosdealimentos WHERE the_geom is not NULL"
 url = "https://danilat.cartodb.com/api/v2/sql?q=#{sql}&api_key=#{ENV['API_KEY']}"
-response = RestClient.get URI.escape(url) 
+response = RestClient.get URI.escape(url)
 data = JSON.parse(response)
 {% endhighlight %}
 
-
 Adding new food banks is also quite evident with a minimum knowledge of SQL, as shown in this code snippet:
 
- {% highlight sql %}
- sql = "INSERT INTO bancosdealimentos (full_address, contact, type) VALUES ('#{address}', '#{contact}', '')"
+{% highlight ruby %}
+sql = "INSERT INTO bancosdealimentos (full_address, contact, type) VALUES ('#{address}', '#{contact}', '')"
 url = "https://danilat.cartodb.com/api/v2/sql?api_key=#{ENV['API_KEY']}"
 response = RestClient.post URI.escape(url), :q => sql
 {% endhighlight %}

@@ -43,18 +43,18 @@ Next up, working with Loomstate I added more content. We drafted a list of steps
 
 In order to give a coherence to the whole process, and illustrate the path from beginning to finish, we added a vizjson. To do so, we first created a table with each latitude/longitude location included in the steps of the process. After importing this table into CartoDB, we ran a basic SQL query to join them into a linestring. It looked like this:
 
- {% highlight sql %}
-{SELECT ST_MakeLine(the_geom_webmercator) 
-  AS the_geom_webmercator 
-  FROM loomstateviz
+{% highlight sql %}
+SELECT ST_MakeLine(the_geom_webmercator)
+AS the_geom_webmercator
+FROM loomstateviz
 {% endhighlight %}
 
 <img src="http://i.imgur.com/p94lR17.png" alt="Imgur"/>
 
 We loaded that into the config block of our Odyssey.js visualization by adding a line that looks like:
- 
- {% highlight text %}
- -vizjson: 
+
+{% highlight text %}
+-vizjson:
 “http://{your username}.cartodb.com/api/v2/viz/{unique viz ID}/viz.json”
 {% endhighlight %}
 

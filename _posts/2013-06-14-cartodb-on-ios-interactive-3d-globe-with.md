@@ -44,8 +44,8 @@ It's all up on <a href="https://github.com/mousebird/cartodbexample">GitHub</a>,
 
 Let's start with the basics.  We want to toss up a globe and we want to get the user taps back via the delegate.
 
- {% highlight text %}
- // Create an empty globe and tie it in to the view hierarchy
+{% highlight objective-c %}
+// Create an empty globe and tie it in to the view hierarchy
 globeViewC = [[WhirlyGlobeViewController alloc] init];
 globeViewC.delegate = self;
 [self.view addSubview:globeViewC.view];
@@ -53,15 +53,14 @@ globeViewC.view.frame = self.view.bounds;
 [self addChildViewController:globeViewC];
 {% endhighlight %}
 
-
 Next, we want a nice base layer to look at and we'll rotate to San Francisco on startup.
 
- {% highlight text %}
- // This is a nice base layer with water and elevation, but no labels or boundaries
+{% highlight objective-c %}
+// This is a nice base layer with water and elevation, but no labels or boundaries
 MaplyQuadEarthWithRemoteTiles *layer = [[MaplyQuadEarthWithRemoteTiles alloc] initWithBaseURL:@"http://a.tiles.mapbox.com/v3/mousebird.map-2ebn78d1/" ext:@"png" minZoom:0 maxZoom:12];
 [globeViewC addLayer:layer];
 
- // Let's start up over San Francisco, center of the universe
+// Let's start up over San Francisco, center of the universe
 [globeViewC animateToPosition:MaplyCoordinateMakeWithDegrees(-122.4192, 37.7793) time:1.0];
 {% endhighlight %}
 
@@ -71,8 +70,8 @@ Here's what that gets you: An interactive globe with an automatically paging til
 
 Cool, but the whole point is display the country where the user taps.  We can get that by filling in one of the delegate methods and then kicking off a query to CartoDB.
 
- {% highlight text %}
- - (void)globeViewController:(WhirlyGlobeViewController *)viewC didTapAt:(WGCoordinate)coord
+{% highlight objective-c %}
+- (void)globeViewController:(WhirlyGlobeViewController *)viewC didTapAt:(WGCoordinate)coord
 {
     // We need degrees for the query, even if we work in radians internally
     float lat = coord.y * 180.0 / M_PI;
@@ -89,7 +88,7 @@ Cool, but the whole point is display the country where the user taps.  We can g
 
     // Kick off the request with AFNetworking.  We can deal with the result in a block
     NSURLRequest *request = [NSURLRequest requestWithURL:
-                             [NSURL URLWithString:[queryStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+                            [NSURL URLWithString:[queryStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
     AFJSONRequestOperation *operation =
     [AFJSONRequestOperation JSONRequestOperationWithRequest:request
             success:
@@ -105,12 +104,11 @@ Cool, but the whole point is display the country where the user taps.  We can g
      {
      }
      ];
-    
+
     // Kick off the network request
     [operation start];
 }
 {% endhighlight %}
-
 
 I'm using <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking</a> here which is a really nice library for doing network calls on iOS and it uses a lot of modern Objective-C constructs, like <a href="http://developer.apple.com/library/ios/#documentation/cocoa/Conceptual/Blocks/Articles/00_Introduction.html">blocks</a>.  Block syntax often looks like a cat puked on your keyboard, but it works really, really well.
 
@@ -123,13 +121,13 @@ All we're doing here is:
 
 Adding the vector outline and label looks like this.
 
- {% highlight text %}
- // Add an admin0 (country, basically) outline and label
+{% highlight objective-c %}
+// Add an admin0 (country, basically) outline and label
 - (void)addCountry:(MaplyVectorObject *)vecs
 {
     if (!vecs)
         return;
-    
+
     // Add the the vectors to the globe with a line width a color and other parameters
     [globeViewC addVectors:@[vecs] desc:
      @{kMaplyColor: [UIColor whiteColor],kMaplyVecWidth: @(5.0),kMaplyDrawOffset: @(4.0),kMaplyFade: @(1.0)}];
@@ -146,10 +144,9 @@ Adding the vector outline and label looks like this.
         admin0Label.layoutImportance = 1.0;
         [globeViewC addScreenLabels:@[admin0Label] desc:
          @{kMaplyColor: [UIColor whiteColor],kMaplyFont: [UIFont boldSystemFontOfSize:20.0],kMaplyShadowColor: [UIColor blackColor], kMaplyShadowSize: @(1.0), kMaplyFade: @(1.0)}];
-    }    
+    }
 }
 {% endhighlight %}
-
 
 We toss the vector feature up there with a little styling and then do the same for the label.  Tap around a little bit and you'll get something like this.
 
@@ -159,6 +156,6 @@ Pretty easy, and all based on open source.
 
 **The Conclusion**
 
-CartoDB is really neat and I'd love to see more apps using it as their spatial data back end.  Setting this example up was incredibly easy and it's very fluid.
+CartoDB is really neat and I'd love to see more apps using it as their spatial data back end. Setting this example up was incredibly easy and it's very fluid.
 
 The version on <a href="https://github.com/mousebird/cartodbexample">GitHub</a> does a few more things, like query the admin1 outlines and keep track of how much we're displaying.  It does all this on other threads, because when you do your data processing on the main thread you make an Apple UX designer cry.
