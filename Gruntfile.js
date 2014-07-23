@@ -88,6 +88,7 @@ module.exports = function(grunt) {
               '*.{ico,png,txt}',
               'fonts/{,*/}*.*',
               '**/*.html',
+              '**/*.xml',
               'img/**/*.*'
             ]
           },
