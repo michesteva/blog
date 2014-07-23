@@ -180,7 +180,6 @@ module.exports = function(grunt) {
     'uglify',
     // 'concurrent:prod',
     'cssmin',
-    'htmlmin',
     'hashres'
   ]);
 
