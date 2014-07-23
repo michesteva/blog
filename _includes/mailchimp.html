@@ -98,7 +98,7 @@
 
 </style>
 <div id="mc_embed_signup">
-<form action="http://vizzuality.us2.list-manage1.com/subscribe/post?u=177f02bad7857b7358dc1d0fd&amp;id={{page.mailchimp_id}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="http://vizzuality.us2.list-manage1.com/subscribe/post?u=177f02bad7857b7358dc1d0fd&amp;id={{site.mailchimp_id}}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div class="mc-field-group">
       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" data-label="Email Address">
     </div>
@@ -107,7 +107,7 @@
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
       </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_177f02bad7857b7358dc1d0fd_{{page.mailchimp_id}}" value=""></div>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_177f02bad7857b7358dc1d0fd_{{site.mailchimp_id}}" value=""></div>
 </div>
 <script type="text/javascript">
 var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
@@ -174,7 +174,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://vizzuality.us2.list-manage.com/subscribe/post-json?u=177f02bad7857b7358dc1d0fd&id={{page.mailchimp_id}}&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://vizzuality.us2.list-manage.com/subscribe/post-json?u=177f02bad7857b7358dc1d0fd&id={{site.mailchimp_id}}&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
