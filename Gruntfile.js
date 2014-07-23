@@ -178,7 +178,8 @@ module.exports = function(grunt) {
     'copy:prod',
     'concat',
     'uglify',
-    'concurrent:prod',
+    // 'concurrent:prod',
+    'cssmin',
     'hashres'
   ]);
 
