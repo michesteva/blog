@@ -21,11 +21,11 @@
             {% include mailchimp.html %}
 
             <p class="post-info-subscribe">
-              <i class="icon i-s icons-twitter-blue h-malign"></i>
-              <a href="https://twitter.com/cartoDB" class="h-iblock h-malign">Follow us on Twitter</a>
-              <span class="h-iblock h-malign">
-                or
+              <span class="btn-follow">
+                <a href="https://twitter.com/twitterapi" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @twitterapi</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
               </span>
+
               <i class="icon i-s icons-rss h-malign"></i>
               <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="h-iblock h-malign">Subscribe via RSS</a>.</p>
           </div>

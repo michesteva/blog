@@ -74,7 +74,7 @@
     font: 18px/28px 'Proxima Nova Rg';
     color: #666;
     & + h3 {
-      margin-top: 60px; 
+      margin-top: 60px;
     }
   }
 
@@ -327,7 +327,11 @@ a.btn-blue-tw.btn-background {
 .post-info-subscribe {
   padding: 20px 0;
   color: #666;
-  font: 200 14px 'Proxima Nova Lt';
+  font: 200 14px/20px 'Proxima Nova Lt';
+}
+
+.btn-follow {
+  float: left;
 }
 
 .pagination {
@@ -494,7 +498,7 @@ a.btn-blue-tw.btn-background {
   height: 10px;
 }
 
-.icons-rss { margin-left: 8px; }
+.icons-rss { margin-left: 18px; }
 
 .icon-pagination {
   width: 23px;
