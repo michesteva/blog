@@ -25,7 +25,7 @@ blog.Views.Post = Backbone.View.extend({
   _onClickFacebook: function(e) {
     var href = $(e.target).closest('a').attr('href');
 
-    javascript:window.open(href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    javascript:window.open(href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600');
     ga('send', 'event', 'button', 'click', 'facebook');
 
     return false;
