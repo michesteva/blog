@@ -2,11 +2,6 @@
   margin-top: -50px;
 }
 
-.content {
-  background: #fff;
-  overflow: hidden;
-}
-
 .posts-list-index {
   margin-top: -40px;
 }
@@ -82,7 +77,7 @@
 
   p {
     position: relative;
-    z-index: 1; 
+    z-index: 1;
   }
 
   ul,
@@ -252,15 +247,22 @@
   }
 }
 
+a.btn-blue-fb.btn-background,
+a.btn-blue-tw.btn-background {
+  color: #fff;
+
+  > span {
+    padding: 6px 20px;
+  }
+}
+
 a.btn-blue-fb.btn-background {
   background: #3C5998;
-  color: #fff;
   border: 2px solid #3C5998;
 }
 
 a.btn-blue-tw.btn-background {
   background: #66B5D2;
-  color: #fff;
   border: 2px solid #66B5D2;
 }
 
@@ -415,18 +417,6 @@ a.btn-blue-tw.btn-background {
   }
 }
 
-a.btn-blue-fb.btn-background {
-  background: #3C5998;
-  color: #fff;
-  border: 2px solid #3C5998;
-}
-
-a.btn-blue-tw.btn-background {
-  background: #66B5D2;
-  color: #fff;
-  border: 2px solid #66B5D2;
-}
-
 @media (max-width: $medium-width) {
   .wrap {
     max-width: 100%;
@@ -483,6 +473,18 @@ a.btn-blue-tw.btn-background {
   width: 19px;
 }
 
+.i-xxs.icons-btn-twitter {
+  width: 19px;
+  height: 16px;
+  margin: 0 10px -3px 0;
+}
+
+.i-xxs.icons-btn-facebook {
+  width: 8px;
+  height: 16px;
+  margin: 0 10px -3px 0;
+}
+
 .i-xxs.i-pagination {
   width: 6px;
   height: 10px;
@@ -509,3 +511,4 @@ a.btn-blue-tw.btn-background {
 .gist .gist-file .gist-meta { font-size: 65% !important; }
 .gist-data { font-size: 15px !important;  line-height: 17px !important; background: white !important; }
 .gist-file { margin: 10px 0 21px !important; color: #4B4B4B !important; }
+
