@@ -73,6 +73,9 @@
     margin-bottom: 20px;
     font: 18px/28px 'Proxima Nova Rg';
     color: #666;
+    & + h3 {
+      margin-top: 60px; 
+    }
   }
 
   p {
@@ -106,6 +109,7 @@
     font: 700 20px/30px 'Proxima Nova Bd';
     margin: 40px auto 10px;
   }
+
 
   iframe {
     margin-bottom: 20px;
