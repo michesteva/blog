@@ -3,5 +3,4 @@ node_modules
 _site
 .DS_Store
 .tmp/
-s3_website.yml
 .ruby-version

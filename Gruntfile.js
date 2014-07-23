@@ -150,7 +150,7 @@ module.exports = function(grunt) {
     concurrent: {
       prod: [
         'cssmin',
-        // 'htmlmin'
+        'htmlmin'
       ],
       dist: [
         'compass:dist',
