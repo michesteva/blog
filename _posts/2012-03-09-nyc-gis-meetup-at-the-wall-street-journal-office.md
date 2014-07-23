@@ -4,7 +4,7 @@ date: '2012-03-09T17:41:00+01:00'
 tags:
 - cartodb
 - Where 2.0 Conference
-- O'Reilly
+- OReilly
 - Street Easy
 - OpenStreetMaps
 - MapBox
