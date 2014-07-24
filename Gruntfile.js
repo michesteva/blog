@@ -52,6 +52,7 @@ module.exports = function(grunt) {
         files: [
           '{,*/}*.html',
           '{,*/}*.md',
+          '*.*',
           'img/**/*.*'
         ],
         tasks: ['shell:dist', 'compass:dist', 'copy:dist']
@@ -89,6 +90,7 @@ module.exports = function(grunt) {
               'fonts/{,*/}*.*',
               '**/*.html',
               '**/*.xml',
+              '**/*.json',
               'img/**/*.*'
             ]
           },

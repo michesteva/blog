@@ -11,7 +11,7 @@
         <p class="h-vspace-s">
           <i class="icon i-s icons-tag h-malign i-medium"></i>
           {% for cat in post.categories %}
-            <a href="{{ '/categories/' | append: cat | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
+            <a href="{{ '/categories/' | append: cat | downcase | replace: ' ', '-' | append: '/' | prepend: site.baseurl }}">{{ cat | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         </p>
       {% endunless %}
@@ -29,7 +29,7 @@
           {% endif %}
         {% endfor %}
 
-        <p class="post-author">by <img src="{{ author_avatar | prepend: site.baseurl }}" alt="{{ author_name }}" class="h-iblock h-malign" /> <a href="{{ '/author/' | append: author_slug | prepend: site.baseurl }}">{{ author_name }}</a></p>
+        <p class="post-author">by <img src="{{ author_avatar | prepend: site.baseurl }}" alt="{{ author_name }}" class="h-iblock h-malign" /> <a href="{{ '/author/' | append: author_slug | append: '/' | prepend: site.baseurl }}">{{ author_name }}</a></p>
       {% endif %}
     </div>
   </div>
@@ -37,7 +37,7 @@
   <div class="post-inner h-txt-left">
     {% if post.layout_color %}
       <div class="wrap">
-        <p><a href="{{ post.url }}" class="wrap-border"><img src="{{ post.layout_color }}" alt="{{ post.title }}" /></a></p>
+        <p><a href="{{ post.url | prepend: site.baseurl }}" class="wrap-border"><img src="{{ post.layout_color }}" alt="{{ post.title }}" /></a></p>
       </div>
     {% endif %}
 

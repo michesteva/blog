@@ -1,0 +1,15 @@
+---
+layout: none
+---
+
+{
+  "posts": [
+    {% for post in site.posts | limit:5 %}
+    {
+      "title"     : "{{ post.title }}",
+      "post_url"  : "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
+      "date"      : "{{ post.date }}"
+    }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+  ] 
+}

@@ -2,7 +2,7 @@
 title: Mapping elections data on the go
 date: '2012-03-26T11:09:00+02:00'
 tags:
-- Andalucía
+- Andalucia
 - Andalusia
 - Elections
 - Data journalism
