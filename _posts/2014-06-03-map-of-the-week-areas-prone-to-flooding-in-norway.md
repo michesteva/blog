@@ -5,7 +5,7 @@ tags:
 - cartodb
 - norway
 - nrk
-- "Øyvind bye skille"
+- "Oyvind bye skille"
 categories:
 - 'Map of the Week'
 ---
