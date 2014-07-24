@@ -7,7 +7,7 @@
 
             <ul class="lst-nav-tags">
             {% for cat in site.categories %}
-              <li><a href="{{ '/categories/' | append: cat[0] | downcase | replace: ' ', '-' | prepend: site.baseurl }}">{{ cat[0] | capitalize }}</a></li>
+              <li><a href="{{ '/categories/' | append: cat[0]| downcase | replace: ' ', '-' | append: '/' | prepend: site.baseurl }}">{{ cat[0] | capitalize }}</a></li>
             {% endfor %}
             </ul>
           </div>
