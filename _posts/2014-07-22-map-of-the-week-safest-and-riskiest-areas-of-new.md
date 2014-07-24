@@ -10,6 +10,8 @@ categories:
 - 'Map of the Week'
 ---
 
+
+
 <a href="http://www.nydailynews.com/new-york/nyc-crime/daily-news-analysis-reveals-crime-rankings-city-subway-system-article-1.1836918"><img src="http://i.imgur.com/I1D8zOW.png"></a>
 
 Welcome [Sarah Ryley](https://twitter.com/MissRyley) to our Map of the Week series. Sarah is the data projects editor at the New York Daily News, which has the second-largest newspaper website in the United States. Crime reporting is the bread and butter of the Daily News, so Sarah has been focused on making crime data interactive and accessible to the publication's millions of readers.
