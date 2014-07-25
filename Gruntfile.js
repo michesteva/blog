@@ -37,6 +37,12 @@ module.exports = function(grunt) {
         options: {
           async: false
         }
+      },
+      drafts: {
+        command: "jekyll build --drafts --limit_posts 20", // make it fast
+        options: {
+          async: false
+        }
       }
     },
     watch: {
@@ -193,4 +199,14 @@ module.exports = function(grunt) {
     'connect',
     'watch'
   ]);
+
+  grunt.registerTask('drafts', [
+    // 'test',
+    'clean',
+    'shell:drafts',
+    'concurrent:dist',
+    'connect',
+    'watch'
+  ]);
+
 };
