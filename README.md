@@ -20,4 +20,10 @@ npm install
 grunt
 ```
 
+## To work with drafts
+
+* Save your draft to the _drafts folder
+* Launch ```grunt drafts```
+* After you want to publish your draft, move your post to the normal _posts folder
+
 A tab in your browser will open and direct you to http://0.0.0.0:4002
