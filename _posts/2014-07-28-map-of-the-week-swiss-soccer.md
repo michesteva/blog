@@ -8,11 +8,11 @@ categories:
 - 'Map of the Week'
 ---
 
-![Imgur](http://i.imgur.com/EXLJ188.png)
+<a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/"><img src="http://i.imgur.com/EXLJ188.png"></a>
 
 We welcome [Timo Grossenbacher](https://twitter.com/wnstns) to our Map of The Week. He’s currently working as Interactive News Developer at the Swiss daily newspaper [Tages-Anzeiger](http://www.tagesanzeiger.ch/), based in Zurich.
 
-Tages-Anzeiger published a couple of weeks ago their newest data driven journalism project built with CartoDB: An interactive map of spatial distribution of Swiss soccer fans. The map shows where the fans of [Swiss Football League](http://sfl.ch) soccer clubs reside, ready for the start of this year's "Super League" tournament. 
+Tages-Anzeiger published a couple of weeks ago their newest data driven journalism project built with CartoDB: <a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/">An interactive map of spatial distribution of Swiss soccer fans</a>. The map shows where the fans of [Swiss Football League](http://sfl.ch) soccer clubs reside, ready for the start of this year's "Super League" tournament. 
 
 This blog post summarizes the kind of data utilized by the developers, how they made use of the CartoDB Editor to style the map and how they built a full-blown Javascript application on top of the [CartoDB.js API](http://docs.cartodb.com/cartodb-platform/cartodb-js.html). 
 
