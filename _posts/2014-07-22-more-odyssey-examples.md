@@ -8,8 +8,8 @@ tags:
 - journalism
 categories:
 - 'Customer stories'
+description: More Odyssey.js stories keep popping up from different parts of the world.
 ---
-
 
 ![Imgur](http://i.imgur.com/9jG2O2v.jpg)
 
@@ -17,7 +17,7 @@ More Odyssey.js stories keep popping up from different parts of the world. Here 
 
 <!--more-->
 
-###Germany's way through 2014 Fifa World Cup 
+### Germany's way through 2014 Fifa World Cup 
 
 <a href="http://bl.ocks.org/anonymous/raw/b25e486daa1c44b9c89e/"><img src="http://i.imgur.com/UflHJt0.png"></a>
 
@@ -29,7 +29,7 @@ Riccardo Klinger made this map after the soccer World Cup final. It shows the lo
 
 This is a perfect example of how Odyssey.js can be part of an investigative journalism story.  The Financial Times gathered data on 78 corporate water projects around the globe and they used Odyssey.js to show how and where those projects have spent billions of dollars. 
 
-###The story of James Rodriguez 
+### The story of James Rodriguez 
 
 <a href="http://karlajaramillo.github.io/qindio-firstmap/"><img src="http://i.imgur.com/2X5GgbR.png"></a>
 
