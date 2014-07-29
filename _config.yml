@@ -8,7 +8,7 @@ url: "http://blog.cartodb-staging.com"
 
 markdown: kramdown
 permalink: /:title/
-paginate: 5
+paginate: 10
 paginate_path: page/:num
 encoding: utf-8
 exclude: ['README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'node_modules', 'Gruntfile.js', 'package.json', 's3_website.yml']
