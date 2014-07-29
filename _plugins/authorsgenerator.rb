@@ -13,6 +13,8 @@ module Jekyll
 
       author_title_prefix = site.config['author_title_prefix'] || 'Posts by: '
       self.data['title'] = "#{author_title_prefix}#{author['name']}"
+      self.data['title_meta'] = "#{author['name']}"
+      self.data['description'] = "Posts by #{author['name']} in the CartoDB Blog. All things CartoDB"
     end
   end
 
