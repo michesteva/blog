@@ -4,7 +4,7 @@ date: '2014-07-29T12:35:00+02:00'
 tags:
 - cartodb
 categories:
-- 'CartoDB Enterprise'
+- 'Enterprise'
 # layout_color: '/img/posts/2014-07-29-cartodb-enterprise.png'
 ---
 
