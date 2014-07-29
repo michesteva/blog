@@ -10,7 +10,7 @@ categories:
 
 <div class="wrap"><p><a href="http://www.cartodb.com/enterprise" ><img src="/img/posts/2014-07-29-637-cartodb-enterprise.png" alt=""></a></p></div>
 
-CartoDB is the easiest way to create amazing maps with your data. The interface is creating a new standard for user experience in the mapping and data analytics community. This has allows us to work with users from diverse backgrounds to create maps. From hobbyists, educators, researchers, and general business, we are enabling a new generation of mappers to work with their data. 
+CartoDB is the easiest way to create amazing maps with your data. The interface is creating a new standard for user experience in the mapping and data analytics community. This allows us to work with users from diverse backgrounds to create maps. From hobbyists to educators, researchers, and general business, we are enabling a new generation of mappers to work with their data. 
 
 **We are excited to announce the release of our CartoDB Enterprise offering**: Just like we transformed the way that people make their own maps online, CartoDB is now going to transform the way you work with data as a team or an organization. CartoDB Enterprise brings the power of a consumer web service together with a secure and scalable environment for collaboration. This is a new type of GIS.
 
