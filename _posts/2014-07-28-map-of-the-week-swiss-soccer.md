@@ -12,6 +12,8 @@ categories:
 
 We welcome [Timo Grossenbacher](https://twitter.com/wnstns) to our Map of The Week. He’s currently working as Interactive News Developer at the Swiss daily newspaper [Tages-Anzeiger](http://www.tagesanzeiger.ch/), based in Zurich.
 
+<!--more-->
+
 Tages-Anzeiger published a couple of weeks ago their newest data driven journalism project built with CartoDB: <a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/">An interactive map of spatial distribution of Swiss soccer fans</a>. The map shows where the fans of [Swiss Football League](http://sfl.ch) soccer clubs reside, ready for the start of this year's "Super League" tournament. 
 
 This blog post summarizes the kind of data utilized by the developers, how they made use of the CartoDB Editor to style the map and how they built a full-blown Javascript application on top of the [CartoDB.js API](http://docs.cartodb.com/cartodb-platform/cartodb-js.html). 
@@ -20,7 +22,7 @@ This blog post summarizes the kind of data utilized by the developers, how they 
 
 ### Data collection and pre-processing
 
-It all started when one of the journalists I work with had the idea to ask Swiss soccer clubs for data on where their fans live. Surprisingly, at least to me, most of the clubs store detailed data about the holders of their **season tickets** (which allow those to watch all the games in the club's home stadium). So my colleague tediously phoned each of the ten top-flight clubs and got provided with spreadsheets showing the amount of season ticket holders per **zip code** for as many as 9 clubs (one club would not give us the data because of data privacy concerns, although it is technically almost impossible to reidentify people based on such data). Another colleague pre-processed the data, and specifically, matched the zip codes with **actual municipalities** (as the map shows municipality borders, not zip code areas). 
+It all started when one of the journalists I work with had the idea to ask Swiss soccer clubs for data on where their fans live. Surprisingly, at least to me, most of the clubs store detailed data about the holders of their **season tickets** (which allow those to watch all the games in the club's home stadium). So my colleague tediously phoned each of the ten top-flight clubs and got provided with spreadsheets showing the amount of season ticket holders per **zip code** for as many as 9 clubs (one club would not give us the data because of data privacy concerns, although it is technically impossible to reidentify people based on such data). Another colleague pre-processed the data, and specifically, matched the zip codes with **actual municipalities** (as the map shows municipality borders, not zip code areas). 
 
 ### Data classification and styling
 
