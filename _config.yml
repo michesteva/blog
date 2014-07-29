@@ -28,4 +28,3 @@ defaults:
       type: "post"
     values:
       layout: post
-      is_post: true

@@ -13,6 +13,8 @@ module Jekyll
 
       category_title_prefix = site.config['category_title_prefix'] || 'Category: '
       self.data['title'] = "#{category_title_prefix}#{category.capitalize}"
+      self.data['title_meta'] = "#{category.capitalize}"
+      self.data['description'] = "#{category.capitalize} posts in the CartoDB Blog. All things CartoDB"
     end
   end
 
