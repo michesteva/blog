@@ -13,6 +13,8 @@ module Jekyll
 
       tag_title_prefix = site.config['tag_title_prefix'] || 'Tag: '
       self.data['title'] = "#{tag_title_prefix}#{tag}"
+      self.data['title_meta'] = "#{tag.capitalize}"
+      self.data['description'] = "#{tag.capitalize} posts in the CartoDB Blog. All things CartoDB"
     end
   end
 

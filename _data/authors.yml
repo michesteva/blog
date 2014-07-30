@@ -2,3 +2,11 @@
   slug: alvaro
   name: 'Álvaro Ortiz'
   avatar: '/img/authors/alvaro.jpg'
+-
+  slug: matallo
+  name: 'Carlos Matallín'
+  avatar: '/img/authors/matallo.jpg'
+-
+  slug: andrew
+  name: 'Andrew Hill'
+  avatar: '/img/authors/andrew.jpg'
