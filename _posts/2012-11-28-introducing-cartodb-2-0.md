@@ -3,6 +3,8 @@ title: 'Introducing CartoDB 2.0'
 date: '2012-11-28T22:21:03+01:00'
 categories:
 - 'New features'
+redirect_from:
+- "/post/36758461808/introducing-cartodb-2-0/"
 ---
 
 This **Thursday, November 29th**, we will be releasing our biggest update yet to CartoDB. What this means for you is that there will be a period of approximately **6 hours downtime** on the **29th at 2AM EST** where your dashboard will not be accessible (We will post again once the process is complete). This does **NOT **mean however, that your maps and visualizations will go offline. We’re upgrading in such a way as to keep all your work available. 

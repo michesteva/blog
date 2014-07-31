@@ -8,6 +8,8 @@ tags:
 - data
 categories:
 - 'New features'
+redirect_from:
+- "/post/31412595373/cartodb-backs-your-apps/"
 ---
 
 From its very beginning, CartoDB has always been about making it easier for you to create map driven applications online. 

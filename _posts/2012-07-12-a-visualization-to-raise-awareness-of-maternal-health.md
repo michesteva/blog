@@ -8,6 +8,8 @@ tags:
 - Simbiotica
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/27009832298/a-visualization-to-raise-awareness-of-maternal-health/"
 ---
 
 <a href="http://www.doctorsoftheworld.org/">Doctors of the World</a> is a healthcare and humanitarian aid charity working worldwide to provide solutions that improve health and save lives. Its Spanish branch is launching this week the campaign <a href="http://www.elvirusdelasalud.org/">"The health virus"</a>, an initiative to raise awareness of the global right to health focused on the maternal health challenge &#8212;every two minutes, a woman dies from complications related to pregnancy. 

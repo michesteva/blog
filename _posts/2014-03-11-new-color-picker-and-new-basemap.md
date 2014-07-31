@@ -9,6 +9,8 @@ tags:
 - color picker
 categories:
 - 'New features'
+redirect_from:
+- "/post/79296956191/new-color-picker-and-new-basemap/"
 ---
 
 Two new small improvements  this week (watch our for bigger ones in the coming ones!!).

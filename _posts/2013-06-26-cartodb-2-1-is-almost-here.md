@@ -6,6 +6,8 @@ tags:
 - preview
 categories:
 - 'New features'
+redirect_from:
+- "/post/53932512302/cartodb-2-1-is-almost-here/"
 ---
 
 As many of you already know, we have been working on the 2.1 version of CartoDB for several months now. In the upcoming release, we are incorporating multi-layer support, new visualization wizards, and a new and improved way to publish and save your visualizations.

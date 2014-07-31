@@ -6,6 +6,8 @@ tags:
 - hackathon
 - stories
 - story telling
+redirect_from:
+- "/post/52881061250/map-stories-at-the-nypl-labs/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/nypl.jpg" width="640"/>

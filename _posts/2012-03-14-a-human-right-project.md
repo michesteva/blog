@@ -11,6 +11,8 @@ tags:
 - nonprofit
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/19286535149/a-human-right-project/"
 ---
 
 <img alt="A Human Right" src="http://cartodb.s3.amazonaws.com/tumblr/posts/logo_ahr.png" title="A Human Right"/>

@@ -7,6 +7,8 @@ tags:
 - nyc
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/53198074093/june-geonyc-tonight/"
 ---
 
 As many of you know, we are very involved in the <a href="http://www.meetup.com/geonyc/">GeoNYC</a> meetings, helping to organize, contribute to, and sponsor for over a year now. It has been exciting to see the active geo community grow so quickly over that time. Tonight will be <a href="http://www.meetup.com/geonyc/events/119499782/">one of the biggest</a> GeoNYC meetings to date, with a sellout crowd of 130 mappers joining us at Google. 

@@ -8,6 +8,8 @@ tags:
 - ecohack
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/37806337727/such-a-busy-season-hackathons-hacks-and-meetups/"
 ---
 
 **Hackathons**

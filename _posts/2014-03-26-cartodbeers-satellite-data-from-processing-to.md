@@ -10,6 +10,8 @@ tags:
 - earth observation
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/80783629062/cartodbeers-satellite-data-from-processing-to/"
 ---
 
 <img src="http://i.imgur.com/8wYT3zx.jpg" alt=""/>

@@ -9,6 +9,8 @@ tags:
 - nyc
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/58247530913/free-geocoder-for-new-york-based-on-pluto-open-data/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/flatiron-1.jpg" width="637px"/>

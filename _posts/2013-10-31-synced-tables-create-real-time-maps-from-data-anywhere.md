@@ -8,6 +8,8 @@ tags:
 - data visualization
 categories:
 - 'New features'
+redirect_from:
+- "/post/65639747344/synced-tables-create-real-time-maps-from-data-anywhere/"
 ---
 
 The speed at which new data is created on the web is mind boggling. Sources from Twitter to Dropbox are helping us organize everything from our thoughts to our spreadsheets. At CartoDB, we have been trying to help you organize your geospatial data and help you share the insights you gain from that data with the world. However, keeping up with the speed at which new data becomes available can be a daunting task.

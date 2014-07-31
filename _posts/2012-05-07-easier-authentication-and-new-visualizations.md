@@ -8,6 +8,8 @@ tags:
 - OpenStreetMaps
 categories:
 - 'New features'
+redirect_from:
+- "/post/22603531637/easier-authentication-and-new-visualizations/"
 ---
 
 <iframe frameborder="0" height="300" src="http://cartodb.s3.amazonaws.com/examples/hexagon/index.html" width="630"></iframe>

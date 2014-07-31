@@ -3,6 +3,8 @@ title: Learn CartoDB for free in NY, hosted by Gilt
 date: '2014-05-29T10:13:08+02:00'
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/87184734674/learn-cartodb-for-free-in-ny-hosted-by-gilt/"
 ---
 
 <img src="http://i.imgur.com/L82xFqt.png" alt=""/>

@@ -5,6 +5,8 @@ tags:
 - odyssey
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/91358902229/odyssey-js-examples-in-the-wild/"
 ---
 
 Following the release of the <a href="http://blog.cartodb.com/post/91149570719/odyssey-js-new-open-source-tool-to-weave-interactive">new Odyssey.js tool</a> to create map based interactive stories, here you have some projects that are already using it:

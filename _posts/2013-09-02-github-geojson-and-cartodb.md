@@ -8,6 +8,8 @@ tags:
 - data
 categories:
 - 'New features'
+redirect_from:
+- "/post/60102532420/github-geojson-and-cartodb/"
 ---
 
 We were very excited earlier this spring by the <a href="https://github.com/blog/1528-there-s-a-map-for-that">announcement that GitHub </a>would be including interactive maps for small GeoJSON files stored in your repos. What a cool feature! It will definitely improve your repo and data management while also making it easy to share your geospatial data. If you haven’t had a chance to play with GeoJSON on GitHub on your own yet, take a look at this set of world borders inside the <a href="http://cartodb.com">CartoDB</a> repository,

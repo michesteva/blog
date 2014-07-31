@@ -4,5 +4,5 @@ _site
 .DS_Store
 .tmp/
 .ruby-version
-
-2014-08-01-map-of-the-week-bike.md
+bower_components/
+grunt-aws.json

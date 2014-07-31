@@ -8,7 +8,10 @@ tags:
 - Google Fusion
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/19005435697/telling-a-story-cartodb-at-medialab-prado/"
 ---
+
 <iframe frameborder="0" height="480" src="http://player.vimeo.com/video/38232915?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="648"></iframe>
 
 CartoDB was yesterday at the <a href="http://medialab-prado.es/article/sesion_formativa_periodismo_datos_visualizacion">3rd Training Session</a> for the Data Journalism Group at MediaLab Prado, in Madrid. <a href="https://twitter.com/#!/saleiva">@saleiva</a> discussed how to use CartoDB for data analysis and visualization to create a narrative and tell a story.

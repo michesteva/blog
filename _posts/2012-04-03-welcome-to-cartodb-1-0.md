@@ -8,6 +8,8 @@ tags:
 - Open Street Maps
 categories:
 - 'New features'
+redirect_from:
+- "/post/20403296927/welcome-to-cartodb-1-0/"
 ---
 
 We are happy to announce you that CartoDB 1.0 is already live. 

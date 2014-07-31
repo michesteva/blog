@@ -5,6 +5,8 @@ tags:
 - foss4g
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/90658865894/submit-your-maps-to-the-foss4g-map-gallery/"
 ---
 
 <img src="http://i.imgur.com/ZT0nRIb.png" alt=""/>

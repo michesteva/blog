@@ -7,6 +7,8 @@ tags:
 - feature
 categories:
 - 'New features'
+redirect_from:
+- "/post/43394168988/introducing-beautiful-info-windows-with-image-support/"
 ---
 
 <img alt="New header info-window template" height="400" src="http://cartodb.s3.amazonaws.com/tumblr/posts/headerImage-infowindow2.png" width="650"/>

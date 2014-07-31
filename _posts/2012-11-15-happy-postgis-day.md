@@ -3,6 +3,8 @@ title: Happy PostGIS day!
 date: '2012-11-15T18:03:00+01:00'
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/35780150094/happy-postgis-day/"
 ---
 
 Yesterday was GIS day, so naturally today, and the next 364 days, are PostGIS days. In order to celebrate a year of PostGIS days, we’ve made this little map which we hope you like.

@@ -7,6 +7,8 @@ tags:
 - torque
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/59432614920/connecting-hbase-hadoop-to-cartodb-to-visualize/"
 ---
 
 _In this guest blog, <a href="https://twitter.com/timrobertson100">Tim Robertson</a> describes how the <a href="http://www.gbif.org/">Global Biodiversity Information Facility</a> (GBIF) are building a dynamic density map with 0.5 billion tiles and supporting 40,000 tile updates per second using components of the CartoDB stack for their forthcoming <a href="http://uat.gbif.org/">portal</a>.  This is the first time the CartoDB stack is connected to an <a href="http://hbase.apache.org/">HBase</a> / <a href="http://hadoop.apache.org/">Hadoop</a> backend to handle large data volumes and velocities. It is a great example on the upcoming configurations we will see of CartoDB connected to Big Data sources._

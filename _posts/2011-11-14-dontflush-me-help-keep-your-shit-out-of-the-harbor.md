@@ -12,6 +12,8 @@ tags:
 - flush
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/12794674311/dontflush-me-help-keep-your-shit-out-of-the-harbor/"
 ---
 
 In The last 2 weeks a lot of new applications have been developed at <a href="http://www.ecohacknyc.org/">#ecohacknyc</a>, <a href="http://2011.nycbigapps.com/">#nycbigapps</a> and <a href="http://sciencehackday.com/">#sciencehackday</a> using CartoDB, pretty excited. This demonstrates the power of CartoDB specially for fast development of location aware applications and mapping. We are gonna be highlighting different applications that make use of CartoDB on the next days. 

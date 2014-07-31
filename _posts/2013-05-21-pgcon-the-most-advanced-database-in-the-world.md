@@ -8,6 +8,8 @@ tags:
 - postgresql
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/50991197609/pgcon-the-most-advanced-database-in-the-world/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/pgcon-post-proc.png" width="650px"/>

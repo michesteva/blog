@@ -7,6 +7,8 @@ tags:
 - cartodb support
 categories:
 - 'New features'
+redirect_from:
+- "/post/70400336479/cartodb-support-at-stack-exchange-providing-better/"
 ---
 
 For a while now, members of the CartoDB team have been following CartoDB related questions over on StackExchange. Already, we are starting to see some great questions and we are also seeing a good amount of community driven conversation. We think the StackExchange format has a lot more to offer our community, so we are <a href="http://gis.stackexchange.com/questions/tagged/cartodb">officially starting to shift our free support questions to the GIS StackExchange site</a>.

@@ -8,6 +8,8 @@ tags:
 - mobile world congress
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/76648772259/create-an-amazing-map-and-win-a-free-pass-to-the-mobile/"
 ---
 
 Do you want to get a free pass to the <a href="http://www.mobileworldcongress.com/">Mobile World Congress</a> in Barcelona? CartoDB is here to help! We are giving away two completely free passes to the MWC. You just need to create an amazing map with CartoDB, and you will be entering in our contest. We will give away two passes to the two best maps created with CartoDB.

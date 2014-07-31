@@ -14,7 +14,6 @@ We welcome [Timo Grossenbacher](https://twitter.com/wnstns) to our Map of The We
 
 <!--more-->
 
-
 Tages-Anzeiger published a couple of week ago their newest data driven journalism project built with CartoDB: An interactive map of spatial distribution of Swiss soccer fans. The map shows where the fans of [Swiss Football League](http://sfl.ch) soccer clubs reside, ready for the start of this year's "Super League" tournament. 
 
 Tages-Anzeiger published a couple of weeks ago their newest data driven journalism project built with CartoDB: <a href="http://www.tagesanzeiger.ch/extern/interactive/2014/fankarte/">An interactive map of spatial distribution of Swiss soccer fans</a>. The map shows where the fans of [Swiss Football League](http://sfl.ch) soccer clubs reside, ready for the start of this year's "Super League" tournament. 

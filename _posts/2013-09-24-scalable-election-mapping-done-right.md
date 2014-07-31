@@ -7,6 +7,8 @@ tags:
 - visualization
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/62169554598/scalable-election-mapping-done-right/"
 ---
 
 Last weekend there were elections in Germany, and that means a lot of mapping! Maps are a fundamental tool to explain voting results, differences between regions, possible coalitions, and more. And during election night they become one of the most fundamental visualization techniques for showing the status of results.

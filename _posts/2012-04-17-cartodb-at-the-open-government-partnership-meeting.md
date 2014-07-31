@@ -6,6 +6,8 @@ tags:
 - open goverment
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/21232694126/cartodb-at-the-open-government-partnership-meeting/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/opg.png"/>

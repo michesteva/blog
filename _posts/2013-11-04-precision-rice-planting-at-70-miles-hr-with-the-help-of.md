@@ -8,6 +8,8 @@ tags:
 - maps
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/66026109241/precision-rice-planting-at-70-miles-hr-with-the-help-of/"
 ---
 
 <img alt="image" src="http://blog.agroguia.es/blog/wordpress/wp-content/uploads/2013/06/avioneta1.jpg" width="637"/>

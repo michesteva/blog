@@ -3,6 +3,8 @@ title: "How NewsBeast Labs Visualized Roe V' Wade"
 date: '2013-02-27T22:10:00+01:00'
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/44162257359/how-newsbeast-labs-visualized-roe-v-wade/"
 ---
 
 <img alt="image" src="http://media.tumblr.com/8ad23a69fe160cfabaf15ede0b22ad47/tumblr_inline_miwcu2Lm8a1qz4rgp.png" width="650px"/>

@@ -8,6 +8,8 @@ tags:
 - security definer
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/53510434258/read-and-write-to-cartodb-with-the-leaflet-draw-plugin/"
 ---
 
 A handful of developers using CartoDB have begun to build tools that incorporate CartoDB data and the <a href="https://github.com/Leaflet/Leaflet.draw">Leaflet.draw</a> plugin. It is a pretty neat combination of tools, that allow anyone to create polygon editing interfaces on top of their datasets. It also lets you build custom data management interfaces on top of a powerful geospatial database. We used it for a fun demo at the recent <a href="http://foss4g-na.org/">FOSS4G-NA</a> meeting and it gave us the chance to see how it could work. The library is pretty straightforward, though it does take a basic grasp of GeoJSON, JavaScript, and the gang of usual suspects. 

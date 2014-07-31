@@ -7,6 +7,8 @@ tags:
 - iPad
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/34160277026/how-to-build-real-time-cross-device-electoral-maps/"
 ---
 
 With US Presidential Election just around the corner, we want to show you how to use CartoDB to power dynamic, fully scalable, cross-device maps that update instantly, with no need to refresh the browser. 

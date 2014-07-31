@@ -8,6 +8,8 @@ tags:
 - toc
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/40629351063/were-in-cartodb-is-a-publishing-startup-showcase/"
 ---
 
 <a href="http://www.toccon.com/toc2013/public/schedule/detail/27033?cmp=ba-toc-tc13-startup-showcase-finalist"><img alt="image" height="220" src="http://i.imgur.com/g3eBY.png" width="618"/></a>

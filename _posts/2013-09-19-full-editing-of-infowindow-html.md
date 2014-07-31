@@ -7,6 +7,8 @@ tags:
 - tutorials
 categories:
 - 'New features'
+redirect_from:
+- "/post/61664564416/full-editing-of-infowindow-html/"
 ---
 
 <img alt="" src="http://cartodb.s3.amazonaws.com/tumblr/posts/htmlinfowindowscreenshot.jpg"/>

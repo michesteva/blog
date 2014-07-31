@@ -7,6 +7,8 @@ tags:
 - how-to
 categories:
 - 'Map of the week'
+redirect_from:
+- "/post/84208848560/map-of-the-week-private-contributions-in-argentinian/"
 ---
 
 Welcome Andy Tow for this new Map of the Week. Andy is an adviser in the Argentinian Senate, and blogs relentlessly about elections and politics with a focus on quantitative information and analysis. In this map he shows extensive information about the private contributions in the 2013 primary legislative elections.

@@ -9,6 +9,8 @@ tags:
 - data visualization
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/69031342485/map-academy-online-mapping-for-beginners/"
 ---
 
 We finished the first class in our mapping academy series last night. We think it was s tremendous success and couldn't be happier about the turnout and reception. Thank you to everyone who joined us! If you missed the event, you can find all the details about it on the <a href="http://cartodb.com/academy">Academy homepage</a>

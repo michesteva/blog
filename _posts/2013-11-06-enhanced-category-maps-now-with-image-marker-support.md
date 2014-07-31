@@ -7,6 +7,8 @@ tags:
 - data visualization
 categories:
 - 'New features'
+redirect_from:
+- "/post/66198526433/enhanced-category-maps-now-with-image-marker-support/"
 ---
 
 Earlier this fall we launched a new wizard that allows you to create Category maps with just a couple of clicks. You have all seemed to love the feature and have made it one of our most popular visualization types. Deep down inside though, we knew it wasn’t really complete (remember,we release early but we release often), so we’ve been working hard to get it finalized for you.

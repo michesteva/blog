@@ -7,6 +7,8 @@ tags:
 - video
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/20769138097/cartodb-v1-0-launched-at-where-conference/"
 ---
 
 <iframe frameborder="0" height="315" src="http://www.youtube.com/embed/bFCFlNEK070" width="637"></iframe>

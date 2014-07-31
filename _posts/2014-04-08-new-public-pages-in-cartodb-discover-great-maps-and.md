@@ -9,6 +9,8 @@ tags:
 - new features
 categories:
 - 'new features'
+redirect_from:
+- "/post/81486919763/new-public-pages-in-cartodb-discover-great-maps-and/"
 ---
 
 <img src="http://i.imgur.com/2XF3VsP.jpg" alt=""/>

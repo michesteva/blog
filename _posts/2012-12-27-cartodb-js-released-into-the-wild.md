@@ -6,6 +6,8 @@ tags:
 - release
 categories:
 - 'New features'
+redirect_from:
+- "/post/38979096292/cartodb-js-released-into-the-wild/"
 ---
 
 <img alt="CartoDB.js" height="300" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cartodbjs.png" width="650"/>

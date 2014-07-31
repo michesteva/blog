@@ -7,6 +7,8 @@ tags:
 - OSM
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/55276358111/manhattanhenge-today-and-every-day-of-the-year/"
 ---
 
 <a href="http://nychenge.com"><img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cityhenge_home.jpg" width="637px"/></a>

@@ -7,6 +7,8 @@ tags:
 - development
 categories:
 - 'Enterprise'
+redirect_from:
+- "/post/30103333358/introducing-the-cartodb-partners-program/"
 ---
 
 <a href="http://cartodb.com/partners" title="Cartodb Partners page" target="_blank"><img alt="Partners page image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/partners.png"/></a><br/>It is with great excitement that today we announce the public launch of the  <a href="http://cartodb.com/partners" target="_blank">CartoDB partners program</a>. Designed around the core needs of our current and prospective partners, the program's versatility can be seen from the onset though the diverse array of industries that our launch partners service, spanning non profit work, biotechnology consulting, and digital creative agencies. 

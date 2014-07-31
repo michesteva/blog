@@ -9,6 +9,8 @@ tags:
 - XYZ
 categories:
 - 'New features'
+redirect_from:
+- "/post/67460068881/cartodb-makes-it-easy-to-add-the-perfect-basemap-to/"
 ---
 
 **Basemaps tailored to data visualization**

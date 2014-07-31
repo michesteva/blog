@@ -9,6 +9,8 @@ tags:
 - madrid
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/18602437732/happy-birthday-to-11870-com/"
 ---
 
 <iframe frameborder="0" height="300" src="https://viz2.cartodb.com/tables/hoteles_madrid_11870/embed_map" width="645"></iframe>

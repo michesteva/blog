@@ -7,6 +7,8 @@ tags:
 - trial
 categories:
 - 'New features'
+redirect_from:
+- "/post/60446633550/free-14-day-trial-offer-for-our-paid-service/"
 ---
 
 We know it can be challenging to pick the right tools to create a successful project. Good developers, designers, and other map creators want to know that the tools they use will value to their work. They want to kick the tires, test the capacity, understand the limits. That is why we have always provided users with a free account tier. But what about testing our larger developer accounts? Today we are announcing our new <a href="http://cartodb.com/pricing">free 14-day trial period</a> for all Magellan plan upgrades.

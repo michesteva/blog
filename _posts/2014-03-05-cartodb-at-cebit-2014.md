@@ -6,6 +6,8 @@ tags:
 - cartodb
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/78655588510/cartodb-at-cebit-2014/"
 ---
 
 <img src="http://i.imgur.com/yApcq0H.png" alt=""/>

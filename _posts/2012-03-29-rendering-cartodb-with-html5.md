@@ -11,6 +11,8 @@ tags:
 - sql api
 categories:
 - 'New features'
+redirect_from:
+- "/post/20128700449/rendering-cartodb-with-html5/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/nyc_distrincts_vecnik.png"/>

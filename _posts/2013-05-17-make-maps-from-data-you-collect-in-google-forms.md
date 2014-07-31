@@ -9,6 +9,8 @@ tags:
 - mapping
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/50652990859/make-maps-from-data-you-collect-in-google-forms/"
 ---
 
 While many CartoDB users arrive to the service with data on hand others look to use CartoDB to host and map data from ongoing collection. For those users, we offer a number of useful <a href="http://developers.cartodb.com/documentation/sql-api.html#cartodb_clients">client libraries</a> and <a href="http://developers.cartodb.com/tutorials.html">tutorials</a> for using our APIs. For businesses, scientists, and students that still want a little easier way to collect data, we thought we would put together this tutorial covering how to collect data with <a href="http://www.google.com/drive/apps.html">Google Forms</a> and have it inserted directly into a CartoDB table.

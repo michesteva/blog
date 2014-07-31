@@ -3,6 +3,8 @@ title: 'Workshop: CartoDB for Hackathons, Madrid May 6th'
 date: '2014-04-29T11:00:35+02:00'
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/84210790341/workshop-cartodb-for-hackathons-madrid-may-6th/"
 ---
 
 <img src="http://i.imgur.com/b94kNna.jpg" alt=""/>

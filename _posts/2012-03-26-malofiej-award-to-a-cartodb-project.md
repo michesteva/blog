@@ -12,6 +12,8 @@ tags:
 - Universidad de Navarra
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/19953379770/malofiej-award-to-a-cartodb-project/"
 ---
 
 <img align="top" alt="RTVE elections 2011" height="422" src="http://cartodb.s3.amazonaws.com/tumblr/posts/rtve.png" width="690"/>

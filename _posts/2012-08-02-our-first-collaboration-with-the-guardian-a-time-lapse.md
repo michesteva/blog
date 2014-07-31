@@ -8,6 +8,8 @@ tags:
 - civic media
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/28487635064/our-first-collaboration-with-the-guardian-a-time-lapse/"
 ---
 
 Online activists are having a key role documenting the ongoing civil war in Syria. As this terrible war unfolds, they are posting dozens of videos and live streams on the internet, and curating data to fight the so-called “electronic war”.

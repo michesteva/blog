@@ -7,6 +7,8 @@ tags:
 - data service
 categories:
 - 'New features'
+redirect_from:
+- "/post/57786792357/pluto-is-back/"
 ---
 
 Sorry, that title was too fun not to use. In reality, we aren’t talking about the <a href="http://xkcd.com/473/">rejected non-planet</a>, we are talking about NYC’s latest open data release, the <a href="http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml">PLUTO dataset</a>. The PLUTO dataset contains land use and geographic data for tax lots across the five boroughs. That’s 850,000 polygons! While not being exactly building-by-building footprints, tax lots are now among the highest resolution geospatial data available from the NYC open data portal. 

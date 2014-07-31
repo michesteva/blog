@@ -8,6 +8,8 @@ tags:
 - live map
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/33634830768/how-we-made-the-stratos-freefall-jump-live-demo/"
 ---
 
 Eight million people followed yesterday the YouTube live stream from the <a href="http://www.redbullstratos.com/">Red Bull Stratos Challenge</a>. According to the video service, it was the largest-ever simultaneous viewing for a web audience.

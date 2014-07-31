@@ -7,6 +7,8 @@ tags:
 - data visualization
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/66372286509/online-mapping-for-beginners-a-free-online-course/"
 ---
 
 <img src="http://i.imgur.com/nUh0Odu.png" width="637px"/>

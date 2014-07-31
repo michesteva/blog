@@ -7,6 +7,8 @@ tags:
 - conference
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/20792249074/cartodb-vizzuality-at-foss4g-na/"
 ---
 
 What a month, we just finished <a href="http://blog.cartodb.com/post/20769138097/cartodb-v1-0-launched-at-where-conference">Where conference</a> and we are ready to attend another conference. This time it will be the great <a href="http://foss4g-na.org/">FOSS4G North America Conference</a> in Washington DC. 

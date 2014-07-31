@@ -10,6 +10,8 @@ tags:
 - barcelona
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/76974551001/cartodb-at-mobile-world-congress-the-importance-of/"
 ---
 
 <img src="http://i.imgur.com/O31WSZE.jpg" alt="Location and ham"/>

@@ -8,6 +8,8 @@ tags:
 - data visualization
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/70589903911/mapping-television-news/"
 ---
 
 A new series of maps have been published on the Internet Archive's blog showing the location and frequency that US television news has mentioned places around the world. You can see the original blog post here, <a href="http://blog.archive.org/2013/12/13/mapping-400000-hours-of-u-s-tv-news/">Mapping 400,000 Hours of U.S. TV News</a>.

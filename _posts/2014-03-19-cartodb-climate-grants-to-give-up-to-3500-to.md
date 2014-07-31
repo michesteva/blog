@@ -8,6 +8,8 @@ tags:
 - Nonprofit
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/80063962471/cartodb-climate-grants-to-give-up-to-3500-to/"
 ---
 
 <img src="http://i.imgur.com/Vfq3DKX.jpg" width="637"/>

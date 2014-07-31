@@ -8,6 +8,8 @@ tags:
 - storytelling
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/91249157364/odyssey-js-learn-to-create-interactive-stories/"
 ---
 
 <img src="http://i.imgur.com/Re3vQCK.png" alt="Imgur"/>

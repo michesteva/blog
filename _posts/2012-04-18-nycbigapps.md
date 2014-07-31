@@ -7,6 +7,8 @@ tags:
 - new york
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/21338064172/nycbigapps/"
 ---
 
 The Award Ceremony for the NYC BigApps3.0 competition was held yesterday. Ninety-six apps were submitted to this city-run contest that encourages developers to play with government data. There were 4 apps, that we know!, using CartoDB:

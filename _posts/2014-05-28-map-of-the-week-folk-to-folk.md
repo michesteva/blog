@@ -5,6 +5,8 @@ tags:
 - cartodb
 categories:
 - 'Map of the Week'
+redirect_from:
+- "/post/87119672064/map-of-the-week-folk-to-folk/"
 ---
 
 Welcome Emma from Folk to Folk in this new installment of our Map of the Week. <a href="http://folk-to-folk.com">Folk to Folk</a> is an independent documentary project exploring how the inclusive spirit of folk music helps build communities and creates accessible, participatory spaces across America today. We are happy to see how people are using CartoDB to create story-telling sites - and stay tuned because we'll have news in this front soon! Meanwhile, enjoy the story of how Folk to Folk was made.

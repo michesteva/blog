@@ -9,6 +9,8 @@ tags:
 - visualization
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/77072446554/mwc-beautiful-real-time-mobile-coverage-maps/"
 ---
 
 <img src="http://i.imgur.com/A5CiOkQ.jpg"/>

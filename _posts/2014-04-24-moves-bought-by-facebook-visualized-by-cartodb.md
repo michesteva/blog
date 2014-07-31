@@ -7,6 +7,8 @@ tags:
 - facebook
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/83723812630/moves-bought-by-facebook-visualized-by-cartodb/"
 ---
 
 As you may've heard, Facebook has bought yet another company, our favorite <a href="http://moves-app.com/">Moves</a>. Moves track your daily activity, including your location. And when it comes to location, what better app helps you to visualize and analyze than CartoDB? Learn how much location info Moves has about you with this simple guide: just upload your Moves data to CartoDB and -no step 2- visualize it!

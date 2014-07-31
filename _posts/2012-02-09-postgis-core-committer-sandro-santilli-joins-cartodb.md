@@ -3,6 +3,8 @@ title: PostGIS core committer Sandro Santilli joins CartoDB
 date: '2012-02-09T15:55:00+01:00'
 categories:
 - 'New hires'
+redirect_from:
+- "/post/17318840209/postgis-core-committer-sandro-santilli-joins-cartodb/"
 ---
 
 We're really happy to announce the arrival of <a href="http://www.vizzuality.com/team/sandro">Sandro Santilli</a>, one of the core committers of <a href="http://postgis.refractions.net/">PostGIS</a>, to the <a href="http://www.cartodb.com">CartoDB</a> team.

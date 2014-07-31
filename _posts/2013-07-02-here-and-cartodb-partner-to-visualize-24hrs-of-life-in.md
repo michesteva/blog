@@ -8,7 +8,10 @@ tags:
 - Smartcity
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/54428171327/here-and-cartodb-partner-to-visualize-24hrs-of-life-in/"
 ---
+
 <a href="http://here.com/livingcities/" title="Living Cities visualization"><img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/%20livingcities4.png"/></a>
 
 We have worked together with <a href="http://www.here.com">HERE</a> to visualize how cities come to life. Using data continuously collected by HERE through connected devices such as smartphones and cars, users can see how movement changes over 24 hours in five major cities: London, Chicago, Rome, Helsinki and Mumbai.

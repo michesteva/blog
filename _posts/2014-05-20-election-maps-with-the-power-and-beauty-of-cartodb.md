@@ -6,6 +6,8 @@ tags:
 - cartodb
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/86308811894/election-maps-with-the-power-and-beauty-of-cartodb/"
 ---
 
 <img src="http://i.imgur.com/FTvfdEq.png" alt=""/>

@@ -11,8 +11,10 @@ permalink: /:title/
 paginate: 10
 paginate_path: page/:num
 encoding: utf-8
-exclude: ['README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'node_modules', 'Gruntfile.js', 'package.json', 's3_website.yml']
+exclude: ['README.md', 'config.rb', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components', 'Gruntfile.js', 'package.json', 'grunt-aws.example.json', 'grunt-aws.json']
 highlighter: rouge
+gems:
+  - jekyll-redirect-from
 
 cartodb-baseurl: 'http://cartodb.com'
 academy-baseurl: 'http://academy.cartodb.com'

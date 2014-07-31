@@ -5,6 +5,8 @@ tags:
 - 3D
 - VECNIK
 - Torque
+redirect_from:
+- "/post/52883275417/physical-3d-mapping-with-the-exploratorium/"
 ---
 
 While we were in San Francisco recently, we were invited to the <a href="http://www.exploratorium.edu/">Exploratorium</a> to take a look at some of the really interesting mapping projects they have on display. If you haven’t been been to the Exploratorium before, you have to go! Their location on the waterfront is really amazing and the space is huge. While there, be sure to walk all way to the back, where there is a room dedicated to many things geospatial. There were maps, interactive maps, and activities to tell you stories about the world around us, it was really inspiring. 

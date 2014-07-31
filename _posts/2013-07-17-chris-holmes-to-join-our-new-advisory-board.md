@@ -6,6 +6,8 @@ tags:
 - announcement
 categories:
 - 'New hires'
+redirect_from:
+- "/post/55700891855/chris-holmes-to-join-our-new-advisory-board/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/cholmes.jpg" width="637px"/>

@@ -8,6 +8,8 @@ tags:
 - Spatiality blog
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/23173591867/an-analysis-of-the-bike-share-program-in-nyc/"
 ---
 
 If you live in NYC, you've probably heard about a new <a href="http://a841-tfpweb.nyc.gov/bikeshare/">bike-share program</a> that will come to life this summer. The program will be launched with around 420 stations and is scheduled to grow to some 10,000 bikes and 600 rental stations throughout the city by summer 2013. 
