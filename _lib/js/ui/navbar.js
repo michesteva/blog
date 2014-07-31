@@ -11,9 +11,7 @@ blog.ui.Views.Navbar = Backbone.View.extend({
     'click .navbar-button': '_toggle'
   },
 
-  initialize: function(options) {
-    this.options = options;
-
+  initialize: function() {
     this.model = new blog.ui.Models.Navbar();
 
     this.model.on("change:hidden", this._toggleNav, this);

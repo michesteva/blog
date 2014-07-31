@@ -148,8 +148,7 @@ module.exports = function(grunt) {
           '_site/js/main.js': ['.tmp/js/main.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
           '_site/js/index.js': ['_lib/js/index.js'],
-          '_site/js/editor.js': ['_lib/js/editor.js'],
-          '_site/js/tutorials.js': ['_lib/js/tutorials.js']
+          '_site/js/post.js': ['_lib/js/post.js']
         }
       },
     },
@@ -159,14 +158,12 @@ module.exports = function(grunt) {
           '.tmp/js/vendor.js': [
             'bower_components/jquery/dist/jquery.js',
             'bower_components/underscore/underscore.js',
-            'bower_components/backbone/backbone.js',
-            '_lib/js/vendor/jquery.mousewheel.js',
-            '_lib/js/vendor/jquery.jscrollpane.js',
-            '_lib/js/vendor/waypoints.min.js',
+            'bower_components/backbone/backbone.js'
           ],
           '.tmp/js/main.js': [
             '_lib/js/app.js',
-            '_lib/js/ui/navbar.js'
+            '_lib/js/ui/navbar.js',
+            '_lib/js/ui/tooltip.js'
           ]
         }
       }

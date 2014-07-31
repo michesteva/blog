@@ -1,3 +1,21 @@
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+@import "compass/css3/background-size";
+
+@import "_constants";
+@import "_fonts";
+@import "_buttons";
+@import "_icons";
+@import "_helpers";
+@import "_base";
+
+@import "_header";
+@import "_footer";
+
 .header{
   margin-top: -50px;
 }
@@ -433,13 +451,15 @@ a.btn-blue-tw.btn-background {
   }
 }
 
-@media (max-width: $medium-width) {
+@media (max-width: $large-width) {
   .wrap {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
+}
 
+@media (max-width: $medium-width) {
   .post-share li {
     display: block;
     margin: 20px 0 0;
@@ -518,13 +538,3 @@ a.btn-blue-tw.btn-background {
     margin-left: -2px;
   }
 }
-
-
-/* =Gists
------------------------------------------------ */
-
-.gist-file { overflow: hidden; }
-.gist .gist-file .gist-meta { font-size: 65% !important; }
-.gist-data { font-size: 15px !important;  line-height: 17px !important; background: white !important; }
-.gist-file { margin: 10px 0 21px !important; color: #4B4B4B !important; }
-

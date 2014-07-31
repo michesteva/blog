@@ -2,10 +2,10 @@
 title: 'Altran Spain becomes the newest CartoDB Partner'
 date: '2014-06-23T10:07:00+02:00'
 tags:
-  - cartodb partners
-  - partners
+- cartodb partners
+- partners
 categories:
-  - 'Enterprise'
+- 'Enterprise'
 author: alvaro
 redirect_from:
 - "/post/88941433624/altran-spain-becomes-the-newest-cartodb-partner/"

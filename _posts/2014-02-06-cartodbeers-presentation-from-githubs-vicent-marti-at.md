@@ -1,6 +1,5 @@
 ---
-title: 'CartoDBeers: Presentation from GitHub''s Vicent Martí at CartoDB''s Madrid
-  office'
+title: "CartoDBeers: Presentation from GitHub's Vicent Martí at CartoDB's Madrid office"
 date: '2014-02-06T19:14:00+01:00'
 tags:
 - cartodb
@@ -8,7 +7,7 @@ tags:
 categories:
 - 'Events and conferences'
 redirect_from:
-- "/post/11116577790/indexed-nearest-neighbour-search-coming-to-cartodb/"
+- "/post/75811827433/cartodbeers-presentation-from-githubs-vicent-marti-at/"
 ---
 
 <img src="http://i.imgur.com/cIZbe1B.jpg" alt=""/>

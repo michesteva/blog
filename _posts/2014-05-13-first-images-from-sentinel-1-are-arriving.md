@@ -6,7 +6,8 @@ tags:
 - satellite
 - esa
 - Earth Observation
-- cartodbredirect_from:
+- cartodb
+redirect_from:
 - "/post/85633093279/first-images-from-sentinel-1-are-arriving/"
 ---
 
