@@ -114,6 +114,12 @@ module.exports = function(grunt) {
           async: false
         }
       },
+      drafts: {
+        command: "jekyll build --drafts --limit_posts 20", // make it fast
+        options: {
+          async: false
+        }
+      },
       dist: {
         command: "jekyll build --config '_config-prod.yml'",
         options: {
@@ -315,6 +321,14 @@ module.exports = function(grunt) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
+
+  grunt.registerTask('drafts', [
+    'clean',
+    'shell:drafts',
+    'concurrent:server',
+    'connect:livereload',
+    'watch'
+  ]);
 
   grunt.registerTask('build', [
     'clean',
