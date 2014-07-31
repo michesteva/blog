@@ -7,6 +7,8 @@ tags:
 - examples
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/53846061807/guest-post-new-online-service-who-represents-me/"
 ---
 
 _Today we hear from <a href="https://twitter.com/SR_spatial">Steven </a><a href="https://twitter.com/SR_spatial">Romalewski </a>in a guest post detailing work on the "Who Represents Me: NYC" project. Steven has created several projects using CartoDB, generally focused on topics in the NYC area. We think his work is interesting to people anywhere though! We're happy to let him share his work with you here._

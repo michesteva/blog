@@ -7,6 +7,8 @@ tags:
 - Data journalism
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/26837195815/the-wall-street-journals-2012-election-map-done-with/"
 ---
 
 The Wall Street Journal (WSJ) published today its first <a href="http://projects.wsj.com/campaign2012/maps/?mod=wsj_elections_2012_nav">interactive map</a> on the 2012 election. The map is part of an ongoing, regularly updated full election coverage. All data analysis and storage is done with CartoDB. The final election map is built through <a href="http://developers.cartodb.com/documentation/cartodb-apis.html">CartoDB API's</a> and the <a href="https://github.com/Vizzuality/cartodb-leaflet">Leaflet map library</a>.  

@@ -3,6 +3,8 @@ title: 'Dynamic map styles '
 date: '2011-12-09T15:39:00+01:00'
 categories:
 - 'New features'
+redirect_from:
+- "/post/13968310966/dynamic-map-styles/"
 ---
 
 We're just putting the finishing touches on a new feature of CartoDB that will let you style your maps on a per tile basis using the Carto map styling language. Many of you have asked for this, and we agree with you - dynamic map styles opens the door to a range of new interactive use cases. Exciting times! 

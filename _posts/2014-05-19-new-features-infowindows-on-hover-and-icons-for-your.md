@@ -9,6 +9,8 @@ tags:
 - markers
 categories:
 - 'New features'
+redirect_from:
+- "/post/86199203624/new-features-infowindows-on-hover-and-icons-for-your/"
 ---
 
 <img src="http://i.imgur.com/a8HPEHF.gif" alt=""/>

@@ -8,6 +8,8 @@ tags:
 - Data Visualization
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/27556284760/save-time-and-eat-better-with-the-ny-restaurant-week/"
 ---
 
 This year marks the twentieth anniversary of Restaurant Week in New York City, and in order to commemorate its longevity, the dining celebration has been extended to a very un-weekly 20+ days, creating a somewhat good problem for New Yorkers to have.

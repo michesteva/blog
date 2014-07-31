@@ -7,6 +7,8 @@ tags:
 categories:
   - 'Enterprise'
 author: alvaro
+redirect_from:
+- "/post/88941433624/altran-spain-becomes-the-newest-cartodb-partner/"
 ---
 
 <img src="http://i.imgur.com/GvRr30B.jpg" alt=""/>

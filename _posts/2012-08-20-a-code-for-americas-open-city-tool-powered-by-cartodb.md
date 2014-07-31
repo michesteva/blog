@@ -7,6 +7,8 @@ tags:
 - tools
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/29822497608/a-code-for-americas-open-city-tool-powered-by-cartodb/"
 ---
 
 <a href="http://codeforamerica.org/">Code for America</a> is a non-profit organization developing open source projects for city governments. Through several initiatives, it's building a network of cities, citizens, community groups, and startups "committed to reimagining government for the 21st century".

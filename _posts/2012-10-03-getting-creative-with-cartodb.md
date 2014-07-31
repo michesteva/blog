@@ -7,6 +7,8 @@ tags:
 - styles
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/32462049529/getting-creative-with-cartodb/"
 ---
 
 The combination of styling with SQL on CartoDB gives a surprising range of freedom to create data visualizations. I find myself often thinking about creative solutions to mapping data in interesting ways.

@@ -9,6 +9,8 @@ tags:
 - private tables
 categories:
 - 'New features'
+redirect_from:
+- "/post/78555009263/new-privacy-features-for-visualizations/"
 ---
 
 <img src="http://i.imgur.com/y8asLnx.png" alt=""/>

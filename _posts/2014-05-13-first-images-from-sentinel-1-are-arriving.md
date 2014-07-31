@@ -6,7 +6,8 @@ tags:
 - satellite
 - esa
 - Earth Observation
-- cartodb
+- cartodbredirect_from:
+- "/post/85633093279/first-images-from-sentinel-1-are-arriving/"
 ---
 
 <iframe src="http://www.esa.int/spaceinvideos/content/view/embedjw/425436" width="640" height="360" frameborder="0"></iframe>

@@ -3,6 +3,8 @@ title: CartoDB Migration Complete, Welcome to 2.0
 date: '2012-11-30T20:03:00+01:00'
 categories:
 - 'New features'
+redirect_from:
+- "/post/36891627435/cartodb-migration-complete-welcome-to-2-0/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/announcing_20.png"/>

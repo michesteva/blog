@@ -7,6 +7,8 @@ tags:
 - osm
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/33779327396/things-are-moving-fast-in-the-mapping-community/"
 ---
 
 While still only three-quarters of the way through the year, 2012 will definitely be referenced as an important year for maps. In 2012 Google began <a href="http://www.dailymail.co.uk/sciencetech/article-2056128/Google-Maps-start-charging--thousands-sites-apps-hit-fees.html" title="Google Charges for Maps">charging for maps</a>, ESRI bought up some <a href="http://blog.geoiq.com/2012/07/10/building-from-the-inside/" title="ESRI buy GeoIQ">key</a> geospatial <a href="http://techcrunch.com/2012/10/15/esri-acquires-location-platform-geoloqi-plans-to-launch-alternative-ios-mapping-library-soon/" title="ESRI buys Geoloqi">innovators</a>, Amazon launched its own <a href="https://developer.amazon.com/sdk/mapssignup.html" title="Amazon maps">maps API</a>, and everyone knows Apple launched its own maps app. While at the same time, we saw many important online maps providers, including <a href="http://blog.osmfoundation.org/2012/03/08/welcome-apple/" title="apple + osm">Apple</a>, <a href="http://arstechnica.com/business/2012/08/craigslist-is-on-board-openstreetmap-continues-soaring-to-new-heights/" title="craigslist + osm">Craigslist</a>, <a href="http://techcrunch.com/2012/04/05/wikipedias-mobile-apps-drop-google-maps-for-openstreetmap/" title="wikipedia + osm">Wikipedia</a>, and <a href="http://blog.foursquare.com/2012/02/29/foursquare-is-joining-the-openstreetmap-movement-say-hi-to-pretty-new-maps/" title="foursquare + osm">FourSquare</a>, finally make the move to OpenStreetMap. 

@@ -3,6 +3,8 @@ title: Powering Real-Time Election Results
 date: '2012-11-07T00:37:00+01:00'
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/35158980419/powering-real-time-election-results/"
 ---
 
 <img height="320" src="http://i.imgur.com/wC6h1.png" width="650"/>

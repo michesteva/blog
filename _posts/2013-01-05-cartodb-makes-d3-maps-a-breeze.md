@@ -8,6 +8,8 @@ tags:
 - SQL API
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/39680106243/cartodb-makes-d3-maps-a-breeze/"
 ---
 
 <iframe frameborder="0" height="300" src="http://cartodb.s3.amazonaws.com/tumblr/posts/iframe.html" width="640"></iframe>

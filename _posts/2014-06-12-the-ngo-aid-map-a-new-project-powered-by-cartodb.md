@@ -10,6 +10,8 @@ tags:
 - examples
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/88566554684/the-ngo-aid-map-a-new-project-powered-by-cartodb/"
 ---
 
 <a href="http://ngoaidmap.org/"><img src="http://i.imgur.com/raiss2l.jpg"/></a>

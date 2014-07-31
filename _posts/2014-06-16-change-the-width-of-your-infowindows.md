@@ -7,6 +7,8 @@ tags:
 - cartodb
 categories:
 - 'New features'
+redirect_from:
+- "/post/88969177119/change-the-width-of-your-infowindows/"
 ---
 
 <img src="http://i.imgur.com/LFkDPf8.gif" alt=""/>

@@ -8,6 +8,8 @@ tags:
 - data visualization
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/66779883192/visualizing-the-osm-volunteer-activity-in-response-to/"
 ---
 
 The <a href="http://hot.openstreetmap.org/">Humanitarian OpenStreetMap Team</a> (HOT) has been working hard to mobilize a large number of volunteers to digitize areas of the Philippines in order to help aid efforts. We put together this map to show the results of that great effort.

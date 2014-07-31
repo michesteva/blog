@@ -8,6 +8,8 @@ tags:
 - open source
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/15785190161/simplegeo-storage/"
 ---
 
 Yesterday it was announce that SimpleGeo, now bought by Urban Airship, will stop their operations. They have published a document explaining how to migrate to some alternative services, and they recommend PostGIS as an Open Source solution for their storage option. 

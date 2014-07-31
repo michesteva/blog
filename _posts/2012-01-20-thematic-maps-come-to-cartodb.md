@@ -3,6 +3,8 @@ title: Thematic Maps come to CartoDB
 date: '2012-01-20T18:42:00+01:00'
 categories:
 - 'New features'
+redirect_from:
+- "/post/16177185772/thematic-maps-come-to-cartodb/"
 ---
 
 At CartoTowers, we've been hard at work preparing some new thematic map visualization options for you to use in CartoDB: **Choropleth** and **Bubble maps**. For those of you new to mapping, here's a quick summary of these two popular cartographic techniques:

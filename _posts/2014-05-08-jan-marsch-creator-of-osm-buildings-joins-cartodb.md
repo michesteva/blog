@@ -8,6 +8,8 @@ tags:
 - openstreetmap
 categories:
 - 'New hires'
+redirect_from:
+- "/post/85117772814/jan-marsch-creator-of-osm-buildings-joins-cartodb/"
 ---
 
 <img src="http://i.imgur.com/oKFFI0r.png" alt=""/>

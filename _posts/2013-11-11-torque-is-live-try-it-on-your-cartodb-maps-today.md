@@ -9,6 +9,8 @@ tags:
 - mapping
 categories:
 - 'New features'
+redirect_from:
+- "/post/66687861735/torque-is-live-try-it-on-your-cartodb-maps-today/"
 ---
 
 If you have been following the development of <a href="https://github.com/CartoDB/Torque">Torque</a> you might already know that we have been working hard to bring it to all our users directly in the <a href="http://cartodb.com/">CartoDB</a> user interface. Well, today is the day! We have released the first version of the tool to all our users, try it out now!

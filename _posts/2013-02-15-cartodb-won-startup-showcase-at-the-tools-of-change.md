@@ -3,6 +3,8 @@ title: CartoDB won 'Startup showcase' at the Tools of Change for Publishing conf
 date: '2013-02-15T16:43:09+01:00'
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/43151265465/cartodb-won-startup-showcase-at-the-tools-of-change/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/orelly2.png"/>

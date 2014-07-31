@@ -9,6 +9,8 @@ tags:
 - knight foundation
 categories:
 - 'New features'
+redirect_from:
+- "/post/91149570719/odyssey-js-new-open-source-tool-to-weave-interactive/"
 ---
 
 <img src="http://i.imgur.com/9jG2O2v.jpg" alt="Imgur"/>

@@ -7,6 +7,8 @@ tags:
 - examples
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/82193209466/interesting-cartodb-profiles/"
 ---
 
 <img src="http://i.imgur.com/AdU7hx9.jpg" alt=""/>

@@ -8,6 +8,8 @@ tags:
 - openstreetmap
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/91457454859/cartodb-in-berlin-for-csv-conf-and-more/"
 ---
 
 There are several things happening in Berlin during the week of July 14th:

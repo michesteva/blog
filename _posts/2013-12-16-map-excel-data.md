@@ -8,6 +8,8 @@ tags:
 - map data
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/70189043272/map-excel-data/"
 ---
 
 Excel spreadsheets have to be one of the most used data storage formats used in the office today. Whether you need to quickly look at your data in rows and columns, or if you need formulas and pivot tables, or if you just need to make quick fixes in your data, Excel is a useful and easy to use tool. Now, if you add CartoDB to the mix and mapping Excel files just became easy and beautiful.

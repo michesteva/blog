@@ -1,5 +1,5 @@
 ---
-title: 'Visualizing the Peter Jackson''s the Hobbit : Film Locations'
+title: "Visualizing the Peter Jackson's the Hobbit : Film Locations"
 date: '2012-12-14T17:25:00+01:00'
 tags:
 - Hobbit
@@ -9,6 +9,8 @@ tags:
 - film locations
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/37912794875/visualizing-the-peter-jacksons-the-hobbit-film/"
 ---
 
 Maps are a wonderful way to tell stories, and with today's release of The Hobbit: An Unexpected Journey, we felt a visualization of the film's locations in New Zealand would be suiting, and while Bilbo went “There and Back Again” in an adventure that film revelers the world throughout will undoubtedly flock to this weekend. Peter Jackson and the crew of the Hobbit Movie did much of the same, spending a grueling 266 days filming in the studio, and then travelling the country in two teams to shoot those locations that make up Middle Earth in the film. 

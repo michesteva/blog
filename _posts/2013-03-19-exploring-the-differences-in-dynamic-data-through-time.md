@@ -7,6 +7,8 @@ tags:
 - real-time
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/47054808317/guest-post-michael-keller-from-newsbeast-labs/"
 ---
 
 We often find ourselves exploring what interesting things can be found in data that changes through time. In recent blog posts about the Mobile World Congress (MWC), we have published a couple interesting experiments with temporal data. In the first, we showed how CartoDB could be used to map traffic in Barcelona.

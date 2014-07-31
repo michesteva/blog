@@ -7,6 +7,8 @@ tags:
 - Deforestation
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/77275846367/global-forest-watch-released/"
 ---
 
 <img alt="image" src="http://i.imgur.com/b9PpCKv.jpg" width="637"/>

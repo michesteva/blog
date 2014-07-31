@@ -8,6 +8,8 @@ tags:
 - sxsw2014
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/78653445475/cartodb-at-sxsw-2014/"
 ---
 
 <img src="http://i.imgur.com/K2yPJyI.png" alt="SXSW 2014"/>

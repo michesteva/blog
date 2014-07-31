@@ -7,6 +7,8 @@ tags:
 - cartodb
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/58712047170/come-hear-the-latest-from-cartodb-in-nyc/"
 ---
 
 We have a couple of public presentations coming up that we wanted to let you know about. They are both in the NYC area, but don’t worry, we have <a href="http://okfn.org/okcon/">OKCon</a>, <a href="http://2013.foss4g.org/">FOSS4G</a>, <a href="http://nacis.org/index.cfm?x=2">NACIS</a>, and <a href="http://strataconf.com/strataeu2013?intcmp=il-strata-steu13-franchise-page">Strata London</a> all coming up in other places! 

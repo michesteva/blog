@@ -8,6 +8,8 @@ tags:
 - cartodb
 categories:
 - 'New features'
+redirect_from:
+- "/post/37268014801/more-out-of-the-box-styling-power-and-upgraded-cartocss/"
 ---
 
 With the recent release of 2.0, you have probably noticed a our complete overhaul of styling features in CartoDB. In this post we are going to explore those features in detail.  We'll look at the changes to the user-interface and some of the great new styling upgrades that come with this release. Some things to look for below include, new point-and-click visualization, support for new CartoCSS methods, new the ability to add a third dimension to your polygons. 

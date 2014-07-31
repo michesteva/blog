@@ -7,6 +7,8 @@ tags:
 - scalability
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/54030821305/mapping-the-world-ongoing-demonstrations-in-brazil/"
 ---
 
 <a href="http://g1.globo.com/brasil/protestos-2013/infografico/platb/"><img alt="image" src="http://i.imgur.com/pZRuvuh.png" width="637px"/></a>

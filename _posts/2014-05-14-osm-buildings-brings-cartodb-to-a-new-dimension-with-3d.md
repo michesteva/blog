@@ -7,6 +7,8 @@ tags:
 - berlin
 categories:
 - 'New hires'
+redirect_from:
+- "/post/85719060234/osm-buildings-brings-cartodb-to-a-new-dimension-with-3d/"
 ---
 
 <img alt="" src="http://i.imgur.com/AdDtMGF.png"/>

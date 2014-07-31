@@ -3,6 +3,8 @@ title: Come see us speak in Barcelona and get a free MWC ticket.
 date: '2013-02-06T16:37:00+01:00'
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/42431340118/come-see-us-speak-in-barcelona-and-get-a-free-mwc/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/mwc_stand.png"/>

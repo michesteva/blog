@@ -3,6 +3,8 @@ title: 'Map Of The Week: Urban Reviewer'
 date: '2014-07-07T12:18:53+02:00'
 categories:
 - 'Map of the Week'
+redirect_from:
+- "/post/91036143049/map-of-the-week-urban-reviewer/"
 ---
 
 Welcome <a href="https://twitter.com/ebrelsford">Eric Brelsford</a> to our Map of the Week series. Brelsford is a freelance programmer, mapmaker, and teacher. He spends much of his time working on <a href="http://596acres.org">596 Acres</a> and related sites in Brooklyn, NY.

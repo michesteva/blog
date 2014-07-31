@@ -6,6 +6,8 @@ tags:
 - examples
 categories:
 - 'customer stories'
+redirect_from:
+- "/post/56322011583/visualizing-melbournes-urban-forest/"
 ---
 
 _Today we are pleased to publish a post from <a href="https://twitter.com/gregmore">Greg More</a>, founder of <a href="http://www.oomcreative.com">OOM Creative</a>. We saw some of the maps being created by Greg and his team for the City of Melbourne and knew our users would be interested in the project and process. Enjoy!_

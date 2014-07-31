@@ -8,6 +8,8 @@ tags:
 - ipad
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/52898364065/cartodb-on-ios-interactive-3d-globe-with/"
 ---
 
 _Today we hear a fun guestpost from Steve Gifford of <a href="http://www.mousebirdconsulting.com/">Mousebird Consulting</a>. Steve has done some very interesting work with maps using iOS, 3D globes, and CartoDB. Today, he tells us a bit about that work._

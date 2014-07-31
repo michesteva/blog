@@ -7,6 +7,8 @@ tags:
 - opendata
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/42847998810/real-time-maps/"
 ---
 
 <img alt="image" src="http://cartodb.s3.amazonaws.com/tumblr/posts/traffic-BCN.png"/>

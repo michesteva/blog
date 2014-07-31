@@ -9,6 +9,8 @@ tags:
 - templates
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/47619936290/guest-post-teamup-wins-third-prize-in-urban-data/"
 ---
 
 _As some of you may already know, Newsweek / The Daily Beast has been using CartoDB for some time now, and as such today's blog post comes from Michael Keller of Newsbeast labs. We'd also like to take the opportunity thank Michael for his amazing contributions to the CartoDB community. Thanks!_

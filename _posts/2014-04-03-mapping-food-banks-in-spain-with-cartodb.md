@@ -10,6 +10,8 @@ tags:
 - spain
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/81582763163/mapping-food-banks-in-spain-with-cartodb/"
 ---
 
 We welcome <a href="https://twitter.com/dani_latorre">Dani Latorre</a> in this guest post to let him tell us about a little project in which he has used CartoDB as part of the development. Stay tuned for more stories like this, and if you want, just write and tell us your stories@cartodb.com

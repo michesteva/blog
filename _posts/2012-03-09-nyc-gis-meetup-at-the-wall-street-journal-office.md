@@ -10,6 +10,8 @@ tags:
 - MapBox
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/19005651900/nyc-gis-meetup-at-the-wall-street-journal-office/"
 ---
 
 <img height="431" src="http://cartodb.s3.amazonaws.com/tumblr/posts/mapa648.png" width="648"/>

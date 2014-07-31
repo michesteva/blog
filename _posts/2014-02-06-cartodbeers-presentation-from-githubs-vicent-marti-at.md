@@ -7,6 +7,8 @@ tags:
 - github
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/11116577790/indexed-nearest-neighbour-search-coming-to-cartodb/"
 ---
 
 <img src="http://i.imgur.com/cIZbe1B.jpg" alt=""/>

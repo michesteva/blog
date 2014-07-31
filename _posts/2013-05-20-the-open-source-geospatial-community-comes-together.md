@@ -7,6 +7,8 @@ tags:
 - conference
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/50907095797/the-open-source-geospatial-community-comes-together/"
 ---
 
 <a href="http://foss4g-na.org/"><img alt="image" src="http://i.imgur.com/ygRgE4x.png" width="650px"/></a>

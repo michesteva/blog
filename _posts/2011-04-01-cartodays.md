@@ -8,6 +8,8 @@ tags:
 categories:
 - 'Events and conferences'
 layout_color: '/img/posts/2011-04-01-cartodays/cartodays_blog.jpg'
+redirect_from:
+- "/post/4257185140/cartodays/"
 ---
 
 Today we want to announce the launch of CartoDays!

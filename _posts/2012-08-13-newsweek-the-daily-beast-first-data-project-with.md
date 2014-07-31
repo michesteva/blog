@@ -8,6 +8,8 @@ tags:
 - Brian Abelson
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/29339432459/newsweek-the-daily-beast-first-data-project-with/"
 ---
 
 The horrific shooting occurred on July 20 in Colorado has reignited the debate in US over gun control. <a href="http://www.thedailybeast.com/articles/2012/07/24/interactive-map-the-us-shooting-epidemic.html">How bad is the problem?</a>, asks The Daily Beast in a new piece of data journalism based on a list of 431 shootings in US with more than one victim since 2005.

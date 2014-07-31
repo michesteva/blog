@@ -3,6 +3,8 @@ title: Learn CartoDB for free in NY, hosted by Gilt
 date: '2014-05-29T10:13:08+02:00'
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/11116577790/indexed-nearest-neighbour-search-coming-to-cartodb/"
 ---
 
 <img src="http://i.imgur.com/L82xFqt.png" alt=""/>

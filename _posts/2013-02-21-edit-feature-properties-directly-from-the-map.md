@@ -8,6 +8,8 @@ tags:
 - clean
 categories:
 - 'New features'
+redirect_from:
+- "/post/43639452489/edit-feature-properties-directly-from-the-map/"
 ---
 
 <a href="http://cartodb.com" title="CartoDB" target="_blank"><img alt="Open feature metadata window CartoDB" src="http://cartodb.s3.amazonaws.com/tumblr/posts/featuremetadata1.png" width="650"/></a>

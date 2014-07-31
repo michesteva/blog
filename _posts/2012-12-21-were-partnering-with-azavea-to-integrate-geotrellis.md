@@ -9,6 +9,8 @@ tags:
 - azavea
 categories:
 - 'New hires'
+redirect_from:
+- "/post/38477800470/were-partnering-with-azavea-to-integrate-geotrellis/"
 ---
 
 <img alt="image" height="273" src="http://i.imgur.com/abZa0.png" width="636"/>

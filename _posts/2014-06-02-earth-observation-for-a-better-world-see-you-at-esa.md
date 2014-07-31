@@ -7,6 +7,8 @@ tags:
 - industry space days
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/87609698969/earth-observation-for-a-better-world-see-you-at-esa/"
 ---
 
 <img src="http://i.imgur.com/2fRHegI.png" alt=""/>

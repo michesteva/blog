@@ -3,6 +3,8 @@ title: SceneNearMe.com at NYC Big apps hackathon
 date: '2011-11-21T20:53:00+01:00'
 categories:
 - 'New features'
+redirect_from:
+- "/post/13120577335/scenenearme-com-at-nyc-big-apps-hackathon/"
 ---
 
 <iframe frameborder="0" height="350" src="http://player.vimeo.com/video/32464469?title=0&amp;byline=0&amp;portrait=0" width="640"></iframe>

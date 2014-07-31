@@ -8,6 +8,8 @@ tags:
 - integration
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/77901605968/integrate-cartodb-maps-into-your-ducksboard/"
 ---
 
 <img src="http://i.imgur.com/mD9ZjD2.png" alt="Ducksboard Integration"/>

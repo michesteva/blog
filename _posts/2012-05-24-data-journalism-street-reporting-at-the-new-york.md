@@ -8,6 +8,8 @@ tags:
 - Data Journalism
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/23634690189/data-journalism-street-reporting-at-the-new-york/"
 ---
 
 Which are the blocks in New York City that had the most New York Police Department stops in 2011? 

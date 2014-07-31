@@ -6,6 +6,8 @@ tags:
 - The Guardian
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/32464928928/torque-big-data-meets-time-based-maps-bundled-with/"
 ---
 
 At CartoDB, it is our goal to give our users the tools necessary to create compelling visualizations with their data. We are continuously looking for new innovative technologies that will enable data-driven storytelling.

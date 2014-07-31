@@ -6,6 +6,8 @@ tags:
 - Real-time
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/33236163160/a-120-000-feet-freefall-jump-live-map-powered-by/"
 ---
 
 When we read about Felix Baumgartner plans to ascend to 120,000 feet and make a freefall jump rushing toward earth at supersonic speeds before parachuting to the ground in Rosswell, New Mexico, we were pretty excited.

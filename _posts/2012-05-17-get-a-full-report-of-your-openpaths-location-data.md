@@ -6,6 +6,8 @@ tags:
 - Science Hack Day
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/23243945421/get-a-full-report-of-your-openpaths-location-data/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/geostats.png"/>

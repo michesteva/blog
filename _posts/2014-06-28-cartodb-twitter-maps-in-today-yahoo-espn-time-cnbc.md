@@ -8,6 +8,8 @@ tags:
 - twitter maps
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/90139923789/cartodb-twitter-maps-in-today-yahoo-espn-time-cnbc/"
 ---
 
 <img src="http://i.imgur.com/GXkqPhP.jpg" alt=""/>

@@ -6,6 +6,8 @@ tags:
 - twitter
 categories:
 - 'New features'
+redirect_from:
+- "/post/90054357029/announcing-twitter-maps-access-twitter-data-directly/"
 ---
 
 <img src="http://i.imgur.com/Ddn0h2m.png" alt=""/>

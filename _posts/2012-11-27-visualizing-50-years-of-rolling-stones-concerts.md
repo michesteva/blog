@@ -9,6 +9,8 @@ tags:
 - visualization
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/36676708348/visualizing-50-years-of-rolling-stones-concerts/"
 ---
 
 The Stones passed the half-centuty mark as a band this year. An incredible achievement for an incredible band. They also happen to be one of the most prolific touring bands in the world with more than 1,300 concerts all over the world, and over the last 50 years they have have traveled almost 1,000,000 Km (<a href="http://saleiva-beta.cartodb.com/api/v2/sql?q=SELECT%20sum(ST_length(the_geom::geography))%20FROM%20rolling_stones_tour_list">960,000 km actually</a>).

@@ -7,6 +7,8 @@ tags:
 - screencast
 categories:
 - 'New features'
+redirect_from:
+- "/post/11116577790/indexed-nearest-neighbour-search-coming-to-cartodb/"
 ---
 
 Take a sneak peek at some upcoming functionality to CartoDB: Indexed nearest neighbour search. Thanks to <a href="http://blog.opengeo.org/2011/09/28/indexed-nearest-neighbour-search-in-postgis/">CartoDB investment in PostGIS 2.0</a>, you can now find the nearest N things to anywhere on the planet at ultra fast speed!

@@ -8,6 +8,8 @@ tags:
 - MWC
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/43975515359/a-cartodb-and-bbva-visualization-on-the-economic-impact/"
 ---
 
 <a href="http://mwcimpact.com" title="mwc impact data visualization" target="_blank"><img alt="mwcimpact visualization" src="http://cartodb.s3.amazonaws.com/tumblr/posts/mwcimpact_blog.png"/></a>

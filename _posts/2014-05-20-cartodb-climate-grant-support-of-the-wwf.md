@@ -7,6 +7,8 @@ tags:
 - grants
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/86315169674/cartodb-climate-grant-support-of-the-wwf/"
 ---
 
 <img alt="" src="http://i.imgur.com/YU8IWxa.png"/>

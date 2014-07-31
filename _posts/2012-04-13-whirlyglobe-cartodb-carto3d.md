@@ -8,6 +8,8 @@ tags:
 - WhereCamp
 categories:
 - 'How-to guides'
+redirect_from:
+- "/post/21015598565/whirlyglobe-cartodb-carto3d/"
 ---
 
 Last Wherecamp in SF was very fruitful. We met Steve Gifford, an experienced software developer and the creator of <a href="http://code.google.com/p/whirlyglobe/">WhirlyGlobe</a>, an Open Source 3D globe engine for iPad. WhirlyGlobe take cares of managing the globe with the performance of OpenGL, and allows you to overlay data on top of it.

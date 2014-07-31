@@ -8,6 +8,8 @@ tags:
 - nonprofits
 categories:
 - 'Map of the Week'
+redirect_from:
+- "/post/86503685434/map-of-the-week-a-map-of-attacks-on-health-care-in/"
 ---
 
 Physicians for Human Rights (<a href="http://www.twitter.com/P4HR">@P4HR</a>) is an independent organization that uses medicine and science to stop mass atrocities and severe human rights violations. They are supported by the expertise and passion of health professionals and concerned citizens alike. We welcome <a href="http://www.twitter.com/elise__baker">Elise Baker</a> to tell us about how they have created this comprehensive map.

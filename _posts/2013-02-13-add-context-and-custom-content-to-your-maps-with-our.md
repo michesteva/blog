@@ -7,6 +7,8 @@ tags:
 - publishing
 categories:
 - 'New features'
+redirect_from:
+- "/post/43005693012/add-context-and-custom-content-to-your-maps-with-our/"
 ---
 
 <a href="http://developers.cartodb.com/" title="CartoDB developers page" target="_blank"><img alt="Responsive cartodb publishing templates" src="http://cartodb.s3.amazonaws.com/tumblr/posts/templates-photo.png"/></a>

@@ -6,6 +6,8 @@ tags:
 - examples
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/62996568384/mapping-the-the-life-of-eric-the-seagull/"
 ---
 
 Earlier this week we saw this <a href="http://lifewatch.inbo.be/blog/posts/tracking-eric.html">amazing blog post</a> from <a href="http://lifewatch.inbo.be/">LifeWatch</a>, where they map and analyze the life of a seagull. The blog post comes out of a project that tracks, in real-time, 30 birds using solar powered GPS units. From those 30 birds, the authors single-out Eric,

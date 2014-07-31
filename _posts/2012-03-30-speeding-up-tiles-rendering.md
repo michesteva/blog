@@ -9,6 +9,8 @@ tags:
 categories:
 - 'New features'
 - 'New hires'
+redirect_from:
+- "/post/20163722809/speeding-up-tiles-rendering/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/mapnik_patch.png"/>

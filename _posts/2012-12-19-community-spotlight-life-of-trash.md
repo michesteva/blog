@@ -8,6 +8,8 @@ tags:
 - spotlight
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/38258951298/community-spotlight-life-of-trash/"
 ---
 
 <a href="http://www.lifeoftrash.com"><img alt="image" height="389" src="http://i.imgur.com/YDSF1.jpg" width="650"/></a>

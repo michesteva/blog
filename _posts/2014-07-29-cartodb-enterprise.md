@@ -8,7 +8,6 @@ categories:
 layout_color: '/img/posts/2014-07-29-cartodb-enterprise/multiuser.png'
 ---
 
-
 CartoDB is the easiest way to create amazing maps with your data. The interface is creating a new standard for user experience in the mapping and data analytics community. This allows us to work with users from diverse backgrounds to create maps. From hobbyists to educators, researchers, and general business, we are enabling a new generation of mappers to work with their data. 
 
 <!--more-->

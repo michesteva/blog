@@ -7,6 +7,8 @@ tags:
 - awards
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/63092661188/cartodb-maps-recognized-in-foss4g-opening-up-the-map/"
 ---
 
 Last week was the international <a href="http://2013.foss4g.org/">FOSS4G</a> meeting, one of our favorite conferences of the year. We told you a few weeks ago about <a href="http://blog.cartodb.com/post/58078947064/its-foss4g-time-again">some of the things</a> we would be presenting at the meeting. Something we forgot to mention was that this year they did something completely new called, <a href="http://2013.foss4g.org/conf/gallery/">_“Opening Up The Map”_</a>. In short, it was a community generated gallery of some of the best maps coming from the open source community.

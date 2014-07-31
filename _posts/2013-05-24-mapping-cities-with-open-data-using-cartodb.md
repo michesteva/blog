@@ -5,6 +5,8 @@ tags:
 - sf
 - city
 - mapping
+redirect_from:
+- "/post/51252122508/mapping-cities-with-open-data-using-cartodb/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/2462093810_f67989fa40_o.jpg"/>

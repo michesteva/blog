@@ -7,6 +7,8 @@ tags:
 - OpenStreetMaps
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/20470870268/enjoy-working-with-geospatial-data/"
 ---
 
 <a href="http://speakerdeck.com/u/jatorre/p/cartodb-how-working-with-geospatial-data-can-be-a-joy-and-not-a-pain"><img src="http://cartodb.s3.amazonaws.com/tumblr/posts/whereslides.png"/></a>

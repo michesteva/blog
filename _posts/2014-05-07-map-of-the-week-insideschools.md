@@ -10,6 +10,8 @@ tags:
 - examples
 categories:
 - 'Map of the Week'
+redirect_from:
+- "/post/85018415044/map-of-the-week-insideschools/"
 ---
 
 Chris Henrick is a CartoDB collaborator. We welcome him in this guest Map of the Week post to let him tell us about how he is using CartoDB mapping tool to solve the mapping needs of InsideSchools, with maps such as the <a href="http://insideschools.org/blog/item/1000820-our-pre-k-picks">Guide to pre-kindergarten</a>

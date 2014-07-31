@@ -9,6 +9,8 @@ tags:
 - Alastair Coote
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/18005420765/taxonomy-your-taxi-experience-in-nyc/"
 ---
 
 <img src="http://cartodb.s3.amazonaws.com/tumblr/posts/taxonomy.jpg" width="640"/>

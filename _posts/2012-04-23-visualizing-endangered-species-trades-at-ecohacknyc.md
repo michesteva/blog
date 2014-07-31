@@ -8,6 +8,8 @@ tags:
 - cartodb
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/21652319148/visualizing-endangered-species-trades-at-ecohacknyc/"
 ---
 
 We spent yersterday's Earth Day at our offices in NYC trying to do balloon mapping, a nice way to end an intense <a href="http://www.ecohacknyc.org/#program">EcoHackNYC</a> weekend. It is the second time we co-organized this (un)conference. Last fall we gathered at NYU and this time we met at Parsons. 

@@ -8,6 +8,8 @@ tags:
 - ecohacknyc
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/83717177703/ecohack-a-global-event-to-improve-our-environment-with/"
 ---
 
 <img src="http://i.imgur.com/Y2Ptq0k.jpg" alt=""/>

@@ -11,6 +11,8 @@ tags:
 - Torque
 categories:
 - 'Customer stories'
+redirect_from:
+- "/post/75598311828/superbowl-visualization-makes-use-of-many-powerful/"
 ---
 
 It didn't take long after the Superbowl ended for there to be an awesome visualization of all the Twitter activity during the game. The visualization uses CartoDB's Torque library to show over 1 million tweets in just 6 hours.

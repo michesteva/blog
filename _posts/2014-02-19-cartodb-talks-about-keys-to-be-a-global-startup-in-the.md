@@ -9,6 +9,8 @@ tags:
 - mwc 2014
 categories:
 - 'Events and conferences'
+redirect_from:
+- "/post/77191011731/cartodb-talks-about-keys-to-be-a-global-startup-in-the/"
 ---
 
 <img src="http://i.imgur.com/RFK0Z1S.png"/>

@@ -8,6 +8,8 @@ tags:
 - Knight Foundation
 categories:
 - 'New features'
+redirect_from:
+- "/post/74281376414/knight-helps-us-advance-map-based-storytelling/"
 ---
 
 Yesterday, <a href="http://www.knightfoundation.org/blogs/knightblog/2014/1/22/testable-moment-for-media-innovation/">Knight Foundation announced</a> that Vizzuality and CartoDB have received a grant to help build an open source tool for journalists that will enable better storytelling with maps online. We have long been advocates of storytelling using maps and data visualization and this grant will allow us to help make it easier for everyone. As part of the <a href="http://www.knightfoundation.org/prototype/">Prototype Fund</a>, our project aims to simplify the process of combining narratives, maps, and interactions into a single web page.

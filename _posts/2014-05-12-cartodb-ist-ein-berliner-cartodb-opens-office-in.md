@@ -9,6 +9,8 @@ tags:
 - cartodbeers
 categories:
  - 'Events and conferences'
+redirect_from:
+- "/post/85513787334/cartodb-ist-ein-berliner-cartodb-opens-office-in/"
 ---
 
 <img src="http://i.imgur.com/GfIK76P.png" alt=""/>
