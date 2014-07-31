@@ -19,10 +19,10 @@ npm install
 ### Run locally
 
 ```
-grunt
+grunt serve
 ```
 
-A tab in your browser will open and direct you to http://0.0.0.0:4002
+A tab in your browser will open and direct you to http://0.0.0.0:9000
 
 ## Write
 
@@ -71,3 +71,11 @@ Add the next tags avobe and below the code to show, with the syntax to highlight
 ```
 
 **Careful with the indentation and the name of the syntax**
+
+## Deploy
+
+```
+grunt deploy:staging|production
+```
+
+You'll need a `grunt-aws.json` credentials file.
