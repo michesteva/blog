@@ -24,6 +24,8 @@ grunt serve
 
 A tab in your browser will open and direct you to http://0.0.0.0:9000
 
+Also, you can run the blog locally as if it was on production with `grunt serve:dist`
+
 ## Write
 
 ### Working with drafts
