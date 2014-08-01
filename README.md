@@ -42,13 +42,13 @@ Normally the excerpts of the posts take the first paragraph of the content (it c
 
 Images can be styled so they are 940px width and have a border. Just wrap it between the next code:
 
-- with link
+- without link
 
 ```
 <div class="wrap"><p class="wrap-border"><img src="http://" alt=""></p></div>
 ```
 
-- without link
+- with link
 
 ```
 <div class="wrap"><p><a href="http://" class="wrap-border"><img src="http://" alt=""></a></p></div>
