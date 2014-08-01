@@ -1,16 +1,9 @@
 blog.Views.Post = Backbone.View.extend({
-  el: 'body',
+  el: '#post-single',
 
   events: {
     'click .btn-blue-tw': '_onClickTwitter',
-    'click .btn-blue-fb': '_onClickFacebook',
-    'click': '_closeDialogs'
-  },
-
-  initialize: function() {
-    this.$content = this.$('.post-inner');
-
-    this._initViews();
+    'click .btn-blue-fb': '_onClickFacebook'
   },
 
   _onClickTwitter: function(e) {
@@ -30,17 +23,8 @@ blog.Views.Post = Backbone.View.extend({
 
     return false;
   },
-
-  _closeDialogs: function() {
-    this.tooltip.close();
-  },
-
-  _initViews: function() {
-    this.tooltip = new blog.ui.Views.Tooltip();
-    this.navbar = new blog.ui.Views.Navbar();
-  }
 });
 
 $(function() {
-  blog.index = new blog.Views.Post();
+  blog.post = new blog.Views.Post();
 });

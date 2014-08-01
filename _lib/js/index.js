@@ -6,8 +6,6 @@ blog.Views.Index = Backbone.View.extend({
   },
 
   initialize: function() {
-    this.$content = this.$('.post-inner');
-
     this._initViews();
   },
 

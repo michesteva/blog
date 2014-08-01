@@ -168,6 +168,7 @@ module.exports = function(grunt) {
           ],
           '.tmp/js/main.js': [
             '_lib/js/app.js',
+            '_lib/js/index.js',
             '_lib/js/ui/navbar.js',
             '_lib/js/ui/tooltip.js'
           ]
@@ -248,7 +249,7 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            '{,*/}*.html',
+            '**/*.html',
             'fonts/{,*/}*.*',
             'img/**/*.{gif,jpeg,jpg,png}'
           ]
