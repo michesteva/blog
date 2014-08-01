@@ -6,6 +6,7 @@ tags:
 - feature
 categories:
 - 'new features'
+thumbnail_image: '/img/posts/2014-08-01-lock-your-tables-and-visualizations/locked-tables-thumbnail.png'
 ---
 
 Creating maps is quite addictive, so you may end up with tons of tables and visualizations in your account that are part of publications, and which you don't wish to change.
