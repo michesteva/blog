@@ -153,7 +153,6 @@ module.exports = function(grunt) {
         files: {
           '_site/js/main.js': ['.tmp/js/main.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
-          '_site/js/index.js': ['_lib/js/index.js'],
           '_site/js/post.js': ['_lib/js/post.js']
         }
       },
@@ -167,10 +166,11 @@ module.exports = function(grunt) {
             'bower_components/backbone/backbone.js'
           ],
           '.tmp/js/main.js': [
+            'bower_components/cdbui/js/cdbui/cdbui.js',
+            'bower_components/cdbui/js/cdbui/cdbui.navbar.js',
+            'bower_components/cdbui/js/cdbui/cdbui.tooltip.js',
             '_lib/js/app.js',
-            '_lib/js/index.js',
-            '_lib/js/ui/navbar.js',
-            '_lib/js/ui/tooltip.js'
+            '_lib/js/index.js'
           ]
         }
       }

@@ -1,4 +1,4 @@
-blog.Views.Index = Backbone.View.extend({
+App.Views.Index = Backbone.View.extend({
   el: 'body',
 
   events: {
@@ -14,11 +14,11 @@ blog.Views.Index = Backbone.View.extend({
   },
 
   _initViews: function() {
-    this.tooltip = new blog.ui.Views.Tooltip();
-    this.navbar = new blog.ui.Views.Navbar();
+    this.tooltip = new CDBUI.Tooltip();
+    this.navbar = new CDBUI.Navbar();
   }
 });
 
 $(function() {
-  blog.index = new blog.Views.Index();
+  window.Index = new App.Views.Index();
 });
