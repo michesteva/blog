@@ -34,3 +34,66 @@
     margin-left: 4px;
   }
 }
+
+/* iconfont */
+
+[class^="iconFont-"], [class*=" iconFont-"] {
+  font-family: 'carto-icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.iFont-xxs { font-size: 12px; }
+.iFont-xs { font-size: 16px; }
+.iFont-m { font-size: 24px; }
+.iFont-xl { font-size: 72px; }
+
+.iconFont-check:before {
+  content: "\e001";
+}
+.check-ok {
+  color: #8EB83F;
+}
+.check-disabled {
+  color: #DDDDDD;
+}
+.icon-white {
+  color: #fff;
+}
+.icon-light {
+  opacity: .25;
+}
+.icon-medium {
+  opacity: .5;
+}
+.icon-dark {
+  opacity: .8;
+}
+
+.iconFont-share:before {
+  content: "\e002";
+}
+
+.iconFont-noLimits:before {
+  content: "\e003";
+}
+
+.iconFont-arrow:before {
+  content: "\e004";
+}
+
+.iconFont-vipSupport:before {
+  content: "\e005";
+}
+
+.iconFont-enterpriseReady:before {
+  content: "\e006";
+}
+
+.iconFont-checkSimple:before {
+  content: "\e007";
+}

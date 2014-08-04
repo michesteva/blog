@@ -109,6 +109,21 @@
   font: 700 16px/20px 'Proxima Nova Bd';
 }
 
+.tit-module {
+  font: 400 31px/33px 'Proxima Nova Lt';
+  margin-bottom: 35px;
+  letter-spacing: -1px;
+}
+
+.tit-module-full {
+  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid rgba(#000, .2);
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
 .tit-decoration {
   display: inline-block;
   position: relative;
@@ -149,21 +164,20 @@
 
 .sub-section {
   font: 26px/34px 'Proxima Nova Lt';
-  color: #666;
 
-  a:hover {
-    text-decoration: underline;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
 .sub-section-m {
   font: 24px/32px 'Proxima Nova Lt';
-  color: #666;
 }
 
 .sub-section-s {
   font: 21px/29px 'Proxima Nova Lt';
-  color: #666;
 }
 
 .blue_layout,
@@ -191,9 +205,7 @@
 }
 
 .txt-default { font: 400 18px/22px 'Proxima Nova Lt'; color: #999; }
-.txt-default-white { font: 400 18px/22px 'Proxima Nova Lt'; color: #fff; }
 .txt-default-dark { color: #666; }
-.txt-default-s { font: 400 16px/20px 'Proxima Nova Lt'; color: #999; }
 
 @media (max-width: $large-width){
   .tit-decoration:before, .tit-decoration:after { display: none; }
