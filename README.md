@@ -72,6 +72,15 @@ Add the next tags avobe and below the code to show, with the syntax to highlight
 {% endhighlight %}
 ```
 
+### Related posts
+
+While developing related posts, i.e. `--lsi` option are _disabled_ in order to not slow files regeneration. To check related posts and still make it fast just install gsl. In OSX:
+
+```
+brew install gsl
+gem install rb-gsl
+```
+
 **Careful with the indentation and the name of the syntax**
 
 ## Deploy
