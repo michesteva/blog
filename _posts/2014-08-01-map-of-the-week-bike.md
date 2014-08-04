@@ -26,7 +26,7 @@ New York City publishes copious amounts of interesting data highlighting the fun
 It turned out that the data for trucks was in kml format and didn't have all of the metadata I wanted, but the department of transportation has a [data feeds page](http://www.nyc.gov/html/dot/html/about/datafeeds.shtml) which has the same thing as shape files.
 
 ###Trimming the Data
-Since CartoDB has limits on how much data you can store,it's a good idea to trim anything you don't need. It's so easy to drag the raw data back in that you aren't really losing anything. My map only dealt with Manhattan, so I used the boro column in truck data to delete anything I didn't care about. Here is a before and after:
+Since CartoDB has limits on how much data you can store, it's a good idea to trim anything you don't need. It's so easy to drag the raw data back in that you aren't really losing anything. My map only dealt with Manhattan, so I used the boro column in truck data to delete anything I didn't care about. Here is a before and after:
 
 <div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes.png" alt=""></p></div>
 
@@ -53,7 +53,7 @@ I also needed lines on the map denoting the southbound bike lanes. I added a man
 
 Lastly, I added a legend explaining what each color was. Once I had tweaked everything to my liking I published the visualization on my blog using the embed iframe option. Other than my not knowing about line-offset, the whole process only took a few hours.
 
-If you want to be part of our Map of the Week and create beautiful maps like this one, go to [CartoDB](http://cartodb.com/) and sign up for a free account. 
+If you want to be part of our [Map of the Week](http://blog.cartodb.com/categories/map-of-the-week/) and create beautiful maps like this one, go to [CartoDB](http://cartodb.com/) and sign up for a free account. 
 
 
 
