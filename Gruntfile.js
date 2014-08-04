@@ -199,7 +199,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           config: 'config.rb',
-          cssDir: '<%= config.dist %>/css'
+          cssDir: '<%= config.dist %>/css',
+          fontsDir: 'bower_components/cdbui/fonts'
         }
       },
       dist: {
@@ -250,9 +251,17 @@ module.exports = function(grunt) {
           src: [
             '*.{ico,png,txt}',
             '**/*.html',
-            'fonts/{,*/}*.*',
             'img/**/*.{gif,jpeg,jpg,png}'
           ]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/cdbui/fonts',
+          dest: '<%= config.dist %>/fonts/',
+          src: '{,*/}*.*'
+        }, {
+          src: 'bower_components/modernizr/modernizr.js',
+          dest: '<%= config.dist %>/js/vendor/modernizr.js'
         }]
       },
       styles: {
@@ -261,19 +270,6 @@ module.exports = function(grunt) {
         cwd: '_lib/scss',
         dest: '<%= config.app %>/css/',
         src: '{,*/}*.css'
-      },
-      scripts: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '_lib/js',
-          src: ['{,*/}*.*'],
-          dest: '<%= config.app %>/js/'
-        },
-        {
-          src: 'bower_components/modernizr/modernizr.js',
-          dest: '<%= config.dist %>/js/vendor/modernizr.js'
-        }]
       }
     },
     concurrent: {
@@ -285,7 +281,6 @@ module.exports = function(grunt) {
       dist: [
         'compass:dist',
         'copy:styles',
-        'copy:scripts'
       ]
     },
     htmlmin: {
