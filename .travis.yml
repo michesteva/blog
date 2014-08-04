@@ -5,11 +5,10 @@ before_install:
 - npm install -g grunt-cli
 install:
 - bundle install
-- gem install rb-gsl
 - npm install
 before_script:
 - cp grunt-aws.example.json grunt-aws.json
-script: grunt build
+script: grunt test
 branches:
   only:
   - master

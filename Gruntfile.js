@@ -120,6 +120,12 @@ module.exports = function(grunt) {
           async: false
         }
       },
+      test: {
+        command: "jekyll build --config '_config-prod.yml'",
+        options: {
+          async: false
+        }
+      },
       dist: {
         command: "jekyll build --lsi --config '_config-prod.yml'",
         options: {
@@ -343,6 +349,19 @@ module.exports = function(grunt) {
     'filerev',
     'usemin',
     // 'htmlmin'
+  ]);
+
+  grunt.registerTask('test', [
+    'clean',
+    'shell:test',
+    'concurrent:dist',
+    'useminPrepare',
+    'concat',
+    'cssmin',
+    'uglify',
+    'copy:dist',
+    'filerev',
+    'usemin'
   ]);
 
   grunt.registerTask('deploy:staging', [
