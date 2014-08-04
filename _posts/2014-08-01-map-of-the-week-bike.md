@@ -47,9 +47,7 @@ After a while of failing to make both visible I checked a [CartoCSS](https://www
 }
 {% endhighlight %}
 
-I also needed lines on the map denoting the southbound bike lanes. I added a manual layer to accomplish this. The button can be hard to see, but it's in the menu on the right side:
-
-<div class="wrap"><p class="wrap-border"><img src="/img/posts/2014-08-01-map-of-the-week-bike/imagebikelanes2.png" alt=""></p></div>
+I also needed lines on the map denoting the southbound bike lanes. I added a manual layer to accomplish this. The button can be hard to see, but it's in the menu on the right side.
 
 Lastly, I added a legend explaining what each color was. Once I had tweaked everything to my liking I published the visualization on my blog using the embed iframe option. Other than my not knowing about line-offset, the whole process only took a few hours.
 
