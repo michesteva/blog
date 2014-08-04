@@ -121,7 +121,7 @@ module.exports = function(grunt) {
         }
       },
       dist: {
-        command: "jekyll build --config '_config-prod.yml'",
+        command: "jekyll build --lsi --config '_config-prod.yml'",
         options: {
           async: false
         }
