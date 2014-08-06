@@ -256,6 +256,7 @@ module.exports = function(grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
+            'feed.*',
             '**/*.html',
             'img/**/*.{gif,jpeg,jpg,png}'
           ]
