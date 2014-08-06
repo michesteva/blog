@@ -43,7 +43,8 @@ module.exports = function(grunt) {
         options: {
           bucket: '<%= aws.stagingBucket %>'
         },
-        "disallow-robots.txt": "robots.txt"
+        src: "<%= config.dist %>/disallow-robots.txt",
+        dest: "robots.txt"
       },
       production: {
         options: {
@@ -72,7 +73,8 @@ module.exports = function(grunt) {
         options: {
           bucket: '<%= aws.productionBucket %>'
         },
-        "allow-robots.txt": "robots.txt"
+        src: "<%= config.dist %>/allow-robots.txt",
+        dest: "robots.txt"
       }
     },
     connect: {
@@ -176,9 +178,8 @@ module.exports = function(grunt) {
         src: [
           '<%= config.dist %>/js/**/*.js',
           '<%= config.dist %>/css/{,*/}*.css',
-          '<%= config.dist %>/img/**/*.*',
-          '<%= config.dist %>/fonts/{,*/}*.*',
-          '<%= config.dist %>/*.{ico,png}'
+          '<%= config.dist %>/img/**/*.{gif,jpeg,jpg,png}',
+          '<%= config.dist %>/fonts/{,*/}*.*'
         ]
       }
     },
