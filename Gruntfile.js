@@ -15,26 +15,64 @@ module.exports = function(grunt) {
       options: {
         accessKeyId: "<%= aws.accessKeyId %>",
         secretAccessKey: "<%= aws.secretAccessKey %>",
-        headers: {
-          "CacheControl": "max-age=630720000, public",
-          "Expires": new Date(Date.now() + 63072000000).toUTCString()
-        },
-        gzip: true,
-        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*"]
       },
       staging: {
         options: {
           bucket: '<%= aws.stagingBucket %>'
         },
         cwd: "<%= config.dist %>",
-        src: "**"
+        src: [
+          '*.{ico,png}',
+          'feed.*',
+          '**/*.html'
+        ]
+      },
+      stagingAssets: {
+        options: {
+          bucket: '<%= aws.stagingBucket %>',
+          headers: {
+            "CacheControl": "max-age=630720000, public",
+            "Expires": new Date(Date.now() + 63072000000).toUTCString()
+          },
+        },
+        gzip: true,
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        cwd: "<%= config.dist %>"
+      },
+      stagingRobots: {
+        options: {
+          bucket: '<%= aws.stagingBucket %>'
+        },
+        "disallow-robots.txt": "robots.txt"
       },
       production: {
         options: {
           bucket: '<%= aws.productionBucket %>'
         },
         cwd: "<%= config.dist %>",
-        src: "**"
+        src: [
+          '*.{ico,png}',
+          'feed.*',
+          '**/*.html'
+        ]
+      },
+      productionAssets: {
+        options: {
+          bucket: '<%= aws.productionBucket %>',
+          headers: {
+            "CacheControl": "max-age=630720000, public",
+            "Expires": new Date(Date.now() + 63072000000).toUTCString()
+          },
+        },
+        gzip: true,
+        src: ["css/{,*/}*", "js/{,*/}*", "fonts/{,*/}*", "img/**/*.{gif,jpeg,jpg,png}"],
+        cwd: "<%= config.dist %>"
+      },
+      productionRobots: {
+        options: {
+          bucket: '<%= aws.productionBucket %>'
+        },
+        "allow-robots.txt": "robots.txt"
       }
     },
     connect: {
@@ -362,12 +400,16 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy:staging', [
     'build',
-    's3:staging'
+    's3:staging',
+    's3:stagingAssets',
+    's3:stagingRobots'
   ]);
 
   grunt.registerTask('deploy:production', [
     'build',
-    's3:production'
+    's3:production',
+    's3:productionAssets',
+    's3:productionRobots'
   ]);
 
   grunt.registerTask('default', [
