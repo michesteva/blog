@@ -7,14 +7,15 @@
 @import "compass/css3/background-size";
 
 @import "_constants";
-@import "_fonts";
-@import "_buttons";
-@import "_icons";
-@import "_helpers";
-@import "_base";
+@import "../../bower_components/cdbui/scss/cdbui/_fonts";
+@import "../../bower_components/cdbui/scss/cdbui/_buttons";
+@import "../../bower_components/cdbui/scss/cdbui/_icons";
+@import "../../bower_components/cdbui/scss/cdbui/_helpers";
+@import "../../bower_components/cdbui/scss/cdbui/_base";
 
-@import "_header";
-@import "_footer";
+@import "../../bower_components/cdbui/scss/cdbui/_header";
+@import "../../bower_components/cdbui/scss/cdbui/_footer";
+
 
 .header{
   margin-top: -50px;
@@ -389,16 +390,6 @@ a.btn-blue-tw.btn-background {
 
 .blog-aside-inner {
   margin: 0 40px;
-}
-
-.title-module {
-  font: 400 31px/36px 'Proxima Nova Rg';
-  margin-bottom: 35px;
-}
-
-.description-module {
-  line-height: 1;
-  margin-bottom: 20px;
 }
 
 .lst-nav-tags {

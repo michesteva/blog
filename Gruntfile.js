@@ -159,7 +159,6 @@ module.exports = function(grunt) {
         files: {
           '_site/js/main.js': ['.tmp/js/main.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
-          '_site/js/index.js': ['_lib/js/index.js'],
           '_site/js/post.js': ['_lib/js/post.js']
         }
       },
@@ -173,10 +172,11 @@ module.exports = function(grunt) {
             'bower_components/backbone/backbone.js'
           ],
           '.tmp/js/main.js': [
+            'bower_components/cdbui/js/cdbui/cdbui.js',
+            'bower_components/cdbui/js/cdbui/cdbui.navbar.js',
+            'bower_components/cdbui/js/cdbui/cdbui.tooltip.js',
             '_lib/js/app.js',
-            '_lib/js/index.js',
-            '_lib/js/ui/navbar.js',
-            '_lib/js/ui/tooltip.js'
+            '_lib/js/index.js'
           ]
         }
       }
@@ -205,7 +205,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           config: 'config.rb',
-          cssDir: '<%= config.dist %>/css'
+          cssDir: '<%= config.dist %>/css',
+          fontsDir: 'bower_components/cdbui/fonts'
         }
       },
       dist: {
@@ -256,9 +257,17 @@ module.exports = function(grunt) {
           src: [
             '*.{ico,png,txt}',
             '**/*.html',
-            'fonts/{,*/}*.*',
             'img/**/*.{gif,jpeg,jpg,png}'
           ]
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/cdbui/fonts',
+          dest: '<%= config.dist %>/fonts/',
+          src: '{,*/}*.*'
+        }, {
+          src: 'bower_components/modernizr/modernizr.js',
+          dest: '<%= config.dist %>/js/vendor/modernizr.js'
         }]
       },
       styles: {
@@ -267,19 +276,6 @@ module.exports = function(grunt) {
         cwd: '_lib/scss',
         dest: '<%= config.app %>/css/',
         src: '{,*/}*.css'
-      },
-      scripts: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '_lib/js',
-          src: ['{,*/}*.*'],
-          dest: '<%= config.app %>/js/'
-        },
-        {
-          src: 'bower_components/modernizr/modernizr.js',
-          dest: '<%= config.dist %>/js/vendor/modernizr.js'
-        }]
       }
     },
     concurrent: {
@@ -291,7 +287,6 @@ module.exports = function(grunt) {
       dist: [
         'compass:dist',
         'copy:styles',
-        'copy:scripts'
       ]
     },
     htmlmin: {

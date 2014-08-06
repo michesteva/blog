@@ -1,11 +1,6 @@
-window.blog = {
+window.App = {
   Models: {},
   Collections: {},
   Views: {},
-  Routers: {},
-  ui: {
-    Models: {},
-    Collections: {},
-    Views: {}
-  }
+  Routers: {}
 };

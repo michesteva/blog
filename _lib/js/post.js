@@ -1,4 +1,4 @@
-blog.Views.Post = Backbone.View.extend({
+App.Views.Post = Backbone.View.extend({
   el: '#post-single',
 
   events: {
@@ -26,5 +26,5 @@ blog.Views.Post = Backbone.View.extend({
 });
 
 $(function() {
-  blog.post = new blog.Views.Post();
+  window.Post = new App.Views.Post();
 });
