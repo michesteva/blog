@@ -316,6 +316,13 @@ module.exports = function(grunt) {
         cwd: '_lib/scss',
         dest: '<%= config.app %>/css/',
         src: '{,*/}*.css'
+      },
+      images: {
+        expand: true,
+        dot: true,
+        cwd: 'img',
+        dest: '<%= config.dist %>',
+        src: '**/*.{gif,jpeg,jpg,png}'
       }
     },
     concurrent: {
@@ -382,6 +389,7 @@ module.exports = function(grunt) {
     'uglify',
     'copy:dist',
     'filerev',
+    'copy:images',
     'usemin',
     // 'htmlmin'
   ]);
@@ -396,6 +404,7 @@ module.exports = function(grunt) {
     'uglify',
     'copy:dist',
     'filerev',
+    'copy:images',
     'usemin'
   ]);
 
