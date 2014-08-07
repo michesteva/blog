@@ -167,7 +167,7 @@ module.exports = function(grunt) {
         }
       },
       dist: {
-        command: "jekyll build --lsi --config '_config-prod.yml' --limit_posts 20",
+        command: "jekyll build --lsi --config '_config-prod.yml'",
         options: {
           async: false
         }
