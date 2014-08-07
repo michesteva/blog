@@ -62,9 +62,9 @@ Welcome [Miles Grimshaw](@milesgrimshaw) to our Map of the Week series. Miles ha
 
 <p><img src="http://milesgrimshaw.com/Data/Citibike/Plot_Time_Speed_Weekday.jpg" alt="" /></p>
 
-<h2 id="your-data">Your Data</h2>
+<h2 id="your-data" class="decoration">Your Data</h2>
 
-<p><strong>Data Collection</strong></p>
+<h3>Data Collection</h3>
 
 <ul>
   <li>Set up an API with Kimono</li>
@@ -75,13 +75,13 @@ Welcome [Miles Grimshaw](@milesgrimshaw) to our Map of the Week series. Miles ha
   <li><a href="https://gist.github.com/milesgrimshaw/818bfd7c1f8b762563dd">Run this ruby script</a> as <code>ruby citibike.rb</code></li>
 </ul>
 
-<p><strong>Analysis</strong></p>
+<h3>Analysis</h3>
 
 <ul>
   <li><a href="https://gist.github.com/milesgrimshaw/67d26ffa50a6f9c4f5ef">I wrote this R script</a></li>
 </ul>
 
-<p><strong>Visualization</strong></p>
+<h3>Visualization</h3>
 
 <ul>
   <li>Upload the CSV to CartoDB</li>

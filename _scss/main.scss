@@ -91,10 +91,7 @@
   ol {
     margin-bottom: 20px;
     font: 18px/28px 'Proxima Nova Rg';
-    color: #666;
-    & + h3 {
-      margin-top: 60px;
-    }
+    color: #333;
   }
 
   p {
@@ -104,10 +101,10 @@
 
   ul,
   ol {
-    padding: 20px 0;
+    padding: 0 0 10px 0;
 
     > li {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       list-style-type: square;
 
       &:last-child {
@@ -123,12 +120,28 @@
     @include border-radius(4px);
   }
 
+  h2 {
+    color: #333;
+    font: 700 22px/30px 'Proxima Nova Bd';
+    margin: 40px auto 15px;
+  }
+
   h3 {
-    color: #666;
-    font: 700 20px/30px 'Proxima Nova Bd';
+    color: #333;
+    font: 700 20px/30px 'Proxima Nova Sb';
     margin: 40px auto 10px;
   }
 
+  h4 {
+    color: #333;
+    font: 700 20px/30px 'Proxima Nova Sb';
+    margin: 20px auto 10px;
+  }
+
+  .decoration {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; 
+  }
 
   iframe {
     margin-bottom: 20px;
