@@ -104,11 +104,11 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['_lib/scss/*.scss'],
+        files: ['_scss/*.scss'],
         tasks: ['compass:server'],
       },
       js: {
-        files: ['_lib/js/{,*/}*.js'],
+        files: ['_js/{,*/}*.js'],
         tasks: ['copy:server'],
       },
       html: {
@@ -117,7 +117,7 @@ module.exports = function(grunt) {
           '{,*/}*.md',
           'img/**/*'
         ],
-        tasks: ['shell:server', 'compass:server', 'copy:server']
+        tasks: ['shell:server', 'concurrent:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
           '{,*/}*.html',
           '{,*/}*.md',
           'img/**/*',
-          '_lib/scss/*.scss'
+          '_scss/*.scss'
         ]
       }
     },
@@ -167,7 +167,7 @@ module.exports = function(grunt) {
         }
       },
       dist: {
-        command: "jekyll build --lsi --config '_config-prod.yml'",
+        command: "jekyll build --lsi --config '_config-prod.yml' --limit_posts 20",
         options: {
           async: false
         }
@@ -187,7 +187,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '<%= config.dist %>/css/main.css': [
-            '_lib/scss/{,*/}*.css',
+            '_scss/{,*/}*.css',
             '<%= config.app %>/css/{,*/}*.css'
           ]
         }
@@ -198,7 +198,7 @@ module.exports = function(grunt) {
         files: {
           '_site/js/main.js': ['.tmp/js/main.js'],
           '_site/js/vendor.js': ['.tmp/js/vendor.js'],
-          '_site/js/post.js': ['_lib/js/post.js']
+          '_site/js/post.js': ['_js/post.js']
         }
       },
     },
@@ -214,8 +214,8 @@ module.exports = function(grunt) {
             'bower_components/cdbui/js/cdbui/cdbui.js',
             'bower_components/cdbui/js/cdbui/cdbui.navbar.js',
             'bower_components/cdbui/js/cdbui/cdbui.tooltip.js',
-            '_lib/js/app.js',
-            '_lib/js/index.js'
+            '_js/app.js',
+            '_js/index.js'
           ]
         }
       }
@@ -225,7 +225,7 @@ module.exports = function(grunt) {
         dest: '<%= config.dist %>'
       },
       html: '<%= config.dist %>/**/*.html',
-      css: '<%= config.app %>/css/{,*/}*.css'
+      css: '<%= config.dist %>/css/{,*/}*.css'
     },
     usemin: {
       options: {
@@ -260,29 +260,25 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '_lib/scss',
+          cwd: '_scss',
           dest: '<%= config.dist %>/css/',
           src: '{,*/}*.css'
         }, {
           expand: true,
           dot: true,
-          cwd: '_lib/js',
-          src: ['{,*/}*.*'],
+          cwd: '_js',
+          src: '{,*/}*.*',
           dest: '<%= config.dist %>/js/'
-        },
-        {
+        }, {
           src: 'bower_components/jquery/dist/jquery.js',
           dest: '<%= config.dist %>/js/vendor/jquery.js'
-        },
-        {
+        }, {
           src: 'bower_components/underscore/underscore.js',
           dest: '<%= config.dist %>/js/vendor/underscore.js'
-        },
-        {
+        }, {
           src: 'bower_components/backbone/backbone.js',
           dest: '<%= config.dist %>/js/vendor/backbone.js'
-        },
-        {
+        }, {
           src: 'bower_components/modernizr/modernizr.js',
           dest: '<%= config.dist %>/js/vendor/modernizr.js'
         }]
@@ -304,7 +300,7 @@ module.exports = function(grunt) {
           dot: true,
           cwd: 'bower_components/cdbui/fonts',
           dest: '<%= config.dist %>/fonts/',
-          src: '{,*/}*.*'
+          src: '{,*/}*.*',
         }, {
           src: 'bower_components/modernizr/modernizr.js',
           dest: '<%= config.dist %>/js/vendor/modernizr.js'
@@ -313,7 +309,7 @@ module.exports = function(grunt) {
       styles: {
         expand: true,
         dot: true,
-        cwd: '_lib/scss',
+        cwd: '_scss',
         dest: '<%= config.app %>/css/',
         src: '{,*/}*.css'
       },
@@ -321,19 +317,20 @@ module.exports = function(grunt) {
         expand: true,
         dot: true,
         cwd: 'img',
-        dest: '<%= config.dist %>',
-        src: '**/*.{gif,jpeg,jpg,png}'
+        src: '**/*.{gif,jpeg,jpg,png}',
+        dest: '<%= config.dist %>/img/'
       }
     },
     concurrent: {
       server: [
         'compass:server',
+        'copy:server',
         'copy:styles',
-        'copy:server'
+        'copy:images'
       ],
       dist: [
         'compass:dist',
-        'copy:styles',
+        'copy:styles'
       ]
     },
     htmlmin: {
@@ -389,8 +386,8 @@ module.exports = function(grunt) {
     'uglify',
     'copy:dist',
     'filerev',
-    'copy:images',
     'usemin',
+    'copy:images'
     // 'htmlmin'
   ]);
 
@@ -404,8 +401,8 @@ module.exports = function(grunt) {
     'uglify',
     'copy:dist',
     'filerev',
-    'copy:images',
-    'usemin'
+    'usemin',
+    'copy:images'
   ]);
 
   grunt.registerTask('deploy:staging', [
