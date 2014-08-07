@@ -325,8 +325,7 @@ module.exports = function(grunt) {
       server: [
         'compass:server',
         'copy:server',
-        'copy:styles',
-        'copy:images'
+        'copy:styles'
       ],
       dist: [
         'compass:dist',
