@@ -10,7 +10,7 @@ categories:
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/vYgFb41.jpg" alt=""></p></div>
 
-This is the first post of a new series in our blog: Mapping in the invisible. As the title may suggest, we'll be exploring different datasets, doing analysis and visualizations to tell stories that are hidden in that data, so you can learn and get inspired to work with CartoDB.
+This is the first post of a new series in our blog: Mapping the invisible. As the title may suggest, we'll be exploring different datasets, doing analysis and visualizations to tell stories that are hidden in that data, so you can learn and get inspired to work with CartoDB.
 
 <!--more-->
 
