@@ -10,6 +10,7 @@ categories:
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/vYgFb41.jpg" alt=""></p></div>
 
+
 CartoDB is more than just a useful tool for visualizing spreadsheets. When you use CartoDB you have the ability to tap into powerful data manipulation and GIS tools as well. To showcase these capabilities, we are creating a short series, _Mapping the invisible_. As the title may suggest, we'll be exploring different datasets, doing analysis and visualizations to tell stories that are hidden in that data, so you can learn and get inspired to work with CartoDB.
 
 <!--more-->
