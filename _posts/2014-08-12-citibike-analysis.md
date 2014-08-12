@@ -10,11 +10,11 @@ categories:
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/vYgFb41.jpg" alt=""></p></div>
 
-This is the first post of a new series in our blog: Mapping in the invisible. As the title may suggest, we'll be exploring different datasets, doing analysis and visualizations to tell stories that are hidden in that data, so you can learn and get inspired to work with CartoDB.
+CartoDB is more than just a useful tool for visualizing spreadsheets. When you use CartoDB you have the ability to tap into powerful data manipulation and GIS tools as well. To showcase these capabilities, we are creating a short series, _Mapping the invisible_. As the title may suggest, we'll be exploring different datasets, doing analysis and visualizations to tell stories that are hidden in that data, so you can learn and get inspired to work with CartoDB.
 
 <!--more-->
 
-CartoDB is more than just a useful tool for visualizing spreadsheets. When you use CartoDB you have the ability to tap into powerful data manipulation and GIS tools as well. To showcase these capabilities, we are creating a short series, _Mapping the invisible_. In our first installment, we're going to dig through some publically available data from [Citi Bike](https://www.citibikenyc.com/). The data are all recorded bike trips over a short period of time. Like many datasets that governments and businesses publish, there is often more than meets the eye. Here we are going to show you how you can transform data into entirely new and insightful visualizations. If you work with data and find this interesting, stay tuned and follow us on [Twitter](http://twitter.com/cartodb) to stay on top of the series. Let's go!
+In our first installment, we're going to dig through some publically available data from [Citi Bike](https://www.citibikenyc.com/). The data are all recorded bike trips over a short period of time. Like many datasets that governments and businesses publish, there is often more than meets the eye. Here we are going to show you how you can transform data into entirely new and insightful visualizations. If you work with data and find this interesting, stay tuned and follow us on [Twitter](http://twitter.com/cartodb) to stay on top of the series. Let's go!
 
 ### Mapping the invisible Part I
 
