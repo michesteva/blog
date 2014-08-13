@@ -3,6 +3,7 @@ title: 'CartoDB lets anyone create responsive visualizations for desktop and mob
 date: '2014-08-12T15:55:00+01:00'
 categories:
 - 'New features'
+# layout_color: 'http://i.imgur.com/t1jtlSi.jpg'
 ---
 
 <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/pGJSi9r.jpg" alt=""></p></div>
