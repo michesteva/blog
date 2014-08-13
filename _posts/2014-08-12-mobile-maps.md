@@ -1,16 +1,17 @@
 ---
-title: 'CartoDB lets anyone create responsive visualizations for desktop and mobile'
+title: 'CartoDB lets anyone create responsive<br> visualizations for desktop and mobile'
 date: '2014-08-12T15:55:00+01:00'
 categories:
 - 'New features'
-# layout_color: 'http://i.imgur.com/t1jtlSi.jpg'
+layout_color: 'http://i.imgur.com/Ra1Wza1.jpg'
 ---
 
-<div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/pGJSi9r.jpg" alt=""></p></div>
 
-Today, we consume information primarily through mobile devices. From the start, CartoDB has supported visualizations on-the-go. We believe that form and function make a good pair, which is why our maps are designed to live with the technology that supports their creators. 
+Today, we consume information primarily through mobile devices. From the start, CartoDB has supported visualizations on-the-go. We believe that form and function make a good pair, which is why our maps are designed to live with the technology that supports their creators. Our conviction was a hard-won technical challenge. 
 
-Our conviction was a hard-won technical challenge. Scaling visualizations for multiple platforms is difficult, as what displays on a stationary, desktop screen does not readily translate to micro mobile pixels. In the world of general web design, this issue has been addressed by the advent of mobile-specific views and auto-responsive screen adaptation, which renders your content optimally viewable to whatever screen you’re staring at in a given moment. 
+<!-- <div class="wrap"><p class="wrap-border"><img src="http://i.imgur.com/pGJSi9r.jpg" alt=""></p></div> -->
+
+Scaling visualizations for multiple platforms is difficult, as what displays on a stationary, desktop screen does not readily translate to micro mobile pixels. In the world of general web design, this issue has been addressed by the advent of mobile-specific views and auto-responsive screen adaptation, which renders your content optimally viewable to whatever screen you’re staring at in a given moment. 
 
 Streamlining map views is not as simple. To have it both ways, you would need to build two versions of a visualization that were controlled from an external device. That is, until now.
 
